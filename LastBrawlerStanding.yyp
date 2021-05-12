@@ -1,18 +1,23 @@
 {
   "resources": [
     {"id":{"name":"spr_Weiss_DownSpecial","path":"sprites/spr_Weiss_DownSpecial/spr_Weiss_DownSpecial.yy",},"order":11,},
+    {"id":{"name":"spr_Weiss_GlyphCreate","path":"sprites/spr_Weiss_GlyphCreate/spr_Weiss_GlyphCreate.yy",},"order":15,},
     {"id":{"name":"obj_Goku_player","path":"objects/obj_Goku_player/obj_Goku_player.yy",},"order":0,},
     {"id":{"name":"spr_Weiss_BasicAttack","path":"sprites/spr_Weiss_BasicAttack/spr_Weiss_BasicAttack.yy",},"order":7,},
     {"id":{"name":"spr_Goku_Idle","path":"sprites/spr_Goku_Idle/spr_Goku_Idle.yy",},"order":0,},
-    {"id":{"name":"spr_Weiss_BasicSpecial","path":"sprites/spr_Weiss_BasicSpecial/spr_Weiss_BasicSpecial.yy",},"order":1,},
+    {"id":{"name":"spr_Weiss_Bullet","path":"sprites/spr_Weiss_Bullet/spr_Weiss_Bullet.yy",},"order":1,},
     {"id":{"name":"spr_Goku_BasicAttack","path":"sprites/spr_Goku_BasicAttack/spr_Goku_BasicAttack.yy",},"order":1,},
+    {"id":{"name":"spr_Weiss_BasicSpecial","path":"sprites/spr_Weiss_BasicSpecial/spr_Weiss_BasicSpecial.yy",},"order":18,},
     {"id":{"name":"spr_Weiss_UpSpecial","path":"sprites/spr_Weiss_UpSpecial/spr_Weiss_UpSpecial.yy",},"order":9,},
     {"id":{"name":"spr_aux","path":"sprites/spr_aux/spr_aux.yy",},"order":4,},
+    {"id":{"name":"SalaEstre","path":"rooms/SalaEstre/SalaEstre.yy",},"order":1,},
     {"id":{"name":"spr_Weiss_Parry","path":"sprites/spr_Weiss_Parry/spr_Weiss_Parry.yy",},"order":12,},
     {"id":{"name":"spr_Weiss_Crouch","path":"sprites/spr_Weiss_Crouch/spr_Weiss_Crouch.yy",},"order":2,},
     {"id":{"name":"spr_Weiss_Walk","path":"sprites/spr_Weiss_Walk/spr_Weiss_Walk.yy",},"order":10,},
+    {"id":{"name":"spr_Weiss_GlyphDestroy","path":"sprites/spr_Weiss_GlyphDestroy/spr_Weiss_GlyphDestroy.yy",},"order":17,},
     {"id":{"name":"spr_Weiss_UpAttack","path":"sprites/spr_Weiss_UpAttack/spr_Weiss_UpAttack.yy",},"order":8,},
     {"id":{"name":"spr_Weiss_SideAttackHB","path":"sprites/spr_Weiss_SideAttackHB/spr_Weiss_SideAttackHB.yy",},"order":13,},
+    {"id":{"name":"spr_Weiss_Glyph","path":"sprites/spr_Weiss_Glyph/spr_Weiss_Glyph.yy",},"order":16,},
     {"id":{"name":"spr_Goku_OnAir","path":"sprites/spr_Goku_OnAir/spr_Goku_OnAir.yy",},"order":5,},
     {"id":{"name":"GokuStateMachine","path":"scripts/GokuStateMachine/GokuStateMachine.yy",},"order":0,},
     {"id":{"name":"spr_Weiss_SideAttack","path":"sprites/spr_Weiss_SideAttack/spr_Weiss_SideAttack.yy",},"order":0,},
@@ -40,6 +45,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"Sala1","path":"rooms/Sala1/Sala1.yy",},},
+    {"roomId":{"name":"SalaEstre","path":"rooms/SalaEstre/SalaEstre.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

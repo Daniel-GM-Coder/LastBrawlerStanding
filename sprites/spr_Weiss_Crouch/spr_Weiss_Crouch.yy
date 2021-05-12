@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 18,
-  "bbox_right": 129,
+  "bbox_left": 20,
+  "bbox_right": 123,
   "bbox_top": 21,
-  "bbox_bottom": 106,
+  "bbox_bottom": 98,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -27,12 +27,6 @@
     {"compositeImage":{"FrameId":{"name":"0d3f3167-7b94-4ffc-834d-0989d71a3d29","path":"sprites/spr_Weiss_Crouch/spr_Weiss_Crouch.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"0d3f3167-7b94-4ffc-834d-0989d71a3d29","path":"sprites/spr_Weiss_Crouch/spr_Weiss_Crouch.yy",},"LayerId":{"name":"4079fb66-da2b-4e9e-9821-fbc5c9aa19ba","path":"sprites/spr_Weiss_Crouch/spr_Weiss_Crouch.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_Weiss_Crouch","path":"sprites/spr_Weiss_Crouch/spr_Weiss_Crouch.yy",},"resourceVersion":"1.0","name":"0d3f3167-7b94-4ffc-834d-0989d71a3d29","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4eca5d25-7e2d-45e2-8bbc-ad709f9b1133","path":"sprites/spr_Weiss_Crouch/spr_Weiss_Crouch.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4eca5d25-7e2d-45e2-8bbc-ad709f9b1133","path":"sprites/spr_Weiss_Crouch/spr_Weiss_Crouch.yy",},"LayerId":{"name":"4079fb66-da2b-4e9e-9821-fbc5c9aa19ba","path":"sprites/spr_Weiss_Crouch/spr_Weiss_Crouch.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_Weiss_Crouch","path":"sprites/spr_Weiss_Crouch/spr_Weiss_Crouch.yy",},"resourceVersion":"1.0","name":"4eca5d25-7e2d-45e2-8bbc-ad709f9b1133","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4dab537b-7590-429b-96e3-ed575e1b4fcb","path":"sprites/spr_Weiss_Crouch/spr_Weiss_Crouch.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4dab537b-7590-429b-96e3-ed575e1b4fcb","path":"sprites/spr_Weiss_Crouch/spr_Weiss_Crouch.yy",},"LayerId":{"name":"4079fb66-da2b-4e9e-9821-fbc5c9aa19ba","path":"sprites/spr_Weiss_Crouch/spr_Weiss_Crouch.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_Weiss_Crouch","path":"sprites/spr_Weiss_Crouch/spr_Weiss_Crouch.yy",},"resourceVersion":"1.0","name":"4dab537b-7590-429b-96e3-ed575e1b4fcb","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_Weiss_Crouch","path":"sprites/spr_Weiss_Crouch/spr_Weiss_Crouch.yy",},
@@ -42,14 +36,12 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 3.0,
+    "length": 1.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"c25c4739-e8b3-4f0c-94c3-f801c0c01f30","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0d3f3167-7b94-4ffc-834d-0989d71a3d29","path":"sprites/spr_Weiss_Crouch/spr_Weiss_Crouch.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"fb9ab412-221f-4cc5-91bd-b109ab35984b","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4eca5d25-7e2d-45e2-8bbc-ad709f9b1133","path":"sprites/spr_Weiss_Crouch/spr_Weiss_Crouch.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"abd579fe-9767-484a-b231-5edfbef93ddc","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4dab537b-7590-429b-96e3-ed575e1b4fcb","path":"sprites/spr_Weiss_Crouch/spr_Weiss_Crouch.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
