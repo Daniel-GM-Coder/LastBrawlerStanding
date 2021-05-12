@@ -81,8 +81,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Weiss",
+    "path": "folders/Sprites/Weiss.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_Weiss_Idle",
