@@ -37,5 +37,3 @@ else
 {
 	sprite_index = spr_Weiss_Idle;
 }
-
-y=y+1;

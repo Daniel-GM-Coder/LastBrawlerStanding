@@ -9,5 +9,3 @@ Tamano2=1;
 
 globalvar mainmenu;
 mainmenu = 0;
-
-audio_play_sound(MainMenuBM,1,true);

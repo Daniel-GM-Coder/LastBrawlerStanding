@@ -54,7 +54,7 @@ if keyboard_check_released(vk_space)
 	{
 		audio_play_sound(MainMenuAccept,2,false);
 		audio_stop_sound(MainMenuBM)
-		room_goto(Mapa1);
+		room_goto(CharacterSelect);
 	}
 else if (mainmenu ==2)
 {

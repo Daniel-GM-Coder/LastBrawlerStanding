@@ -129,7 +129,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 47,
-    "yorigin": 128,
+    "yorigin": 117,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_Weiss_DownAttack","path":"sprites/spr_Weiss_DownAttack/spr_Weiss_DownAttack.yy",},
