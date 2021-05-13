@@ -14,8 +14,8 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 90,
-  "height": 145,
+  "width": 104,
+  "height": 104,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"22984b72-b85a-4289-b2b2-4a0f3f16bfd6","path":"sprites/spr_Goku_OnAir/spr_Goku_OnAir.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"22984b72-b85a-4289-b2b2-4a0f3f16bfd6","path":"sprites/spr_Goku_OnAir/spr_Goku_OnAir.yy",},"LayerId":{"name":"fda108aa-d8ed-450b-a6bd-ce3db659e245","path":"sprites/spr_Goku_OnAir/spr_Goku_OnAir.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_Goku_OnAir","path":"sprites/spr_Goku_OnAir/spr_Goku_OnAir.yy",},"resourceVersion":"1.0","name":"22984b72-b85a-4289-b2b2-4a0f3f16bfd6","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"171da2f5-92b4-4451-b4a1-002595e79984","path":"sprites/spr_Goku_OnAir/spr_Goku_OnAir.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"171da2f5-92b4-4451-b4a1-002595e79984","path":"sprites/spr_Goku_OnAir/spr_Goku_OnAir.yy",},"LayerId":{"name":"e820f03a-d750-43e9-bf48-3720933f0771","path":"sprites/spr_Goku_OnAir/spr_Goku_OnAir.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_Goku_OnAir","path":"sprites/spr_Goku_OnAir/spr_Goku_OnAir.yy",},"resourceVersion":"1.0","name":"171da2f5-92b4-4451-b4a1-002595e79984","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_Goku_OnAir","path":"sprites/spr_Goku_OnAir/spr_Goku_OnAir.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"7ff1b283-7321-4a89-9dc7-64b4a4d67ad2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"22984b72-b85a-4289-b2b2-4a0f3f16bfd6","path":"sprites/spr_Goku_OnAir/spr_Goku_OnAir.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3dabc65d-219d-4131-9373-173032bb9266","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"171da2f5-92b4-4451-b4a1-002595e79984","path":"sprites/spr_Goku_OnAir/spr_Goku_OnAir.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"fda108aa-d8ed-450b-a6bd-ce3db659e245","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e820f03a-d750-43e9-bf48-3720933f0771","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
