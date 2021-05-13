@@ -9,12 +9,11 @@ state list
 	
 situation list
 	0 = on floor
-	1 = on air not falling
-	2 = on air falling
+	1 = on air 
 */
+//	We gather the keyboard inputs here
 var nextState = 0;
 
-//	We gather the keyboard inputs here
 if(keyboard_check(ord("W"))){
 	nextState = 2;	
 }else if(keyboard_check(ord("A"))){
@@ -23,6 +22,10 @@ if(keyboard_check(ord("W"))){
 	nextState = 1;
 }else if(keyboard_check(ord("D"))){
 	nextState = 3;
+}else if(keyboard_check(ord("J"))){
+	nextState = 4;	
+}else if(keyboard_check(ord("K"))){
+	nextState = 5;	
 }
 
 if(keyboard_check(ord("W")) && keyboard_check(ord("J"))){
@@ -43,4 +46,5 @@ if(keyboard_check(ord("W")) && keyboard_check(ord("J"))){
 	nextState = 5;
 }
 
-GokuStateMachine(state, nextState, situation);
+// We set the next state
+state = GokuStateMachine(state, nextState, situation);

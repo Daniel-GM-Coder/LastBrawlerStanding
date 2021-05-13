@@ -14,8 +14,8 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 90,
-  "height": 145,
+  "width": 64,
+  "height": 64,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,15 +24,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"22984b72-b85a-4289-b2b2-4a0f3f16bfd6","path":"sprites/spr_Goku_OnAir/spr_Goku_OnAir.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"22984b72-b85a-4289-b2b2-4a0f3f16bfd6","path":"sprites/spr_Goku_OnAir/spr_Goku_OnAir.yy",},"LayerId":{"name":"fda108aa-d8ed-450b-a6bd-ce3db659e245","path":"sprites/spr_Goku_OnAir/spr_Goku_OnAir.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_Goku_OnAir","path":"sprites/spr_Goku_OnAir/spr_Goku_OnAir.yy",},"resourceVersion":"1.0","name":"22984b72-b85a-4289-b2b2-4a0f3f16bfd6","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"228a44b0-8949-4708-9354-667271354269","path":"sprites/spr_Goku_SpecialAttack/spr_Goku_SpecialAttack.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"228a44b0-8949-4708-9354-667271354269","path":"sprites/spr_Goku_SpecialAttack/spr_Goku_SpecialAttack.yy",},"LayerId":{"name":"b057f49d-2759-4336-95c0-30bfa5050751","path":"sprites/spr_Goku_SpecialAttack/spr_Goku_SpecialAttack.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_Goku_SpecialAttack","path":"sprites/spr_Goku_SpecialAttack/spr_Goku_SpecialAttack.yy",},"resourceVersion":"1.0","name":"228a44b0-8949-4708-9354-667271354269","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_Goku_OnAir","path":"sprites/spr_Goku_OnAir/spr_Goku_OnAir.yy",},
+    "spriteId": {"name":"spr_Goku_SpecialAttack","path":"sprites/spr_Goku_SpecialAttack/spr_Goku_SpecialAttack.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 6.0,
+    "playbackSpeed": 30.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"7ff1b283-7321-4a89-9dc7-64b4a4d67ad2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"22984b72-b85a-4289-b2b2-4a0f3f16bfd6","path":"sprites/spr_Goku_OnAir/spr_Goku_OnAir.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"db119e0f-3433-4281-831f-7c73f23f77fb","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"228a44b0-8949-4708-9354-667271354269","path":"sprites/spr_Goku_SpecialAttack/spr_Goku_SpecialAttack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_Goku_OnAir","path":"sprites/spr_Goku_OnAir/spr_Goku_OnAir.yy",},
+    "parent": {"name":"spr_Goku_SpecialAttack","path":"sprites/spr_Goku_SpecialAttack/spr_Goku_SpecialAttack.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_Goku_OnAir",
+    "name": "spr_Goku_SpecialAttack",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"fda108aa-d8ed-450b-a6bd-ce3db659e245","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b057f49d-2759-4336-95c0-30bfa5050751","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_Goku_OnAir",
+  "name": "spr_Goku_SpecialAttack",
   "tags": [],
   "resourceType": "GMSprite",
 }

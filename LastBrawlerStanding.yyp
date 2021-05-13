@@ -9,6 +9,7 @@
     {"id":{"name":"spr_Goku_BasicAttack","path":"sprites/spr_Goku_BasicAttack/spr_Goku_BasicAttack.yy",},"order":1,},
     {"id":{"name":"spr_Weiss_BasicSpecial","path":"sprites/spr_Weiss_BasicSpecial/spr_Weiss_BasicSpecial.yy",},"order":18,},
     {"id":{"name":"spr_Weiss_UpSpecial","path":"sprites/spr_Weiss_UpSpecial/spr_Weiss_UpSpecial.yy",},"order":9,},
+    {"id":{"name":"spr_Goku_SpecialAttack","path":"sprites/spr_Goku_SpecialAttack/spr_Goku_SpecialAttack.yy",},"order":20,},
     {"id":{"name":"spr_aux","path":"sprites/spr_aux/spr_aux.yy",},"order":4,},
     {"id":{"name":"SalaEstre","path":"rooms/SalaEstre/SalaEstre.yy",},"order":1,},
     {"id":{"name":"spr_Weiss_Parry","path":"sprites/spr_Weiss_Parry/spr_Weiss_Parry.yy",},"order":12,},
@@ -72,7 +73,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.2.556",
+    "IDEVersion": "2.3.2.560",
   },
   "resourceVersion": "1.4",
   "name": "LastBrawlerStanding",
