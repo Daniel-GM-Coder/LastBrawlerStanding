@@ -63,6 +63,7 @@
     {"id":{"name":"spr_Weiss_OnAir","path":"sprites/spr_Weiss_OnAir/spr_Weiss_OnAir.yy",},"order":6,},
     {"id":{"name":"spr_Goku_Crouch","path":"sprites/spr_Goku_Crouch/spr_Goku_Crouch.yy",},"order":3,},
     {"id":{"name":"spr_MarioFace","path":"sprites/spr_MarioFace/spr_MarioFace.yy",},"order":6,},
+    {"id":{"name":"spr_Weiss_Head","path":"sprites/spr_Weiss_Head/spr_Weiss_Head.yy",},"order":23,},
     {"id":{"name":"MainMenuChange","path":"sounds/MainMenuChange/MainMenuChange.yy",},"order":1,},
     {"id":{"name":"spr_Goku_Jump","path":"sprites/spr_Goku_Jump/spr_Goku_Jump.yy",},"order":2,},
     {"id":{"name":"spr_Weiss_Jump","path":"sprites/spr_Weiss_Jump/spr_Weiss_Jump.yy",},"order":5,},
@@ -117,7 +118,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.2.560",
+    "IDEVersion": "2.3.1.542",
   },
   "resourceVersion": "1.4",
   "name": "LastBrawlerStanding",
