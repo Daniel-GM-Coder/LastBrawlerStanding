@@ -1,9 +1,17 @@
 draw_sprite(spr_Hud_Ink1,1,-110,-100);
 draw_sprite(spr_Hud_Ink2,1,2030,-100);
 draw_sprite(spr_Hud_Ink3,1,785,-20);
+
+draw_set_halign(fa_center);
+NamePlayer1 = "WEISS";
+imp_text(277,218,NamePlayer1,c_white,font_HUD,1,0.6);
+NamePlayer2 = "HOLLOW";
+imp_text(1648,218,NamePlayer2,c_white,font_HUD,1,0.6);
+draw_set_halign(fa_left);
+
 FacePlayer1 = spr_WeissFace;
 draw_sprite(FacePlayer1,1,277,74);
-FacePlayer2 = spr_GokuFace;
+FacePlayer2 = spr_KnightFace;
 draw_sprite_ext(FacePlayer2,1,1643,74,-1,1,0,c_white,1);
 
 imp_text(880,105,(floor(timer/room_speed/60)),c_white,font_HUD,1,1);
