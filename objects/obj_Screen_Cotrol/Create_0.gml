@@ -4,5 +4,6 @@ DamagePlayer1 = 0;
 DamagePlayer2 = 0;
 
 HPPlayer1 = 5;
+HPPlayer2 = 5;
 
 alarm[0] = 30000;

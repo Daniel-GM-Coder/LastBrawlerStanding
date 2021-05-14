@@ -72,5 +72,10 @@ else
 
 HeadPlayer1 = spr_Weiss_Head;
 draw_sprite(HeadPlayer1,1,420,200);
-imp_text(495,200,HPPlayer1,c_white,font_HUD,1,0.5);
+imp_text(495,200,HPPlayer1,c_white,font_HUD,1,0.6);
 imp_text(475,200,"x",c_white,font_HUD,1,0.5);
+
+HeadPlayer2 = spr_Goku_Head;
+draw_sprite(HeadPlayer2,1,1428,200);
+imp_text(1498,200,HPPlayer2,c_white,font_HUD,1,0.6);
+imp_text(1478,200,"x",c_white,font_HUD,1,0.5);
