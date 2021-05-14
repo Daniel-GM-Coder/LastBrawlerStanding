@@ -69,8 +69,41 @@ if ((fijadoPJ1 == true) && (fijadoPJ2 == true) && (firstTime == true))
 	firstTime = false;
 }
 
+if (seleccionPJ1 == 0)
+{
+	pj1 = 0;
+}
+else if (seleccionPJ1 == 1)
+{
+	pj1 = 1;
+}
+else if (seleccionPJ1 == 2)
+{
+	pj1 = 2;
+}
 
+else if (seleccionPJ1 == 3)
+{
+	pj1 = 3;
+}
 
+if (seleccionPJ2 == 0)
+{
+	pj2 = 0;
+}
+else if (seleccionPJ2 == 1)
+{
+	pj2 = 1;
+}
+else if (seleccionPJ2 == 2)
+{
+	pj2 = 2;
+}
+
+else if (seleccionPJ2 == 3)
+{
+	pj2 = 3;
+}
 
 if(seleccionPJ1 > 3)
 	{seleccionPJ1 = 0;}

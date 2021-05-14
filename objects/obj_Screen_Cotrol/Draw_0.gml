@@ -3,15 +3,85 @@ draw_sprite(spr_Hud_Ink2,1,2030,-100);
 draw_sprite(spr_Hud_Ink3,1,785,-20);
 
 draw_set_halign(fa_center);
-NamePlayer1 = "WEISS";
+if (pj1 == 0)
+{
+	NamePlayer1 = "GOKU";
+}
+else if (pj1 == 1)
+{
+	NamePlayer1 = "WEISS";
+}
+else if (pj1 == 2)
+{
+	NamePlayer1 = "MARIO";
+}
+
+else if (pj1 == 3)
+{
+	NamePlayer1 = "KNIGHT";
+}
+
 imp_text(277,218,NamePlayer1,c_white,font_HUD,1,0.6);
-NamePlayer2 = "HOLLOW";
+
+if (pj2 == 0)
+{
+	NamePlayer2 = "GOKU";
+}
+else if (pj2 == 1)
+{
+	NamePlayer2 = "WEISS";
+}
+else if (pj2 == 2)
+{
+	NamePlayer2 = "MARIO";
+}
+
+else if (pj2 == 3)
+{
+	NamePlayer2 = "KNIGHT";
+}
+
 imp_text(1648,218,NamePlayer2,c_white,font_HUD,1,0.6);
 draw_set_halign(fa_left);
 
-FacePlayer1 = spr_WeissFace;
+if (pj1 == 0)
+{
+	FacePlayer1 = spr_GokuFace;
+}
+else if (pj1 == 1)
+{
+	FacePlayer1 = spr_WeissFace;
+}
+else if (pj1 == 2)
+{
+	FacePlayer1 = spr_MarioFace;
+}
+
+else if (pj1 == 3)
+{
+	FacePlayer1 = spr_KnightFace;
+}
+
 draw_sprite(FacePlayer1,1,277,74);
-FacePlayer2 = spr_KnightFace;
+
+if (pj2 == 0)
+{
+	FacePlayer2 = spr_GokuFace;
+}
+else if (pj2 == 1)
+{
+	FacePlayer2 = spr_WeissFace;
+}
+else if (pj2 == 2)
+{
+	FacePlayer2 = spr_MarioFace;
+}
+
+else if (pj2 == 3)
+{
+	FacePlayer2 = spr_KnightFace;
+}
+
 draw_sprite_ext(FacePlayer2,1,1643,74,-1,1,0,c_white,1);
 
 imp_text(880,105,(floor(timer/room_speed/60)),c_white,font_HUD,1,1);
@@ -78,10 +148,45 @@ else
 	imp_text(1448,66,"%",c_red,font_HUD,1,1.6);
 }
 
-HeadPlayer1 = spr_Weiss_Head;
+if (pj1 == 0)
+{
+	HeadPlayer1 = spr_Goku_Head;
+}
+else if (pj1 == 1)
+{
+	HeadPlayer1 = spr_Weiss_Head;
+}
+else if (pj1 == 2)
+{
+	HeadPlayer1 = spr_Mario_Head;
+}
+
+else if (pj1 == 3)
+{
+	HeadPlayer1 = spr_Knight_Head;
+}
+
 draw_sprite(HeadPlayer1,1,420,200);
 imp_text(495,200,HPPlayer1,c_white,font_HUD,1,0.6);
 imp_text(475,200,"x",c_white,font_HUD,1,0.5);
+
+if (pj2 == 0)
+{
+	HeadPlayer2 = spr_Goku_Head;
+}
+else if (pj2 == 1)
+{
+	HeadPlayer2 = spr_Weiss_Head;
+}
+else if (pj2 == 2)
+{
+	HeadPlayer2 = spr_Mario_Head;
+}
+
+else if (pj2 == 3)
+{
+	HeadPlayer2 = spr_Knight_Head;
+}
 
 HeadPlayer2 = spr_Goku_Head;
 draw_sprite(HeadPlayer2,1,1428,200);

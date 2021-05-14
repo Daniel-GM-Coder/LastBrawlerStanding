@@ -15,3 +15,7 @@ myimage_index4 = 0;
 myimage_speed5 = 1;
 myimage_index5 = 0;
 
+globalvar pj1;
+globalvar pj2;
+pj1 = 0;
+pj2 = 0;
