@@ -1,1 +1,1 @@
-room_goto(Mapa1);
+room_goto(Mapa2);
