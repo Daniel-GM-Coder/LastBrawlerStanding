@@ -103,13 +103,32 @@ function UpdateAttack(state, newState, situation){
 			}
 		}else if(state == 5){
 			
-			//esperar que termine la animacion del ataque especial	
+			//esperar que termine la animacion del ataque especial
 		}
 	}
 }
 
 function UpdateWalk(state, newState, situation){
 	
+	var targetSpeedX = 0;
+	var oldPosY = y;
+	
+	if(state != 4 && state != 5){
+		
+		if (keyboard_check(vk_left))
+		{
+			targetSpeedX -= max_speed;
+		}
+		if (keyboard_check(vk_right))
+		{
+			targetSpeedX += max_speed;
+		}
+	}
+	
+	// update the speed to aim towards targetSpeed
+	var diffSpeedX = targetSpeedX - hspeed; //speedX
+	diffSpeedX = clamp(diffSpeedX, -accel, accel);
+	hspeed += diffSpeedX; //speedX
 }
 
 function UpdateCrouch(state, newState, situation){
