@@ -50,11 +50,19 @@ else if (mainmenu==2)
 
 if keyboard_check_released(vk_space)
 {
-	if(mainmenu==0 || mainmenu==1)
+	if(mainmenu==0)
 	{
 		audio_play_sound(MainMenuAccept,2,false);
 		audio_stop_sound(MainMenuBM)
 		room_goto(CharacterSelect);
+		modoJuego = 0;
+	}
+	else if (mainmenu==1)
+	{
+		audio_play_sound(MainMenuAccept,2,false);
+		audio_stop_sound(MainMenuBM)
+		room_goto(CharacterSelect);
+		modoJuego = 1;
 	}
 else if (mainmenu ==2)
 {

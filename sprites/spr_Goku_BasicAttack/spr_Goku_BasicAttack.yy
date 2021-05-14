@@ -77,8 +77,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Goku",
+    "path": "folders/Sprites/Goku.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_Goku_BasicAttack",

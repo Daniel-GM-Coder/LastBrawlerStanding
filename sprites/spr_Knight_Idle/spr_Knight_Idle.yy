@@ -77,7 +77,7 @@
     "spriteId": {"name":"spr_Knight_Idle","path":"sprites/spr_Knight_Idle/spr_Knight_Idle.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 16.0,
+    "playbackSpeed": 8.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
@@ -127,6 +127,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"71e34583-133d-4bed-b5e2-e641fa8ad875","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "TheKnight",
     "path": "folders/Sprites/TheKnight.yy",

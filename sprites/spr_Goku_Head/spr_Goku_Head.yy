@@ -67,9 +67,10 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"69b3747e-0b58-47d7-8648-eae9f6fbb04a","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Goku",
+    "path": "folders/Sprites/Goku.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_Goku_Head",

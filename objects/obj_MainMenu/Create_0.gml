@@ -9,3 +9,6 @@ Tamano2=1;
 
 globalvar mainmenu;
 mainmenu = 0;
+
+globalvar modoJuego;
+modoJuego = 0;
