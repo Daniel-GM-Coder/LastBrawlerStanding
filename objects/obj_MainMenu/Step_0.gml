@@ -48,7 +48,7 @@ else if (mainmenu==2)
 }
 
 
-if keyboard_check_released(vk_space)
+if keyboard_check_released(ord("X"))
 {
 	if(mainmenu==0)
 	{

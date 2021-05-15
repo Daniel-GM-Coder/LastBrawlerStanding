@@ -1,1 +1,1 @@
-room_goto(Mapa2);
+room_goto(MapSelect);
