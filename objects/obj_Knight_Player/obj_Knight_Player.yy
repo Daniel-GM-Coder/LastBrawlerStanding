@@ -1,13 +1,16 @@
 {
   "spriteId": {
-    "name": "spr_Weiss_Idle",
-    "path": "sprites/spr_Weiss_Idle/spr_Weiss_Idle.yy",
+    "name": "spr_Knight_Idle",
+    "path": "sprites/spr_Knight_Idle/spr_Knight_Idle.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_Player1",
+    "path": "objects/obj_Player1/obj_Player1.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -19,10 +22,13 @@
   "physicsFriction": 0.2,
   "physicsStartAwake": true,
   "physicsKinematic": false,
-  "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_Weiss_Player","path":"objects/obj_Weiss_Player/obj_Weiss_Player.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  "physicsShapePoints": [
+    {"x":0.0,"y":0.0,},
+    {"x":54.0,"y":0.0,},
+    {"x":54.0,"y":74.0,},
+    {"x":0.0,"y":74.0,},
   ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -30,7 +36,7 @@
     "path": "folders/Objetos.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_Weiss_Player",
+  "name": "obj_Knight_Player",
   "tags": [],
   "resourceType": "GMObject",
 }
