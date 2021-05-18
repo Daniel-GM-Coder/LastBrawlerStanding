@@ -12,11 +12,12 @@ situation list
 	1 = on air 
 */
 
-function GokuStateMachine(argument0, argument1, argument2){
+function GokuStateMachine(argument0, argument1, argument2, argument3){
 	
 	var state = argument0;
 	var newState = array_create(1, argument1);
 	var situation = array_create(1, argument2);
+	var t = argument3;
 	
 	UpdateIdle(state, newState, situation);
 	
@@ -26,7 +27,7 @@ function GokuStateMachine(argument0, argument1, argument2){
 	
 	UpdateCrouch(state, newState, situation);
 	
-	UpdateJump(state, newState, situation);
+	UpdateJump(state, newState, situation, t);
 	
 	if(newState[0] == -1){ // plantearlo al reves, es decir, simplemente que si el newState es diferente de -1, entonces state = newState y punto fiera makina tiburon bestia parda
 		return state;	
@@ -83,15 +84,25 @@ function UpdateAttack(state, newState, situation){
 	//	}
 	//}
 	if(state != 4 && state != 5){
-		
-		if(newState[0] == 4){
+		if(situation[0] == 0){
+			if(newState[0] == 4){
+				ChangeSpriteAccordingToSSJStatus();
+				
 			if(sprite_index != spr_Goku_BasicAttack)
 				sprite_index = spr_Goku_BasicAttack;
 			
-		}else if(newState[0] == 5){
+			}else if(newState[0] == 5){
 			if(sprite_index != spr_Goku_SpecialAttack)
 				sprite_index = spr_Goku_SpecialAttack;	
+			}	
+		}else{
+			if(newState[0] == 4){
+				
+			}else if(newState[0] == 5){
+				
+			}
 		}
+		
 	}else{
 		
 		newState[@ 0] = -1;
@@ -133,8 +144,35 @@ function UpdateWalk(state, newState, situation){
 
 function UpdateCrouch(state, newState, situation){
 	
+	
 }
 
-function UpdateJump(state, newState, situation){
+function UpdateJump(state, newState, situation, t){
+	
+	//	Jump
+	if(situation[0] == 0 && (state == 0 || state == 1) && newState[0] == 2){
+		t = 0;
+		
+		//var speedY = vspeed;
+	 	//var diffSpeedY = max_speed - abs(speedY);
+		//diffSpeedY = clamp(diffSpeedY, -accel, accel);
+		//vspeed -= diffSpeedY;
+		//situation[@ 0] = 1;
+		//newState[@ 0] = 2;
+		vspeed = -8;
+		
+	}//else if(situation == 1){
+	//	//newY -= max_speed;
+	//	speedY += grav;
+	//	newY = y + speedY;	
+	//}
+	
+	
+	//	Apply gravity
+	//vspeed += gravity_force;
+	
+}
+
+function ChangeSpriteAccordingToSSJStatus(){
 	
 }

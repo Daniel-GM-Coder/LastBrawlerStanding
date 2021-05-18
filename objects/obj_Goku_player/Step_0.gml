@@ -46,5 +46,10 @@ if(keyboard_check(ord("W")) && keyboard_check(ord("J"))){
 	nextState = 5;
 }
 
+var nextY = vspeed + gravity_force * t + y;
+if(place_free(x, y + nextY)){
+	vspeed += gravity_force * t;
+	t +=1;
+}
 // We set the next state
-state = GokuStateMachine(state, nextState, situation);
+state = GokuStateMachine(state, nextState, situation, t);
