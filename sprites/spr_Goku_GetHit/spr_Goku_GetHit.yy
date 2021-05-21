@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Goku",
-    "path": "folders/Sprites/Goku.yy",
+    "name": "Goku base",
+    "path": "folders/Sprites/Goku/Specials/Goku base.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_Goku_GetHit",

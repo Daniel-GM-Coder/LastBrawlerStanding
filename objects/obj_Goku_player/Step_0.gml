@@ -6,6 +6,8 @@ state list
 	3 = crouch
 	4 = attack
 	5 = special attack
+	6 = Receiving damage
+	
 	
 situation list
 	0 = on floor
@@ -19,9 +21,9 @@ if(keyboard_check(ord("W"))){
 }else if(keyboard_check(ord("A"))){
 	nextState = 1;
 }else if(keyboard_check(ord("S"))){
-	nextState = 1;
-}else if(keyboard_check(ord("D"))){
 	nextState = 3;
+}else if(keyboard_check(ord("D"))){
+	nextState = 1;
 }else if(keyboard_check(ord("J"))){
 	nextState = 4;	
 }else if(keyboard_check(ord("K"))){
@@ -46,10 +48,25 @@ if(keyboard_check(ord("W")) && keyboard_check(ord("J"))){
 	nextState = 5;
 }
 
-var nextY = vspeed + gravity_force * t + y;
+//	FUNCIONA DE PUTA MADRE
+var nextY = vspeed + gravity_force * t;
 if(place_free(x, y + nextY)){
 	vspeed += gravity_force * t;
-	t +=1;
+	t +=3;
+	t = clamp(t,0, maxFallVelocity);
+}else{
+	vspeed = 0;
+	situation = 0;
 }
-// We set the next state
-state = GokuStateMachine(state, nextState, situation, t);
+
+
+
+
+// We set the next stat
+//state = GokuStateMachine(state, nextState, situation, t);
+
+var stateMachineChanges = array_create(3, noone);
+stateMachineChanges = GokuStateMachine(state, nextState, situation, t, ssj_status);	//	nuevo
+state = stateMachineChanges[0];
+situation = stateMachineChanges[1];
+t = stateMachineChanges[2];
