@@ -86,8 +86,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 65,
-    "yorigin": 103,
+    "xorigin": 63,
+    "yorigin": 106,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_Knight_NeutralAir","path":"sprites/spr_Knight_NeutralAir/spr_Knight_NeutralAir.yy",},
@@ -99,7 +99,6 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8fc98741-8af7-4839-9ec4-d5ca21bf7f0c","tags":[],"resourceType":"GMImageLayer",},
   ],
-  "nineSlice": null,
   "parent": {
     "name": "TheKnight",
     "path": "folders/Sprites/TheKnight.yy",
