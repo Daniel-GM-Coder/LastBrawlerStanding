@@ -12,29 +12,32 @@ situation list
 	1 = on air 
 */
 
-function GokuStateMachine(argument0, argument1, argument2, argument3, argument4){
+function GokuStateMachine(argument0, argument1, argument2, argument3, argument4, argument5){
 	
 	var state = argument0;
-	var returnValues = array_create(4, noone);
+	var returnValues = array_create(5, noone);
 	var newState = argument1;
 	//var situation = array_create(1, argument2);
 	var situation = argument2;
 	var t = argument3;
 	var ssj_state = argument4;
+	var orientation = argument5;
+	
 	returnValues[0] = newState;
 	returnValues[1] = situation;
 	returnValues[2] = t;
 	returnValues[3] = ssj_state;
+	returnValues[4] = orientation;
 	
-	returnValues = UpdateIdle(state, newState, situation, ssj_state, returnValues);
+	returnValues = UpdateIdle(state, newState, situation, ssj_state, returnValues, orientation);
 	
-	returnValues = UpdateAttack(state, newState, situation, ssj_state, returnValues);
+	returnValues = UpdateAttack(state, newState, situation, ssj_state, returnValues, orientation);
 	
-	returnValues = UpdateWalk(state, newState, situation, ssj_state, returnValues);
+	returnValues = UpdateWalk(state, newState, situation, ssj_state, returnValues, orientation);
 	
-	returnValues = UpdateCrouch(state, newState, situation, ssj_state, returnValues);
+	returnValues = UpdateCrouch(state, newState, situation, ssj_state, returnValues, orientation);
 	
-	returnValues = UpdateJump(state, newState, situation, t, ssj_state, returnValues);
+	returnValues = UpdateJump(state, newState, situation, t, ssj_state, returnValues, orientation);
 	
 	var returnResults = array_create(3, noone);
 
@@ -47,44 +50,44 @@ function GokuStateMachine(argument0, argument1, argument2, argument3, argument4)
 	return returnValues;
 }
 
-function UpdateIdle(state, newState, situation, ssj_state, returnValues){
+function UpdateIdle(state, newState, situation, ssj_state, returnValues, orientation){
 
 	switch(situation){
 		
 		case 0:
 			if(state == 0 && newState == 0){
-				ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "idle", returnValues);
+				ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "idle", returnValues, orientation);
 			}
 			break;
 			
 		case 1:
 			if(state == 0 && newState == 0){
-				ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "on_air", returnValues);
+				ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "on_air", returnValues, orientation);
 			}
 			break;
 	}
 	return returnValues;
 }
 
-function UpdateAttack(state, newState, situation, ssj_state, returnValues){
+function UpdateAttack(state, newState, situation, ssj_state, returnValues, orientation){
 	
 	if(state != 4 && state != 5){
 		if(situation == 0){
 			if(newState == 4){
-				ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "basic_attack");
+				ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "basic_attack", orientation);
 			//if(sprite_index != spr_Goku_BasicAttack)
 			//	sprite_index = spr_Goku_BasicAttack;
 			
 			}else if(newState == 5){
-				ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "special_atttack");
+				ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "special_atttack", orientation);
 			//if(sprite_index != spr_Goku_SpecialAttack)
 			//	sprite_index = spr_Goku_SpecialAttack;	
 			}	
 		}else{
 			if(newState == 4){
 				
-				ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "air_attack");
-			}else if(newState[0] == 5){
+				ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "air_attack", orientation);
+			}else if(newState == 5){
 				
 			//	ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "special_attack");
 			}
@@ -125,7 +128,7 @@ function UpdateAttack(state, newState, situation, ssj_state, returnValues){
 	return returnValues;
 }
 
-function UpdateWalk(state, newState, situation, ssj_state, returnValues){
+function UpdateWalk(state, newState, situation, ssj_state, returnValues, orientation){
 	
 	var targetSpeedX = 0;
 	var oldPosY = y;
@@ -141,7 +144,7 @@ function UpdateWalk(state, newState, situation, ssj_state, returnValues){
 			targetSpeedX += max_speed;
 		}
 	}
-	ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "walk", returnValues);
+	ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "walk", returnValues, orientation);
 	
 	// update the speed to aim towards targetSpeed
 	var diffSpeedX = targetSpeedX - hspeed; //speedX
@@ -151,7 +154,7 @@ function UpdateWalk(state, newState, situation, ssj_state, returnValues){
 	return returnValues;
 }
 
-function UpdateCrouch(state, newState, situation, ssj_state, returnValues){
+function UpdateCrouch(state, newState, situation, ssj_state, returnValues, orientation){
 	
 	if(situation == 0){
 		
@@ -161,7 +164,7 @@ function UpdateCrouch(state, newState, situation, ssj_state, returnValues){
 					
 					//if(sprite_index != spr_Goku_Crouch)
 					//	sprite_index = spr_Weiss_Crouch;
-					ChangeSpriteAccordingToSSJStatus(returnValues[0], "crouch", ssj_state);
+					ChangeSpriteAccordingToSSJStatus(returnValues[0], "crouch", ssj_state, orientation);
 				}else if(state == 3){
 					
 					if(image_index == image_number){
@@ -183,7 +186,7 @@ function UpdateCrouch(state, newState, situation, ssj_state, returnValues){
 						
 							if(image_index == 1 && image_speed = -1 && state == 3){//image_index = 0
 								//sprite_index = spr_Goku_Idle;
-								ChangeSpriteAccordingToSSJStatus(returnValues[0], "idle", ssj_state);
+								ChangeSpriteAccordingToSSJStatus(returnValues[0], "idle", ssj_state, orientation);
 							}
 						}
 					}
@@ -199,7 +202,7 @@ function UpdateCrouch(state, newState, situation, ssj_state, returnValues){
 		
 }
 
-function UpdateJump(state, newState, situation, t, ssj_state, returnValues){
+function UpdateJump(state, newState, situation, t, ssj_state, returnValues, orientation){
 	
 	// The player is grounded and can jump
 	if(situation == 0 && (state == 0 || state == 1) && newState == 2){
@@ -236,8 +239,14 @@ function UpdateJump(state, newState, situation, t, ssj_state, returnValues){
 	return returnValues;
 }
 
-function ChangeSpriteAccordingToSSJStatus(newState, ssj_state, spriteToAsign, returnValues){
+function ChangeSpriteAccordingToSSJStatus(newState, ssj_state, spriteToAsign, returnValues, orientation){
 	
+	var xScaleOrientation = orientation;
+	if(orientation == 0){
+		xScaleOrientation = -1;
+	}else if(orientation == 1)
+		xScaleOrientation = 1;
+		
 	switch(newState){
 		
 		case 0:
@@ -339,4 +348,5 @@ function ChangeSpriteAccordingToSSJStatus(newState, ssj_state, spriteToAsign, re
 			}
 			break;
 	}
+	image_xscale = xScaleOrientation;
 }
