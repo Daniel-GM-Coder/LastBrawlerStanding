@@ -46,9 +46,12 @@ if(keyboard_check(ord("W")) && keyboard_check(ord("J"))){
 	nextState = 4;
 }else if(keyboard_check(ord("S")) && keyboard_check(ord("K"))){
 	nextState = 5;
-}
+}else if(keyboard_check(ord("W")) && keyboard_check(ord("A")))
+	nextState = 2;
+else if(keyboard_check(ord("W")) && keyboard_check(ord("D")))
+	nextState = 2;
 
-//	FUNCIONA DE PUTA MADRE
+//FUNCIONA DE PUTA MADRE
 var nextY = vspeed + gravity_force * t;
 if(place_free(x, y + nextY)){
 	vspeed += gravity_force * t;
@@ -59,10 +62,6 @@ if(place_free(x, y + nextY)){
 	situation = 0;
 }
 
-
-
-
-// We set the next stat
 //state = GokuStateMachine(state, nextState, situation, t);
 
 var stateMachineChanges = array_create(3, noone);

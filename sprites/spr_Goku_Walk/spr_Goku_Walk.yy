@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 44,
-  "bbox_right": 105,
-  "bbox_top": 26,
-  "bbox_bottom": 123,
+  "bbox_left": 37,
+  "bbox_right": 112,
+  "bbox_top": 32,
+  "bbox_bottom": 117,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"e93e48c2-d42f-417b-819d-f8412e95e10e","path":"sprites/spr_Goku_Idle/spr_Goku_Idle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e93e48c2-d42f-417b-819d-f8412e95e10e","path":"sprites/spr_Goku_Idle/spr_Goku_Idle.yy",},"LayerId":{"name":"f8318cc4-42df-45f4-8ee1-985d11e265e0","path":"sprites/spr_Goku_Idle/spr_Goku_Idle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_Goku_Idle","path":"sprites/spr_Goku_Idle/spr_Goku_Idle.yy",},"resourceVersion":"1.0","name":"e93e48c2-d42f-417b-819d-f8412e95e10e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"1203941d-157e-430b-9024-bb807382aedd","path":"sprites/spr_Goku_Walk/spr_Goku_Walk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"1203941d-157e-430b-9024-bb807382aedd","path":"sprites/spr_Goku_Walk/spr_Goku_Walk.yy",},"LayerId":{"name":"c6755ceb-d96c-4e53-bb30-c2410606febc","path":"sprites/spr_Goku_Walk/spr_Goku_Walk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_Goku_Walk","path":"sprites/spr_Goku_Walk/spr_Goku_Walk.yy",},"resourceVersion":"1.0","name":"1203941d-157e-430b-9024-bb807382aedd","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_Goku_Idle","path":"sprites/spr_Goku_Idle/spr_Goku_Idle.yy",},
+    "spriteId": {"name":"spr_Goku_Walk","path":"sprites/spr_Goku_Walk/spr_Goku_Walk.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 7.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"fac36c8b-9c08-4f7c-8fee-2263b0eca42b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e93e48c2-d42f-417b-819d-f8412e95e10e","path":"sprites/spr_Goku_Idle/spr_Goku_Idle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e4a57a9b-3049-4087-89c8-1b34b3bf3ea5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1203941d-157e-430b-9024-bb807382aedd","path":"sprites/spr_Goku_Walk/spr_Goku_Walk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -54,18 +54,18 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 76,
-    "yorigin": 123,
+    "xorigin": 73,
+    "yorigin": 120,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_Goku_Idle","path":"sprites/spr_Goku_Idle/spr_Goku_Idle.yy",},
+    "parent": {"name":"spr_Goku_Walk","path":"sprites/spr_Goku_Walk/spr_Goku_Walk.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_Goku_Idle",
+    "name": "spr_Goku_Walk",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f8318cc4-42df-45f4-8ee1-985d11e265e0","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c6755ceb-d96c-4e53-bb30-c2410606febc","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Goku/Specials/Goku base.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_Goku_Idle",
+  "name": "spr_Goku_Walk",
   "tags": [],
   "resourceType": "GMSprite",
 }

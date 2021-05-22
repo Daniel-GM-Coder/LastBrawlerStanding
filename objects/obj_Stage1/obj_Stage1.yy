@@ -3,7 +3,7 @@
     "name": "spr_Map1_Platform",
     "path": "sprites/spr_Map1_Platform/spr_Map1_Platform.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,

@@ -1,6 +1,6 @@
 {
-  "bboxMode": 2,
-  "collisionKind": 1,
+  "bboxMode": 0,
+  "collisionKind": 4,
   "type": 0,
   "origin": 7,
   "preMultiplyAlpha": false,
@@ -79,6 +79,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"232a6db9-21c6-46bd-a9a9-5df94ad90095","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Weiss",
     "path": "folders/Sprites/Weiss.yy",

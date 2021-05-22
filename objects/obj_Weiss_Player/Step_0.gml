@@ -1,3 +1,57 @@
+var nextState = 0;
+
+if(keyboard_check(ord("W"))){
+	nextState = 2;	
+}else if(keyboard_check(ord("A"))){
+	nextState = 1;
+}else if(keyboard_check(ord("S"))){
+	nextState = 3;
+}else if(keyboard_check(ord("D"))){
+	nextState = 1;
+}else if(keyboard_check(ord("J"))){
+	nextState = 4;	
+}else if(keyboard_check(ord("K"))){
+	nextState = 5;	
+}
+
+if(keyboard_check(ord("W")) && keyboard_check(ord("J"))){
+	nextState = 4;
+}else if(keyboard_check(ord("W")) && keyboard_check(ord("K"))){
+	nextState = 5;
+}else if(keyboard_check(ord("A")) && keyboard_check(ord("J"))){
+	nextState = 4;
+}else if(keyboard_check(ord("A")) && keyboard_check(ord("K"))){
+	nextState = 5;
+}else if(keyboard_check(ord("D")) && keyboard_check(ord("J"))){
+	nextState = 4;
+}else if(keyboard_check(ord("D")) && keyboard_check(ord("K"))){
+	nextState = 5;
+}else if(keyboard_check(ord("S")) && keyboard_check(ord("J"))){
+	nextState = 4;
+}else if(keyboard_check(ord("S")) && keyboard_check(ord("K"))){
+	nextState = 5;
+}
+
+var stateMachineChanges = array_create(3, noone);
+stateMachineChanges = WeissStateMachine(state, nextState, grounded, t);
+state = stateMachineChanges[0];
+grounded = stateMachineChanges[1];
+t = stateMachineChanges[2];
+
+//	FUNCIONA DE PUTA MADRE
+var nextY = vspeed + gravity_force * t;
+if(place_free(x, y + nextY)){
+	vspeed += gravity_force * t;
+	t +=3;
+	t = clamp(t,0, maxFallVelocity);
+}else{
+	t = 0;
+	vspeed = 0;
+	grounded = 0;
+}
+
+
+/*
 if (keyboard_check(ord("A")) && (keyboard_check(vk_right)))
 {
 	image_xscale=1;
@@ -37,3 +91,4 @@ else
 {
 	sprite_index = spr_Weiss_Idle;
 }
+*/
