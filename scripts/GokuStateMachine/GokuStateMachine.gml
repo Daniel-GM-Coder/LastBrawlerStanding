@@ -84,10 +84,10 @@ function UpdateAttack(state, newState, situation, ssj_state, returnValues){
 			if(newState == 4){
 				
 				ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "air_attack");
-			}//else if(newState[0] == 5){
+			}else if(newState[0] == 5){
 				
 			//	ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "special_attack");
-			//}
+			}
 		}
 		
 	}else{
@@ -102,10 +102,23 @@ function UpdateAttack(state, newState, situation, ssj_state, returnValues){
 				sprite_index = spr_Goku_Idle; //provisional, en funcion de la situacion habra q ponerle el idle del suelo o el de estar en el aire
 			}
 		}else if(state == 5){
-			if(image_index >= image_number - 1){
+			hspeed = 0;
+			if(image_index > image_number - 1){
 				//newState = 0;
 				returnValues[0] = 0;
 				sprite_index = spr_Goku_Idle; //provisional, en funcion de la situacion habra q ponerle el idle del suelo o el de estar en el aire
+				
+				//	NUEVO
+				//var abilityEffect = instance_create_depth(x + 20,y - 40, depth + 1, obj_Goku_Special_Attack_Effect);
+				//	with(abilityEffect){
+				//		hspeed = 2;
+				//	}
+			}
+			else if(image_index == image_number - 2){
+				var abilityEffect = instance_create_depth(x + 80,y - 50, depth + 1, obj_Goku_Special_Attack_Effect);
+					with(abilityEffect){
+						hspeed = 8;
+					}
 			}
 		}
 	}
@@ -312,13 +325,17 @@ function ChangeSpriteAccordingToSSJStatus(newState, ssj_state, spriteToAsign, re
 		case 5:
 			
 			if(ssj_state == 0){
+				
 				if(sprite_index != spr_Goku_base_special_attack){
 					sprite_index = spr_Goku_base_special_attack;
+					
 					
 				}
 					
 			}else if(ssj_state == 1){
-			
+				
+				if(sprite_index != spr_Goku_SSJ_SpecialAttack)
+					sprite_index = spr_Goku_SSJ_SpecialAttack;
 			}
 			break;
 	}

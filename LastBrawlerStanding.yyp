@@ -116,6 +116,7 @@
     {"id":{"name":"MapSelect","path":"rooms/MapSelect/MapSelect.yy",},"order":8,},
     {"id":{"name":"spr_Weiss_SideAttackHB","path":"sprites/spr_Weiss_SideAttackHB/spr_Weiss_SideAttackHB.yy",},"order":13,},
     {"id":{"name":"spr_Ink1","path":"sprites/spr_Ink1/spr_Ink1.yy",},"order":2,},
+    {"id":{"name":"obj_Goku_Special_Attack_Effect","path":"objects/obj_Goku_Special_Attack_Effect/obj_Goku_Special_Attack_Effect.yy",},"order":10,},
     {"id":{"name":"spr_GokuFace","path":"sprites/spr_GokuFace/spr_GokuFace.yy",},"order":4,},
     {"id":{"name":"spr_Fondo_Menus","path":"sprites/spr_Fondo_Menus/spr_Fondo_Menus.yy",},"order":0,},
     {"id":{"name":"spr_Weiss_Glyph","path":"sprites/spr_Weiss_Glyph/spr_Weiss_Glyph.yy",},"order":16,},
