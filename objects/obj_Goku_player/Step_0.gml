@@ -69,3 +69,4 @@ stateMachineChanges = GokuStateMachine(state, nextState, situation, t, ssj_statu
 state = stateMachineChanges[0];
 situation = stateMachineChanges[1];
 t = stateMachineChanges[2];
+ssj_status = stateMachineChanges[3];

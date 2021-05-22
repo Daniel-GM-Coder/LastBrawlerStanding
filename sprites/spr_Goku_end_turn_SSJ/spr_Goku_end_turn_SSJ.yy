@@ -78,7 +78,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Goku SSJ",
-    "path": "folders/Sprites/Goku/Specials/Goku SSJ.yy",
+    "path": "folders/Sprites/Goku/SSJ forms/Goku SSJ.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_Goku_end_turn_SSJ",
