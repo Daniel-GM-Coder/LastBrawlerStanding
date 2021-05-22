@@ -125,10 +125,7 @@
     {"id":{"name":"spr_Goku_ChargeKi","path":"sprites/spr_Goku_ChargeKi/spr_Goku_ChargeKi.yy",},"order":2,},
     {"id":{"name":"sprMarioDamagedFly","path":"sprites/sprMarioDamagedFly/sprMarioDamagedFly.yy",},"order":6,},
     {"id":{"name":"sprMarioDownAttack","path":"sprites/sprMarioDownAttack/sprMarioDownAttack.yy",},"order":9,},
-<<<<<<< HEAD
-=======
     {"id":{"name":"spr_Goku_turn_into_ssj","path":"sprites/spr_Goku_turn_into_ssj/spr_Goku_turn_into_ssj.yy",},"order":2,},
->>>>>>> c66ef48c3377ed562fcf2f9d62404edc599c0d22
     {"id":{"name":"GokuStateMachine","path":"scripts/GokuStateMachine/GokuStateMachine.yy",},"order":0,},
     {"id":{"name":"spr_Map1_Platform","path":"sprites/spr_Map1_Platform/spr_Map1_Platform.yy",},"order":3,},
     {"id":{"name":"Mapa2","path":"rooms/Mapa2/Mapa2.yy",},"order":5,},
