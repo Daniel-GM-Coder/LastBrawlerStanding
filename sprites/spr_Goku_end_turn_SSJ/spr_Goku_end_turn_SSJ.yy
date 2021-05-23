@@ -27,6 +27,9 @@
     {"compositeImage":{"FrameId":{"name":"0ec2a83a-5856-4f9c-82dd-8eab65f0b711","path":"sprites/spr_Goku_end_turn_SSJ/spr_Goku_end_turn_SSJ.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"0ec2a83a-5856-4f9c-82dd-8eab65f0b711","path":"sprites/spr_Goku_end_turn_SSJ/spr_Goku_end_turn_SSJ.yy",},"LayerId":{"name":"49f879af-2de2-4203-a395-c29a24af77c3","path":"sprites/spr_Goku_end_turn_SSJ/spr_Goku_end_turn_SSJ.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_Goku_end_turn_SSJ","path":"sprites/spr_Goku_end_turn_SSJ/spr_Goku_end_turn_SSJ.yy",},"resourceVersion":"1.0","name":"0ec2a83a-5856-4f9c-82dd-8eab65f0b711","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"4bc1128e-57c7-4bf5-9831-633ba25f3414","path":"sprites/spr_Goku_end_turn_SSJ/spr_Goku_end_turn_SSJ.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"4bc1128e-57c7-4bf5-9831-633ba25f3414","path":"sprites/spr_Goku_end_turn_SSJ/spr_Goku_end_turn_SSJ.yy",},"LayerId":{"name":"49f879af-2de2-4203-a395-c29a24af77c3","path":"sprites/spr_Goku_end_turn_SSJ/spr_Goku_end_turn_SSJ.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_Goku_end_turn_SSJ","path":"sprites/spr_Goku_end_turn_SSJ/spr_Goku_end_turn_SSJ.yy",},"resourceVersion":"1.0","name":"4bc1128e-57c7-4bf5-9831-633ba25f3414","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"5643b029-4ef0-406e-8800-81c20a541d36","path":"sprites/spr_Goku_end_turn_SSJ/spr_Goku_end_turn_SSJ.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"5643b029-4ef0-406e-8800-81c20a541d36","path":"sprites/spr_Goku_end_turn_SSJ/spr_Goku_end_turn_SSJ.yy",},"LayerId":{"name":"49f879af-2de2-4203-a395-c29a24af77c3","path":"sprites/spr_Goku_end_turn_SSJ/spr_Goku_end_turn_SSJ.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_Goku_end_turn_SSJ","path":"sprites/spr_Goku_end_turn_SSJ/spr_Goku_end_turn_SSJ.yy",},"resourceVersion":"1.0","name":"5643b029-4ef0-406e-8800-81c20a541d36","tags":[],"resourceType":"GMSpriteFrame",},
@@ -38,18 +41,19 @@
     "spriteId": {"name":"spr_Goku_end_turn_SSJ","path":"sprites/spr_Goku_end_turn_SSJ/spr_Goku_end_turn_SSJ.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 6.0,
+    "playbackSpeed": 7.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 3.0,
+    "length": 4.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"9a23d08b-cc54-49cc-b307-7c96c3b4acbb","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0ec2a83a-5856-4f9c-82dd-8eab65f0b711","path":"sprites/spr_Goku_end_turn_SSJ/spr_Goku_end_turn_SSJ.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"da1658e8-e39a-4d25-b224-3a69d18685f9","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5643b029-4ef0-406e-8800-81c20a541d36","path":"sprites/spr_Goku_end_turn_SSJ/spr_Goku_end_turn_SSJ.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"b9459dd8-7397-4d86-a0ff-96bda18494bf","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dc3702ee-d86e-4221-ac6f-c67aa27e98d8","path":"sprites/spr_Goku_end_turn_SSJ/spr_Goku_end_turn_SSJ.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"36a3b4f2-903a-4871-9187-13955caa0478","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4bc1128e-57c7-4bf5-9831-633ba25f3414","path":"sprites/spr_Goku_end_turn_SSJ/spr_Goku_end_turn_SSJ.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"da1658e8-e39a-4d25-b224-3a69d18685f9","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5643b029-4ef0-406e-8800-81c20a541d36","path":"sprites/spr_Goku_end_turn_SSJ/spr_Goku_end_turn_SSJ.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b9459dd8-7397-4d86-a0ff-96bda18494bf","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dc3702ee-d86e-4221-ac6f-c67aa27e98d8","path":"sprites/spr_Goku_end_turn_SSJ/spr_Goku_end_turn_SSJ.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,

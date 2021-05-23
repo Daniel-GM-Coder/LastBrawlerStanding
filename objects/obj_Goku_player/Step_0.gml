@@ -31,9 +31,7 @@ if(keyboard_check(ord("W"))){
 	nextState = 4;	
 }else if(keyboard_check(ord("K"))){
 	nextState = 5;	
-}
-
-if(keyboard_check(ord("W")) && keyboard_check(ord("J"))){
+}else if(keyboard_check(ord("W")) && keyboard_check(ord("J"))){
 	nextState = 4;
 }else if(keyboard_check(ord("W")) && keyboard_check(ord("K"))){
 	nextState = 5;
@@ -66,7 +64,13 @@ else if(keyboard_check(ord("S")) && keyboard_check(ord("A"))){
 }else if(keyboard_check(ord("S")) && keyboard_check(ord("D"))){
 	nextState = 1;
 	nextOrientation = 1;
-
+}else if(keyboard_check(ord("L"))){
+	nextOrientation = orientation;
+	nextState = 7;
+	if(state != 6)
+		ki += 0.3;
+}else{
+	nextOrientation = orientation;	
 }
 
 //FUNCIONA DE PUTA MADRE
@@ -83,8 +87,14 @@ if(place_free(x, y + nextY)){
 //state = GokuStateMachine(state, nextState, situation, t);
 
 var stateMachineChanges = array_create(3, noone);
-stateMachineChanges = GokuStateMachine(state, nextState, situation, t, ssj_status, nextOrientation);	//	nuevo
+stateMachineChanges = GokuStateMachine(state, nextState, situation, t, ssj_status, nextOrientation, ki);	//	nuevo
 state = stateMachineChanges[0];
 situation = stateMachineChanges[1];
 t = stateMachineChanges[2];
 ssj_status = stateMachineChanges[3];
+orientation = stateMachineChanges[4];
+
+//if(orientation == 0 && image_xscale == -1)
+//	image_xscale = -1
+//else if(orientation == 1 && image_xscale == 1)
+//	image_xscale = 1;

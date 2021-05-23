@@ -1,6 +1,5 @@
-/// @description Inserte aquí la descripción
-// Puede escribir su código en este editor
-//stateMachineChanges = array_create(3, noone);
-//stateMachineChanges[0] = state;
-//stateMachineChanges[1] = situation;
-//stateMachineChanges[2] = t;
+if(player_number == 1){
+	//orientation = 0;
+	show_debug_message(image_xscale);
+
+}
