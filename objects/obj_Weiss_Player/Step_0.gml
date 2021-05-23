@@ -1,13 +1,16 @@
 var nextState = 0;
+var nextOrientation = 0;
 
 if(keyboard_check(ord("W"))){
 	nextState = 2;	
 }else if(keyboard_check(ord("A"))){
-	nextState = 1;
+	nextState = 0;
+	nextOrientation = 0;
 }else if(keyboard_check(ord("S"))){
 	nextState = 3;
 }else if(keyboard_check(ord("D"))){
 	nextState = 1;
+	nextOrientation = 1;
 }else if(keyboard_check(ord("J"))){
 	nextState = 4;	
 }else if(keyboard_check(ord("K"))){
@@ -20,20 +23,38 @@ if(keyboard_check(ord("W")) && keyboard_check(ord("J"))){
 	nextState = 5;
 }else if(keyboard_check(ord("A")) && keyboard_check(ord("J"))){
 	nextState = 4;
+	nextOrientation = 0;
 }else if(keyboard_check(ord("A")) && keyboard_check(ord("K"))){
 	nextState = 5;
+	nextOrientation = 0;
 }else if(keyboard_check(ord("D")) && keyboard_check(ord("J"))){
 	nextState = 4;
+	nextOrientation = 1;
 }else if(keyboard_check(ord("D")) && keyboard_check(ord("K"))){
 	nextState = 5;
+	nextOrientation = 1;
 }else if(keyboard_check(ord("S")) && keyboard_check(ord("J"))){
 	nextState = 4;
 }else if(keyboard_check(ord("S")) && keyboard_check(ord("K"))){
 	nextState = 5;
+}else if(keyboard_check(ord("W")) && keyboard_check(ord("A"))){
+	nextState = 2;
+	nextOrientation = 0;
+}else if(keyboard_check(ord("W")) && keyboard_check(ord("D"))){
+	nextState = 2;
+	nextOrientation = 1;
+}
+else if(keyboard_check(ord("S")) && keyboard_check(ord("A"))){
+	nextState = 1;
+	nextOrientation = 0;
+}else if(keyboard_check(ord("S")) && keyboard_check(ord("D"))){
+	nextState = 1;
+	nextOrientation = 1;
+
 }
 
 var stateMachineChanges = array_create(3, noone);
-stateMachineChanges = WeissStateMachine(state, nextState, grounded, t);
+stateMachineChanges = WeissStateMachine(state, nextState, grounded, t, nextOrientation);
 state = stateMachineChanges[0];
 grounded = stateMachineChanges[1];
 t = stateMachineChanges[2];

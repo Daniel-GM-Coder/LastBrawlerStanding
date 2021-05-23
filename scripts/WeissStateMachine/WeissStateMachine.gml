@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function WeissStateMachine(argument0, argument1, argument2, argument3){
+function WeissStateMachine(argument0, argument1, argument2, argument3, argument4){
 /*
 state list
 	0 = idle
@@ -21,32 +21,39 @@ situation list
 	//var situation = array_create(1, argument2);
 	var situation = argument2;
 	var t = argument3;
+	var orientation = argument4;
 	returnValues[0] = newState;
 	returnValues[1] = situation;
 	returnValues[2] = t;
 	
-	returnValues = UpdateWeissIdle(state, newState, situation, returnValues);
+	returnValues = UpdateWeissIdle(state, newState, situation, returnValues, orientation);
 	
-	returnValues = UpdateWeissAttack(state, newState, situation, returnValues);
+	returnValues = UpdateWeissAttack(state, newState, situation, returnValues, orientation);
 	
-	returnValues = UpdateWeissWalk(state, newState, situation, returnValues);
+	returnValues = UpdateWeissWalk(state, newState, situation, returnValues, orientation);
 	
-	returnValues = UpdateWeissCrouch(state, newState, situation, returnValues);
+	returnValues = UpdateWeissCrouch(state, newState, situation, returnValues, orientation);
 	
-	returnValues = UpdateWeissJump(state, newState, situation, t, returnValues);
+	returnValues = UpdateWeissJump(state, newState, situation, t, returnValues, orientation);
 	
-	show_debug_message("hola");
+	
 	if(returnValues[0] == -1){ // plantearlo al reves, es decir, simplemente que si el newState es diferente de -1, entonces state = newState y punto fiera makina tiburon bestia parda
 		returnValues[0] = state;	
 	}else{
 		returnValues[0] = newState;
 	}
 	
+	var xScaleOrientation = orientation;
+	if(orientation == 1)
+		image_xscale = 1
+	else
+		image_xscale = -1;
+	
 	return returnValues;
 	
 }
 
-function UpdateWeissIdle(state, newState, situation, returnValues){
+function UpdateWeissIdle(state, newState, situation, returnValues, orientation){
 
 	//if(state == 6){
 	//	if(image
@@ -75,7 +82,7 @@ function UpdateWeissIdle(state, newState, situation, returnValues){
 	return returnValues;
 }
 
-function UpdateWeissAttack(state, newState, situation, returnValues){
+function UpdateWeissAttack(state, newState, situation, returnValues, orientation){
 	if(state != 6){
 	
 		if(state != 4 && state != 5){
@@ -133,7 +140,7 @@ function UpdateWeissAttack(state, newState, situation, returnValues){
 	return returnValues;
 }
 
-function UpdateWeissWalk(state, newState, situation, returnValues){
+function UpdateWeissWalk(state, newState, situation, returnValues, orientation){
 	if(state != 6){
 	
 		var targetSpeedX = 0;
@@ -159,7 +166,7 @@ function UpdateWeissWalk(state, newState, situation, returnValues){
 	return returnValues;
 }
 
-function UpdateWeissCrouch(state, newState, situation, returnValues){
+function UpdateWeissCrouch(state, newState, situation, returnValues, orientation){
 	if(state != 6){
 	
 		if(situation == 0){
@@ -203,7 +210,7 @@ function UpdateWeissCrouch(state, newState, situation, returnValues){
 	return returnValues;
 }
 
-function UpdateWeissJump(state, newState, situation, t, returnValues){
+function UpdateWeissJump(state, newState, situation, t, returnValues, orientation){
 	
 	// The player is situation and can jump
 	if(situation == 0 && (state == 0 || state == 1) && newState == 2){

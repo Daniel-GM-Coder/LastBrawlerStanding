@@ -14,19 +14,19 @@ situation list
 	1 = on air 
 */
 //	We gather the keyboard inputs here
-orientation = 0;
+var nextOrientation = 0;
 var nextState = 0;
 
 if(keyboard_check(ord("W"))){
 	nextState = 2;	
 }else if(keyboard_check(ord("A"))){
-	nextState = 1;
-	orientation = 0;
+	nextState = 0;
+	nextOrientation = 0;
 }else if(keyboard_check(ord("S"))){
 	nextState = 3;
 }else if(keyboard_check(ord("D"))){
 	nextState = 1;
-	orientation = 1;
+	nextOrientation = 1;
 }else if(keyboard_check(ord("J"))){
 	nextState = 4;	
 }else if(keyboard_check(ord("K"))){
@@ -39,33 +39,33 @@ if(keyboard_check(ord("W")) && keyboard_check(ord("J"))){
 	nextState = 5;
 }else if(keyboard_check(ord("A")) && keyboard_check(ord("J"))){
 	nextState = 4;
-	orientation = 0;
+	nextOrientation = 0;
 }else if(keyboard_check(ord("A")) && keyboard_check(ord("K"))){
 	nextState = 5;
-	orientation = 0;
+	nextOrientation = 0;
 }else if(keyboard_check(ord("D")) && keyboard_check(ord("J"))){
 	nextState = 4;
-	orientation = 1;
+	nextOrientation = 1;
 }else if(keyboard_check(ord("D")) && keyboard_check(ord("K"))){
 	nextState = 5;
-	orientation = 1;
+	nextOrientation = 1;
 }else if(keyboard_check(ord("S")) && keyboard_check(ord("J"))){
 	nextState = 4;
 }else if(keyboard_check(ord("S")) && keyboard_check(ord("K"))){
 	nextState = 5;
 }else if(keyboard_check(ord("W")) && keyboard_check(ord("A"))){
 	nextState = 2;
-	orientation = 0;
+	nextOrientation = 0;
 }else if(keyboard_check(ord("W")) && keyboard_check(ord("D"))){
 	nextState = 2;
-	orientation = 1;
+	nextOrientation = 1;
 }
 else if(keyboard_check(ord("S")) && keyboard_check(ord("A"))){
 	nextState = 1;
-	orientation = 0;
+	nextOrientation = 0;
 }else if(keyboard_check(ord("S")) && keyboard_check(ord("D"))){
 	nextState = 1;
-	orientation = 1;
+	nextOrientation = 1;
 
 }
 
@@ -83,7 +83,7 @@ if(place_free(x, y + nextY)){
 //state = GokuStateMachine(state, nextState, situation, t);
 
 var stateMachineChanges = array_create(3, noone);
-stateMachineChanges = GokuStateMachine(state, nextState, situation, t, ssj_status, orientation);	//	nuevo
+stateMachineChanges = GokuStateMachine(state, nextState, situation, t, ssj_status, nextOrientation);	//	nuevo
 state = stateMachineChanges[0];
 situation = stateMachineChanges[1];
 t = stateMachineChanges[2];

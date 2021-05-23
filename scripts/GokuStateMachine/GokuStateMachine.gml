@@ -74,19 +74,19 @@ function UpdateAttack(state, newState, situation, ssj_state, returnValues, orien
 	if(state != 4 && state != 5){
 		if(situation == 0){
 			if(newState == 4){
-				ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "basic_attack", orientation);
+				ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "basic_attack", returnValues, orientation);
 			//if(sprite_index != spr_Goku_BasicAttack)
 			//	sprite_index = spr_Goku_BasicAttack;
 			
 			}else if(newState == 5){
-				ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "special_atttack", orientation);
+				ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "special_atttack", returnValues, orientation);
 			//if(sprite_index != spr_Goku_SpecialAttack)
 			//	sprite_index = spr_Goku_SpecialAttack;	
 			}	
 		}else{
 			if(newState == 4){
 				
-				ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "air_attack", orientation);
+				ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "air_attack", returnValues, orientation);
 			}else if(newState == 5){
 				
 			//	ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "special_attack");
@@ -164,7 +164,7 @@ function UpdateCrouch(state, newState, situation, ssj_state, returnValues, orien
 					
 					//if(sprite_index != spr_Goku_Crouch)
 					//	sprite_index = spr_Weiss_Crouch;
-					ChangeSpriteAccordingToSSJStatus(returnValues[0], "crouch", ssj_state, orientation);
+					ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "crouch", returnValues, orientation);
 				}else if(state == 3){
 					
 					if(image_index == image_number){
@@ -186,7 +186,8 @@ function UpdateCrouch(state, newState, situation, ssj_state, returnValues, orien
 						
 							if(image_index == 1 && image_speed = -1 && state == 3){//image_index = 0
 								//sprite_index = spr_Goku_Idle;
-								ChangeSpriteAccordingToSSJStatus(returnValues[0], "idle", ssj_state, orientation);
+								//ChangeSpriteAccordingToSSJStatus(returnValues[0], "idle", ssj_state, orientation);
+								ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "idle", returnValues, orientation);
 							}
 						}
 					}
@@ -216,7 +217,7 @@ function UpdateJump(state, newState, situation, t, ssj_state, returnValues, orie
 		situation = 1;
 		returnValues[1] = 1;
 		
-		ChangeSpriteAccordingToSSJStatus(newState, "jump", ssj_state);
+		ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "jump", returnValues, orientation);
 		
 	}else if(situation == 1){	//	The player is in the air
 		
