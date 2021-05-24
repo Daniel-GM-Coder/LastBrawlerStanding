@@ -55,7 +55,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 68,
-    "yorigin": 119,
+    "yorigin": 121,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_Goku_SSJ_Walk","path":"sprites/spr_Goku_SSJ_Walk/spr_Goku_SSJ_Walk.yy",},

@@ -148,7 +148,7 @@ function UpdateIdle(state, newState, situation, ssj_state, returnValues, orienta
 
 function UpdateAttack(state, newState, situation, ssj_state, returnValues, orientation){
 	
-	if(state != 4 && state != 5 && state != 7){
+	if(state != 4 && state != 5 && state != 7 && state != 6){
 		if(situation == 0){
 			if(newState == 4){
 				returnValues[4] = ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "basic_attack", returnValues, orientation);
@@ -242,48 +242,51 @@ function UpdateWalk(state, newState, situation, ssj_state, returnValues, orienta
 
 function UpdateCrouch(state, newState, situation, ssj_state, returnValues, orientation){
 	
-	if(situation == 0){
+	if(state != 6){
 		
-			if(newState == 3){
+		if(situation == 0){
+		
+				if(newState == 3){
 			
-				if(state !=2 && state != 4 && state != 5 && state != 6 && state != 7){
+					if(state !=2 && state != 4 && state != 5 && state != 6 && state != 7){
 					
-					//if(sprite_index != spr_Goku_Crouch)
-					//	sprite_index = spr_Weiss_Crouch;
-					returnValues[4] = ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "crouch", returnValues, orientation);
-				}else if(state == 3){
+						//if(sprite_index != spr_Goku_Crouch)
+						//	sprite_index = spr_Weiss_Crouch;
+						returnValues[4] = ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "crouch", returnValues, orientation);
+					}else if(state == 3){
 					
-					if(image_index == image_number - 1){
-						image_speed = 0;
-					}
-				} 
-				//SETEAR A 0 SI EL NEW STATE ES IDLE?
-			}else if(newState == 0 || newState == 1){
+						if(image_index == image_number){
+							image_speed = 0;
+						}
+					} 
+					//SETEAR A 0 SI EL NEW STATE ES IDLE?
+				}else if(newState == 0 || newState == 1){
 			
-				if(state != 4 && state != 5 && state !=6 && state != 7){
+					if(state != 4 && state != 5 && state !=6 && state != 7){
 				
-					if(state == 3){
-						//invertir la velocidad del sprite para levantarnos
-						//pasar a idle si ya hemos terminado de levantarnos
+						if(state == 3){
+							//invertir la velocidad del sprite para levantarnos
+							//pasar a idle si ya hemos terminado de levantarnos
 					
-						if(image_speed != -1){
-							image_speed = 1;
-						}else{
+							if(image_speed != -1){
+								image_speed = 1;
+							}else{
 						
-							if(image_index == 0 && image_speed = -1 && state == 3){//image_index = 0
-								//sprite_index = spr_Goku_Idle;
-								//ChangeSpriteAccordingToSSJStatus(returnValues[0], "idle", ssj_state, orientation);
-								returnValues[4] = ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "idle", returnValues, orientation);
+								if(image_index == 0 && image_speed = -1 && state == 3){//image_index = 0
+									//sprite_index = spr_Goku_Idle;
+									//ChangeSpriteAccordingToSSJStatus(returnValues[0], "idle", ssj_state, orientation);
+									returnValues[4] = ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "idle", returnValues, orientation);
+								}
 							}
 						}
 					}
+				//	keycheck_key_released --> image_speed = -1
+				//	if(state == 3 && image_speed = -1 && image_index == 0){
+				//		
+				//	}
 				}
-			//	keycheck_key_released --> image_speed = -1
-			//	if(state == 3 && image_speed = -1 && image_index == 0){
-			//		
-			//	}
-			}
 		}
+	}
 	
 	return returnValues;
 		
@@ -292,7 +295,7 @@ function UpdateCrouch(state, newState, situation, ssj_state, returnValues, orien
 function UpdateJump(state, newState, situation, t, ssj_state, returnValues, orientation){
 	
 	// The player is grounded and can jump
-	if(situation == 0 && (state == 0 || state == 1) && newState == 2){
+	if(situation == 0 && (state == 0 || state == 1) && newState == 2 && state != 6){
 		
 		t = 0;
 		returnValues[2] = 0;

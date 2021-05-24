@@ -17,6 +17,7 @@ situation list
 var nextOrientation = 0;
 var nextState = 0;
 
+
 if(keyboard_check(ord("W"))){
 	nextState = 2;	
 }else if(keyboard_check(ord("A"))){
@@ -86,14 +87,17 @@ if(place_free(x, y + nextY)){
 
 //state = GokuStateMachine(state, nextState, situation, t);
 
-var stateMachineChanges = array_create(3, noone);
+var stateMachineChanges = array_create(5, noone);
 stateMachineChanges = GokuStateMachine(state, nextState, situation, t, ssj_status, nextOrientation, ki);	//	nuevo
 state = stateMachineChanges[0];
 situation = stateMachineChanges[1];
 t = stateMachineChanges[2];
 ssj_status = stateMachineChanges[3];
-orientation = stateMachineChanges[4];
+//orientation = stateMachineChanges[4];
+nextOrientation = stateMachineChanges[4];
 
+if(orientation != nextOrientation)
+	image_xscale = image_xscale * -1;
 //if(orientation == 0 && image_xscale == -1)
 //	image_xscale = -1
 //else if(orientation == 1 && image_xscale == 1)
