@@ -1,6 +1,9 @@
 draw_sprite(spr_Hud_Ink1,1,-110,-100);
 draw_sprite(spr_Hud_Ink2,1,2030,-100);
-draw_sprite(spr_Hud_Ink3,1,785,-20);
+if (modoJuego==1)
+{
+	draw_sprite(spr_Hud_Ink3,1,785,-20);
+}
 
 draw_set_halign(fa_center);
 if (pj1 == 0)
@@ -44,6 +47,7 @@ else if (pj2 == 3)
 imp_text(1648,218,NamePlayer2,c_white,font_HUD,1,0.6);
 draw_set_halign(fa_left);
 
+
 if (pj1 == 0)
 {
 	FacePlayer1 = spr_GokuFace;
@@ -84,16 +88,19 @@ else if (pj2 == 3)
 
 draw_sprite_ext(FacePlayer2,1,1643,74,-1,1,0,c_white,1);
 
-imp_text(880,105,(floor(timer/room_speed/60)),c_white,font_HUD,1,1);
-imp_text(932,105,":",c_white,font_HUD,1,1);
-if(((timer/room_speed) mod 60)<10)
+if (modoJuego==1)
 {
-	draw_text(960,105,"0");
-	draw_text(1002,105,floor(((timer/room_speed) mod 60)));
-}
-else
-{
-	draw_text(960,105,floor(((timer/room_speed) mod 60)));
+	imp_text(880,105,(floor(timer/room_speed/60)),c_white,font_HUD,1,1);
+	imp_text(932,105,":",c_white,font_HUD,1,1);
+	if(((timer/room_speed) mod 60)<10)
+	{
+		draw_text(960,105,"0");
+		draw_text(1002,105,floor(((timer/room_speed) mod 60)));
+	}
+	else
+	{
+		draw_text(960,105,floor(((timer/room_speed) mod 60)));
+	}
 }
 
 if(DamagePlayer1 < 10)
@@ -148,46 +155,91 @@ else
 	imp_text(1448,66,"%",c_red,font_HUD,1,1.6);
 }
 
-if (pj1 == 0)
+
+if (modoJuego==0)
 {
-	HeadPlayer1 = spr_Goku_Head;
-}
-else if (pj1 == 1)
-{
-	HeadPlayer1 = spr_Weiss_Head;
-}
-else if (pj1 == 2)
-{
-	HeadPlayer1 = spr_Mario_Head;
+	if (pj1 == 0)
+	{
+		HeadPlayer1 = spr_Goku_Head;
+	}
+	else if (pj1 == 1)
+	{
+		HeadPlayer1 = spr_Weiss_Head;
+	}
+	else if (pj1 == 2)
+	{
+		HeadPlayer1 = spr_Mario_Head;
+	}
+
+	else if (pj1 == 3)
+	{
+		HeadPlayer1 = spr_Knight_Head;
+	}
+
+	draw_sprite(HeadPlayer1,1,420,200);
+		if(HPPlayer1>0)
+	{
+		imp_text(495,200,HPPlayer1,c_white,font_HUD,1,0.6);
+	}
+	else
+	{
+		imp_text(495,200,"0",c_white,font_HUD,1,0.6);
+	}
+	imp_text(475,200,"x",c_white,font_HUD,1,0.5);
+
+	if (pj2 == 0)
+	{
+		HeadPlayer2 = spr_Goku_Head;
+	}
+	else if (pj2 == 1)
+	{
+		HeadPlayer2 = spr_Weiss_Head;
+	}
+	else if (pj2 == 2)
+	{
+		HeadPlayer2 = spr_Mario_Head;
+	}
+
+	else if (pj2 == 3)
+	{
+		HeadPlayer2 = spr_Knight_Head;
+	}
+
+	draw_sprite(HeadPlayer2,1,1428,200);
+	if(HPPlayer2>0)
+	{
+		imp_text(1498,200,HPPlayer2,c_white,font_HUD,1,0.6);
+	}
+	else
+	{
+		imp_text(1498,200,"0",c_white,font_HUD,1,0.6);
+	}
+	imp_text(1478,200,"x",c_white,font_HUD,1,0.5);
 }
 
-else if (pj1 == 3)
+
+if (modoJuego==1 && Ganador > 0 && firstTime2 == 1)
 {
-	HeadPlayer1 = spr_Knight_Head;
+	firstTime2 = 0;
+	alarm[1] = 50;	
 }
 
-draw_sprite(HeadPlayer1,1,420,200);
-imp_text(495,200,HPPlayer1,c_white,font_HUD,1,0.6);
-imp_text(475,200,"x",c_white,font_HUD,1,0.5);
-
-if (pj2 == 0)
+if (modoJuego==0 && Ganador > 0 && firstTime2 == 1)
 {
-	HeadPlayer2 = spr_Goku_Head;
-}
-else if (pj2 == 1)
-{
-	HeadPlayer2 = spr_Weiss_Head;
-}
-else if (pj2 == 2)
-{
-	HeadPlayer2 = spr_Mario_Head;
+	firstTime2 = 0;
+	alarm[1] = 50;	
 }
 
-else if (pj2 == 3)
+if (modoJuego==0 && Ganador > 0)
 {
-	HeadPlayer2 = spr_Knight_Head;
+	draw_set_halign(fa_center);
+	imp_text(960,300,"SE ACABO",c_yellow,font_MainMenu,1,2);
+	draw_set_halign(fa_left);
 }
 
-draw_sprite(HeadPlayer2,1,1428,200);
-imp_text(1498,200,HPPlayer2,c_white,font_HUD,1,0.6);
-imp_text(1478,200,"x",c_white,font_HUD,1,0.5);
+if (modoJuego==1 && Ganador > 0)
+{
+	draw_set_halign(fa_center);
+	imp_text(960,300,"TIEMPO",c_yellow,font_MainMenu,1,2);
+	draw_set_halign(fa_left);
+}
