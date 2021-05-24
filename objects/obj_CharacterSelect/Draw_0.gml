@@ -56,7 +56,7 @@ else if (seleccionPJ1 == 3)
 	{
 		draw_sprite(spr_Pj1_Select,myimage_index,256,768);
 	}
-	draw_sprite_ext(spr_Knight_Idle,myimage_index5,544,512,3.962,4.027,0,c_white,1);
+	draw_sprite_ext(spr_Knight_Idle,myimage_index5,656,793.8,3.962,4.027,0,c_white,1);
 	draw_set_halign(fa_center);
 	imp_text(672,925,"HOLLOW",c_white,font_MainMenu,1,0.8);
 	draw_set_halign(fa_left);
@@ -119,7 +119,7 @@ else if (seleccionPJ2 == 3)
 	{
 		draw_sprite(spr_Pj2_Select,myimage_index,1664,768);
 	}
-	draw_sprite_ext(spr_Knight_Idle,myimage_index5,1344,512,-3.962,4.027,0,c_white,1);
+	draw_sprite_ext(spr_Knight_Idle,myimage_index5,1275,793.8,-3.962,4.027,0,c_white,1);
 	draw_set_halign(fa_center);
 	imp_text(1250,925,"HOLLOW",c_white,font_MainMenu,1,0.8);
 	draw_set_halign(fa_left);
