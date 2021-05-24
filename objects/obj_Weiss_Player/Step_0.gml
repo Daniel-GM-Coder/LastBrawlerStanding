@@ -66,9 +66,8 @@ if(place_free(x, y + nextY)){
 	t +=3;
 	t = clamp(t,0, maxFallVelocity);
 }else{
-	t = 0;
 	vspeed = 0;
-	grounded = 0;
+	situation = 0;
 }
 
 

@@ -213,31 +213,36 @@ function UpdateWeissCrouch(state, newState, situation, returnValues, orientation
 function UpdateWeissJump(state, newState, situation, t, returnValues, orientation){
 	
 	// The player is situation and can jump
-	if(situation == 0 && (state == 0 || state == 1) && newState == 2){
+	if(situation == 0 && (state == 0 || state == 1) && newState == 2 && state != 6){
 		
+		t = 0;
 		returnValues[2] = 0;
 		vspeed = 0;
-		vspeed -= 10;
+		vspeed -= 15;
+		newState = 2;
 		returnValues[0] = 2;
 		situation = 1;
+		returnValues[1] = 1;
 		
 		if(sprite_index != spr_Weiss_Jump)
 			sprite_index = spr_Weiss_Jump;
 		
 	}else if(situation == 1){	//	The player is in the air
 		
-		//var gravity_force = 0.23;
-		//var nextY = vspeed + gravity_force * t;
-		//if(place_free(x, y + nextY)){
+		var gravity_force = 0.23;
+		var nextY = vspeed + gravity_force * t;
+		if(place_free(x, y + nextY)){
 			
-		//	vspeed += gravity_force * t;
-		//	returnValues[2] +=3;
-		//	returnValues[2] = clamp(t,0, maxFallVelocity);
-		//}else{
+			vspeed += gravity_force * t;
+			t +=3;
+			t = clamp(t,0, maxFallVelocity);
+			returnValues[2] = t;
+		}else{
 			
-		//	vspeed = 0;
-		//	situation = 0;
-		//}
+			vspeed = 0;
+			situation = 0;
+			returnValues[1] = 0;
+		}
 		
 	}
 	

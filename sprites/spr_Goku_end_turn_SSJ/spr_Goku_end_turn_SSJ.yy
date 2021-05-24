@@ -67,7 +67,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 70,
-    "yorigin": 151,
+    "yorigin": 154,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_Goku_end_turn_SSJ","path":"sprites/spr_Goku_end_turn_SSJ/spr_Goku_end_turn_SSJ.yy",},
