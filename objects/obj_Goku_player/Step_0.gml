@@ -14,9 +14,8 @@ situation list
 	1 = on air 
 */
 //	We gather the keyboard inputs here
-var nextOrientation = 0;
-var nextState = 0;
 
+var nextState = 0;
 
 if(keyboard_check(ord("W"))){
 	nextState = 2;	
@@ -102,3 +101,4 @@ if(orientation != nextOrientation)
 //	image_xscale = -1
 //else if(orientation == 1 && image_xscale == 1)
 //	image_xscale = 1;
+EvadeGettingStuckOnFloor();

@@ -33,9 +33,6 @@ function GokuStateMachine(argument0, argument1, argument2, argument3, argument4,
 	returnValues[4] = orientation;
 	returnValues[5] = ki;
 	
-	if(orientation != 0)
-		show_debug_message("algo");
-	
 	returnValues = UpdateIdle(state, newState, situation, ssj_state, returnValues, orientation);
 	
 	returnValues = UpdateAttack(state, newState, situation, ssj_state, returnValues, orientation);
@@ -58,63 +55,85 @@ function GokuStateMachine(argument0, argument1, argument2, argument3, argument4,
 }
 
 function UpdateIdle(state, newState, situation, ssj_state, returnValues, orientation){
-	//if(keyboard_check(ord("D")))
-	//	show_debug_message("D");
-	var accumulatedKi = returnValues[5];
 	
-	if(returnValues[5] > 100)
-		show_debug_message("es mayor que uno, es	" + string(returnValues[5]));
+	var accumulatedKi = returnValues[5];
 	
 	switch(situation){
 		
 		case 0:
+		
 			if(state == 0 && newState == 0){
 				
 				returnValues[4] = ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "idle", returnValues, orientation);
+				
 			}else if(state == 0 && state != 7 && newState == 7){
 				
+				if(sprite_index == spr_Goku_ChargeKi && image_index >= image_number - 1)
+					image_speed = 0;
+				else
+					//image_speed = 1;
+					
 				returnValues[0] = 7;
 				newState = 7;
 				returnValues[4] = ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "charge_ki", returnValues, orientation);
+				
 			}else if(state == 7 && newState == 7){
 				
-				if(image_index == image_number - 1){	// testear cambio de fase
-					//image_speed = 0;
-					var sprite = "";
-					if(accumulatedKi > 100 && ssj_state == 0){	// && ssj_state
+				
+				
+				var sprite = "";
+				if(ssj_state == 0){
+					
+					if(accumulatedKi > 100){
+						if(image_index >= image_number - 1){
+							//image_speed = 0;
+							//sprite = "turn_to_ssj";
+							//newState = 7;	// testear (invulnerable)?
+							//returnValues[0] = 7;
+							//returnValues[3] = 1;
+							//returnValues[4] = ChangeSpriteAccordingToSSJStatus(newState, ssj_state, sprite, returnValues, orientation);
+							//ssj_state = 1;
+						}//else image_speed = 0;
 						
 						sprite = "turn_to_ssj";
 						newState = 7;	// testear (invulnerable)?
 						returnValues[0] = 7;
-						ssj_state = 1;
 						returnValues[3] = 1;
+						ssj_state = 1;
 						returnValues[4] = ChangeSpriteAccordingToSSJStatus(newState, ssj_state, sprite, returnValues, orientation);
-					}else if(accumulatedKi < 100 && ssj_state == 0){
-						
-						image_speed = 0;
+
+					}else if(accumulatedKi < 100){
 						sprite = "charge_ki";
 						returnValues[0] = 7;
 						newState = 7;
-
 						returnValues[4] = ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "charge_ki", returnValues, orientation);
 					}
-					if(ssj_state == 1 && accumulatedKi > 100){	//	testear cambio de fase
+					
+				}else if(ssj_state == 1){
+					
+					//if(image_index >= image_number - 1){	// testear cambio de fase
+					
+					//	image_speed = 0;					
+					//	if(ssj_state == 1 && accumulatedKi > 100){	//	testear cambio de fase
 						
-						//y -= 20;
-						sprite = "idle";
-						newState = 0;	// testear (invulnerable)?
-						returnValues[0] = 0;
-						returnValues[4] = ChangeSpriteAccordingToSSJStatus(newState, ssj_state, sprite, returnValues, orientation);
-						image_speed = 1;
-					}
-					
-					
-					//image_speed = 0;
-					//newState = 0;
-					
-				}else
-					returnValues[0] = -1;
-			}
+					//		//y -= 20;
+					//		sprite = "idle";
+					//		newState = 0;	// testear (invulnerable)?
+					//		returnValues[0] = 0;
+					//		returnValues[4] = ChangeSpriteAccordingToSSJStatus(newState, ssj_state, sprite, returnValues, orientation);
+					//		image_speed = 1;
+					//	}
+					////image_speed = 0;
+					////newState = 0;
+					//}
+				}
+
+			}else if(state == 7 && newState == 0){
+				
+				returnValues[0] = 0;
+				returnValues[4] = ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "idle", returnValues, orientation);
+			}else
+				returnValues[0] = -1;
 			break;
 		
 		//case 0:
@@ -246,48 +265,45 @@ function UpdateCrouch(state, newState, situation, ssj_state, returnValues, orien
 		
 		if(situation == 0){
 		
-				if(newState == 3){
+			if(newState == 3){
 			
-					if(state !=2 && state != 4 && state != 5 && state != 6 && state != 7){
+				if(state !=2 && state != 4 && state != 5 && state != 7){
 					
-						//if(sprite_index != spr_Goku_Crouch)
-						//	sprite_index = spr_Weiss_Crouch;
-						returnValues[4] = ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "crouch", returnValues, orientation);
-					}else if(state == 3){
+					returnValues[4] = ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "crouch", returnValues, orientation);
+				}else if(state == 3){
 					
-						if(image_index == image_number){
-							image_speed = 0;
-						}
-					} 
-					//SETEAR A 0 SI EL NEW STATE ES IDLE?
-				}else if(newState == 0 || newState == 1){
+					if(image_index >= image_number - 1){
+						image_speed = 0;
+					}
+				} 
+				//SETEAR A 0 SI EL NEW STATE ES IDLE?
+			}else if(newState == 0 || newState == 1){
 			
-					if(state != 4 && state != 5 && state !=6 && state != 7){
+				if(state != 4 && state != 5 && state != 7){
 				
-						if(state == 3){
-							//invertir la velocidad del sprite para levantarnos
-							//pasar a idle si ya hemos terminado de levantarnos
+					if(state == 3){
+						//invertir la velocidad del sprite para levantarnos
+						//pasar a idle si ya hemos terminado de levantarnos
 					
-							if(image_speed != -1){
-								image_speed = 1;
-							}else{
+						if(image_speed != -1){
+							image_speed = 1;
+						}else{
 						
-								if(image_index == 0 && image_speed = -1 && state == 3){//image_index = 0
-									//sprite_index = spr_Goku_Idle;
-									//ChangeSpriteAccordingToSSJStatus(returnValues[0], "idle", ssj_state, orientation);
-									returnValues[4] = ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "idle", returnValues, orientation);
-								}
+							if(image_index == 0 && image_speed = -1 && state == 3){//image_index = 0
+								//sprite_index = spr_Goku_Idle;
+								//ChangeSpriteAccordingToSSJStatus(returnValues[0], "idle", ssj_state, orientation);
+								returnValues[4] = ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "idle", returnValues, orientation);
 							}
 						}
 					}
-				//	keycheck_key_released --> image_speed = -1
-				//	if(state == 3 && image_speed = -1 && image_index == 0){
-				//		
-				//	}
 				}
+			//	keycheck_key_released --> image_speed = -1
+			//	if(state == 3 && image_speed = -1 && image_index == 0){
+			//		
+			//	}
+			}
 		}
 	}
-	
 	return returnValues;
 		
 }
@@ -329,18 +345,22 @@ function UpdateJump(state, newState, situation, t, ssj_state, returnValues, orie
 	return returnValues;
 }
 
+function EvadeGettingStuckOnFloor(){
+	
+	var nextY = y + 10;
+	while(!place_free(x, nextY)){
+		nextY -= 1;
+	}
+	y = nextY;
+}
+
 function ChangeSpriteAccordingToSSJStatus(newState, ssj_state, spriteToAsign, returnValues, orientation){
 	
-	if(image_xscale == 1)
-		show_debug_message("xscale	1");
-	else
-		show_debug_message("xscale	" + string(image_xscale));
-		
 	var xScaleOrientation = orientation;
-	if(orientation == 0){
-		xScaleOrientation = -1;
-	}else if(orientation == 1)
+	if(orientation == 1){
 		xScaleOrientation = 1;
+	}else
+		xScaleOrientation = -1;
 		
 	switch(newState){
 		
@@ -457,13 +477,18 @@ function ChangeSpriteAccordingToSSJStatus(newState, ssj_state, spriteToAsign, re
 			}else if(ssj_state == 1){
 				
 				if(spriteToAsign = "turn_to_ssj"){
-					if(sprite_index != spr_Goku_end_turn_SSJ)
-					sprite_index = spr_Goku_end_turn_SSJ;
+					
+					if(sprite_index != spr_Goku_Enter_SSJ)//spr_Goku_end_turn_SSJ
+						sprite_index = spr_Goku_Enter_SSJ;
+				}else if(spriteToAsign == "charge_ki"){
+					
+					if(sprite_index != spr_Goku_SSJ_ChargeKi)
+						sprite_index = spr_Goku_SSJ_ChargeKi;
 				}
 			}
 			break;
 	}
-	image_xscale = xScaleOrientation;	//	testear	
+	image_xscale = xScaleOrientation * -1;	//	testear	
 	
 	//if(xScaleOrientation == -1)
 	//	return 0;
