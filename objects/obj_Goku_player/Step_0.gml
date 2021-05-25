@@ -20,7 +20,7 @@ var nextState = 0;
 if(keyboard_check(ord("W"))){
 	nextState = 2;	
 }else if(keyboard_check(ord("A"))){
-	nextState = 0;
+	nextState = 1;
 	nextOrientation = 0;
 }else if(keyboard_check(ord("S"))){
 	nextState = 3;
