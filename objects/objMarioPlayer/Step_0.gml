@@ -1,8 +1,8 @@
 //Inputs
-PlayerInputs();
+PlayerInputsMario();
 
 //Actualizar máquina de estados
-UpdateStateMachine();
+UpdateStateMachineMario();
 
 //Actualizar posición
-UpdateMovement();
+UpdateMovementMario();
