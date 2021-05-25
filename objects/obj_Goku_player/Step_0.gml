@@ -101,3 +101,4 @@ if(orientation != nextOrientation)
 //	image_xscale = -1
 //else if(orientation == 1 && image_xscale == 1)
 //	image_xscale = 1;
+EvadeGettingStuckOnFloor();

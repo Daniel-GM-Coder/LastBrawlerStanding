@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_Goku_Idle",
+    "path": "sprites/spr_Goku_Idle/spr_Goku_Idle.yy",
+  },
   "solid": true,
   "visible": true,
   "spriteMaskId": null,

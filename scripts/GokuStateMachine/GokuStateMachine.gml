@@ -79,6 +79,8 @@ function UpdateIdle(state, newState, situation, ssj_state, returnValues, orienta
 				
 			}else if(state == 7 && newState == 7){
 				
+				
+				
 				var sprite = "";
 				if(ssj_state == 0){
 					
@@ -263,48 +265,45 @@ function UpdateCrouch(state, newState, situation, ssj_state, returnValues, orien
 		
 		if(situation == 0){
 		
-				if(newState == 3){
+			if(newState == 3){
 			
-					if(state !=2 && state != 4 && state != 5 && state != 6 && state != 7){
+				if(state !=2 && state != 4 && state != 5 && state != 7){
 					
-						//if(sprite_index != spr_Goku_Crouch)
-						//	sprite_index = spr_Weiss_Crouch;
-						returnValues[4] = ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "crouch", returnValues, orientation);
-					}else if(state == 3){
+					returnValues[4] = ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "crouch", returnValues, orientation);
+				}else if(state == 3){
 					
-						if(image_index == image_number){
-							image_speed = 0;
-						}
-					} 
-					//SETEAR A 0 SI EL NEW STATE ES IDLE?
-				}else if(newState == 0 || newState == 1){
+					if(image_index >= image_number - 1){
+						image_speed = 0;
+					}
+				} 
+				//SETEAR A 0 SI EL NEW STATE ES IDLE?
+			}else if(newState == 0 || newState == 1){
 			
-					if(state != 4 && state != 5 && state !=6 && state != 7){
+				if(state != 4 && state != 5 && state != 7){
 				
-						if(state == 3){
-							//invertir la velocidad del sprite para levantarnos
-							//pasar a idle si ya hemos terminado de levantarnos
+					if(state == 3){
+						//invertir la velocidad del sprite para levantarnos
+						//pasar a idle si ya hemos terminado de levantarnos
 					
-							if(image_speed != -1){
-								image_speed = 1;
-							}else{
+						if(image_speed != -1){
+							image_speed = 1;
+						}else{
 						
-								if(image_index == 0 && image_speed = -1 && state == 3){//image_index = 0
-									//sprite_index = spr_Goku_Idle;
-									//ChangeSpriteAccordingToSSJStatus(returnValues[0], "idle", ssj_state, orientation);
-									returnValues[4] = ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "idle", returnValues, orientation);
-								}
+							if(image_index == 0 && image_speed = -1 && state == 3){//image_index = 0
+								//sprite_index = spr_Goku_Idle;
+								//ChangeSpriteAccordingToSSJStatus(returnValues[0], "idle", ssj_state, orientation);
+								returnValues[4] = ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "idle", returnValues, orientation);
 							}
 						}
 					}
-				//	keycheck_key_released --> image_speed = -1
-				//	if(state == 3 && image_speed = -1 && image_index == 0){
-				//		
-				//	}
 				}
+			//	keycheck_key_released --> image_speed = -1
+			//	if(state == 3 && image_speed = -1 && image_index == 0){
+			//		
+			//	}
+			}
 		}
 	}
-	
 	return returnValues;
 		
 }
@@ -346,18 +345,22 @@ function UpdateJump(state, newState, situation, t, ssj_state, returnValues, orie
 	return returnValues;
 }
 
+function EvadeGettingStuckOnFloor(){
+	
+	var nextY = y + 10;
+	while(!place_free(x, nextY)){
+		nextY -= 1;
+	}
+	y = nextY;
+}
+
 function ChangeSpriteAccordingToSSJStatus(newState, ssj_state, spriteToAsign, returnValues, orientation){
 	
-	if(image_xscale == 1)
-		show_debug_message("xscale	1");
-	else
-		show_debug_message("xscale	" + string(image_xscale));
-		
 	var xScaleOrientation = orientation;
-	if(orientation == 0){
-		xScaleOrientation = -1;
-	}else if(orientation == 1)
+	if(orientation == 1){
 		xScaleOrientation = 1;
+	}else
+		xScaleOrientation = -1;
 		
 	switch(newState){
 		
@@ -485,7 +488,7 @@ function ChangeSpriteAccordingToSSJStatus(newState, ssj_state, spriteToAsign, re
 			}
 			break;
 	}
-	image_xscale = xScaleOrientation;	//	testear	
+	image_xscale = xScaleOrientation * -1;	//	testear	
 	
 	//if(xScaleOrientation == -1)
 	//	return 0;
