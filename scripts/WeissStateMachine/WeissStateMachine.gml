@@ -97,8 +97,9 @@ function UpdateWeissAttack(state, newState, situation, returnValues, orientation
 				}else if(newState == 5){
 				
 					if(sprite_index != spr_Weiss_BasicSpecial)
-						sprite_index = spr_Weiss_BasicSpecial;
-			
+						{
+							sprite_index = spr_Weiss_BasicSpecial;
+						}
 				}
 			}	
 		}else{
@@ -218,7 +219,7 @@ function UpdateWeissJump(state, newState, situation, t, returnValues, orientatio
 		t = 0;
 		returnValues[2] = 0;
 		vspeed = 0;
-		vspeed -= 15;
+		vspeed -= 21;
 		newState = 2;
 		returnValues[0] = 2;
 		situation = 1;
