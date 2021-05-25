@@ -14,9 +14,8 @@ situation list
 	1 = on air 
 */
 //	We gather the keyboard inputs here
-var nextOrientation = 0;
-var nextState = 0;
 
+var nextState = 0;
 
 if(keyboard_check(ord("W"))){
 	nextState = 2;	
