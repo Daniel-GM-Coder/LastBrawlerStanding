@@ -63,7 +63,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 70,
-    "yorigin": 150,
+    "yorigin": 153,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_Goku_ChargeKi","path":"sprites/spr_Goku_ChargeKi/spr_Goku_ChargeKi.yy",},

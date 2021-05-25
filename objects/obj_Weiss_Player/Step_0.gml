@@ -1,10 +1,10 @@
 var nextState = 0;
-var nextOrientation = 0;
+
 
 if(keyboard_check(ord("W"))){
 	nextState = 2;	
 }else if(keyboard_check(ord("A"))){
-	nextState = 0;
+	nextState = 1;
 	nextOrientation = 0;
 }else if(keyboard_check(ord("S"))){
 	nextState = 3;
@@ -60,15 +60,15 @@ grounded = stateMachineChanges[1];
 t = stateMachineChanges[2];
 
 //	FUNCIONA DE PUTA MADRE
-var nextY = vspeed + gravity_force * t;
+
+nextY = vspeed + gravity_force * t;
 if(place_free(x, y + nextY)){
 	vspeed += gravity_force * t;
 	t +=3;
 	t = clamp(t,0, maxFallVelocity);
 }else{
-	t = 0;
 	vspeed = 0;
-	grounded = 0;
+	situation = 0;
 }
 
 
@@ -113,3 +113,20 @@ else
 	sprite_index = spr_Weiss_Idle;
 }
 */
+
+if(keyboard_check(ord("N")))
+{
+	if(instance_number(obj_Weiss_Platform) < 1)
+	{
+		if(nextOrientation == 0)
+		{
+			instance_create_depth(x - 350, y - 40,depth,obj_Weiss_Platform);
+		}
+		else if(nextOrientation == 1)
+		{
+			instance_create_depth(x + 350, y - 40,depth,obj_Weiss_Platform);
+		}
+	}
+	else
+	{}
+}
