@@ -113,16 +113,20 @@ else
 	sprite_index = spr_Weiss_Idle;
 }
 */
-if(instance_number(obj_Weiss_Platform) < 1)
+
+if(keyboard_check(ord("N")))
 {
-	if((keyboard_check(ord("N"))) && (nextOrientation == 0))
+	if(instance_number(obj_Weiss_Platform) < 1)
 	{
-		instance_create_depth(x - 350, y - 40,depth,obj_Weiss_Platform);
+		if(nextOrientation == 0)
+		{
+			instance_create_depth(x - 350, y - 40,depth,obj_Weiss_Platform);
+		}
+		else if(nextOrientation == 1)
+		{
+			instance_create_depth(x + 350, y - 40,depth,obj_Weiss_Platform);
+		}
 	}
-	else if((keyboard_check(ord("N"))) && (nextOrientation == 1))
-	{
-		instance_create_depth(x + 350, y - 40,depth,obj_Weiss_Platform);
-	}
+	else
+	{}
 }
-else
-{}

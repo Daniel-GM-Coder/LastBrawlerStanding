@@ -300,7 +300,7 @@ function UpdateJump(state, newState, situation, t, ssj_state, returnValues, orie
 		t = 0;
 		returnValues[2] = 0;
 		vspeed = 0;
-		vspeed -= 15;
+		vspeed -= 21;
 		newState = 2;
 		returnValues[0] = 2;
 		situation = 1;

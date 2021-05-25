@@ -1,10 +1,10 @@
 {
   "spriteId": {
-    "name": "spr_OneWayPlatform",
-    "path": "sprites/spr_OneWayPlatform/spr_OneWayPlatform.yy",
+    "name": "spr_InvWall",
+    "path": "sprites/spr_InvWall/spr_InvWall.yy",
   },
-  "solid": false,
-  "visible": false,
+  "solid": true,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -20,19 +20,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
-  "properties": [
-    {"varType":0,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"weissY","tags":[],"resourceType":"GMObjectProperty",},
-  ],
+  "eventList": [],
+  "properties": [],
   "overriddenProperties": [],
   "parent": {
     "name": "Objetos",
     "path": "folders/Objetos.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_OneWayPlat1",
+  "name": "obj_InvWall",
   "tags": [],
   "resourceType": "GMObject",
 }

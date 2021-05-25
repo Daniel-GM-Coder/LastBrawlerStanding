@@ -168,6 +168,7 @@
     {"id":{"name":"spr_Weiss_OnAir","path":"sprites/spr_Weiss_OnAir/spr_Weiss_OnAir.yy",},"order":6,},
     {"id":{"name":"spr_Goku_Crouch","path":"sprites/spr_Goku_Crouch/spr_Goku_Crouch.yy",},"order":6,},
     {"id":{"name":"spr_MarioFace","path":"sprites/spr_MarioFace/spr_MarioFace.yy",},"order":6,},
+    {"id":{"name":"obj_OneWayPlat2","path":"objects/obj_OneWayPlat2/obj_OneWayPlat2.yy",},"order":18,},
     {"id":{"name":"spr_PostBG","path":"sprites/spr_PostBG/spr_PostBG.yy",},"order":12,},
     {"id":{"name":"Mapa4","path":"rooms/Mapa4/Mapa4.yy",},"order":7,},
     {"id":{"name":"sprMarioComboAttack3","path":"sprites/sprMarioComboAttack3/sprMarioComboAttack3.yy",},"order":4,},

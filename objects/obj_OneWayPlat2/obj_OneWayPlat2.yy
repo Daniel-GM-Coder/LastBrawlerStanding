@@ -32,7 +32,7 @@
     "path": "folders/Objetos.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_OneWayPlat1",
+  "name": "obj_OneWayPlat2",
   "tags": [],
   "resourceType": "GMObject",
 }

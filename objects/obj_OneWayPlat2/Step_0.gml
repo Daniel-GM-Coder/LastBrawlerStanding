@@ -1,7 +1,5 @@
-if(instance_number(obj_Weiss_Player) > 0)
-{
-if(obj_Weiss_Player != noone)
-{weissY = obj_Weiss_Player.y;}
+if(obj_Goku_player != noone)
+{weissY = obj_Goku_player.y;}
 
 if((weissY <= y + 8) && keyboard_check_pressed(ord("S")))
 {	
@@ -15,5 +13,4 @@ else if(weissY <= y)
 else if(weissY > (y + 8))
 {	
 	solid = false;
-}
 }
