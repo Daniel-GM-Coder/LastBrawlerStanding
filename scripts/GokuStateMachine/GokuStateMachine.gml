@@ -99,8 +99,7 @@ function UpdateIdle(state, newState, situation, ssj_state, returnValues, orienta
 						returnValues[3] = 1;
 						ssj_state = 1;
 						returnValues[4] = ChangeSpriteAccordingToSSJStatus(newState, ssj_state, sprite, returnValues, orientation);
-						
-						
+
 					}else if(accumulatedKi < 100){
 						sprite = "charge_ki";
 						returnValues[0] = 7;
@@ -126,44 +125,7 @@ function UpdateIdle(state, newState, situation, ssj_state, returnValues, orienta
 					////newState = 0;
 					//}
 				}
-				
-				////////////////////////////////////////////////////////////////////
-				//if(image_index == image_number - 1){	// testear cambio de fase
-				//	//image_speed = 0;
-				//	var sprite = "";
-				//	if(accumulatedKi > 100 && ssj_state == 0){	// && ssj_state
-						
-				//		sprite = "turn_to_ssj";
-				//		newState = 7;	// testear (invulnerable)?
-				//		returnValues[0] = 7;
-				//		ssj_state = 1;
-				//		returnValues[3] = 1;
-				//		returnValues[4] = ChangeSpriteAccordingToSSJStatus(newState, ssj_state, sprite, returnValues, orientation);
-				//	}else if(accumulatedKi < 100 && ssj_state == 0){
-						
-				//		image_speed = 0;
-				//		sprite = "charge_ki";
-				//		returnValues[0] = 7;
-				//		newState = 7;
 
-				//		returnValues[4] = ChangeSpriteAccordingToSSJStatus(newState, ssj_state, "charge_ki", returnValues, orientation);
-				//	}
-				//	if(ssj_state == 1 && accumulatedKi > 100){	//	testear cambio de fase
-						
-				//		//y -= 20;
-				//		sprite = "idle";
-				//		newState = 0;	// testear (invulnerable)?
-				//		returnValues[0] = 0;
-				//		returnValues[4] = ChangeSpriteAccordingToSSJStatus(newState, ssj_state, sprite, returnValues, orientation);
-				//		image_speed = 1;
-				//	}
-					
-					
-				//	//image_speed = 0;
-				//	//newState = 0;
-					
-				//}else
-				//	returnValues[0] = -1;
 			}else if(state == 7 && newState == 0){
 				
 				returnValues[0] = 0;
