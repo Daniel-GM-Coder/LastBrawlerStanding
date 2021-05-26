@@ -25,17 +25,29 @@ function WeissEnterJumpIdle()
 function WeissNextStateJumpIdle()
 {
 	if(inputNormalAttack)
-		return 3;
+		return 11;
 		
 	if(inputSpecialAttack)
-		return 4;
+		return 12;
+		
+	if(inputNormalDownAttack)
+		return 13;
+		
+	if(inputSpecialDownAttack)
+		return 14;
+	
+	if(inputNormalUpAttack)
+		return 15;
+		
+	if(inputSpecialUpAttack)
+		return 16;
 	
 	if(inputHorizMov != 0)
 		return 10;
 
 	if(inputVerMov2 != 0)
 		return state;
-	
+
 	if(!onAir)
 		return 0;
 	

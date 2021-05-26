@@ -1,7 +1,10 @@
 function WeissUpdateMovement(){
-	if(onAir)
+if(onAir)
 	{
 		var targetSpeedX = 0;
+		
+		if(inputHorizMov != 0)
+			targetSpeedX += maxWalkSpeed * inputHorizMov;
 
 		var diffSpeedX = targetSpeedX - speedX;
 		diffSpeedX = clamp(diffSpeedX, -accel, accel);

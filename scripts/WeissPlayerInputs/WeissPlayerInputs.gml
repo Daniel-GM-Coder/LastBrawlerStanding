@@ -28,9 +28,9 @@ function WeissPlayerInputs(){
 	
 
 	
+	
 	inputNormalSide = keyboard_check(ord("G"));
 	inputSpecialSide = keyboard_check(ord("H"));
-	
 	
 	inputNormalDownAttack = keyboard_check(ord("N"));
 	inputSpecialDownAttack =keyboard_check(ord("M"));

@@ -3,18 +3,19 @@
 function WeissEnterWalk()
 {
 	sprite_index = spr_Weiss_Walk;
+	image_xscale = inputHorizMov;
+	//if(facingRight)
+	//{
+	//	speedX += maxWalkSpeed;
+	//	image_xscale = 1;
+	//}
+	//else if(!facingRight)
+	//{
+	//	speedX -= maxWalkSpeed;
+	//	image_xscale = -1;
+	//}
 	
-	if(inputHorizMov > 0)
-	{
-		speedX = +maxWalkSpeed;
-		image_xscale = 1;
-	}
-	else if(inputHorizMov < 0)
-	{
-		speedX = -maxWalkSpeed;
-		image_xscale = -1;
-	}
-
+	speedX = maxWalkSpeed * inputHorizMov;
 	speedY = 0;
 }
 
@@ -54,15 +55,11 @@ function WeissNextStateWalk()
 
 function WeissEnterWalkAir()
 {	
-	if(inputHorizMov > 0)
+	sprite_index = spr_Weiss_OnAir;
+	if(inputHorizMov != 0)
 	{
-		speedX = maxWalkSpeed * 2;
-		image_xscale = 1;
-	}
-	else if(inputHorizMov < 0)
-	{
-		speedX = -maxWalkSpeed * 2;
-		image_xscale = -1;
+		//speedX = maxWalkSpeed * 4 * inputHorizMov;
+		image_xscale = 1 * inputHorizMov;
 	}
 }
 
