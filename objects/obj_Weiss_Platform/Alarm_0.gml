@@ -1,3 +1,3 @@
 sprite_index = spr_Weiss_Glyph;
 platformReady = true;
-alarm[1] = 500;
+alarm[1] = 300;

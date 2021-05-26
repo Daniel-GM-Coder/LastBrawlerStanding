@@ -41,7 +41,7 @@
     "spriteId": {"name":"spr_Weiss_DownAir","path":"sprites/spr_Weiss_DownAir/spr_Weiss_DownAir.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 5.0,
+    "playbackSpeed": 6.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
