@@ -24,15 +24,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"764a3fa7-8155-434e-98b2-e6feef138160","path":"sprites/spr_Goku_Idle/spr_Goku_Idle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"764a3fa7-8155-434e-98b2-e6feef138160","path":"sprites/spr_Goku_Idle/spr_Goku_Idle.yy",},"LayerId":{"name":"c2c1c188-b252-40fc-8b39-2ed6f402e4c0","path":"sprites/spr_Goku_Idle/spr_Goku_Idle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_Goku_Idle","path":"sprites/spr_Goku_Idle/spr_Goku_Idle.yy",},"resourceVersion":"1.0","name":"764a3fa7-8155-434e-98b2-e6feef138160","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"e93e48c2-d42f-417b-819d-f8412e95e10e","path":"sprites/spr_Goku_Idle/spr_Goku_Idle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e93e48c2-d42f-417b-819d-f8412e95e10e","path":"sprites/spr_Goku_Idle/spr_Goku_Idle.yy",},"LayerId":{"name":"f8318cc4-42df-45f4-8ee1-985d11e265e0","path":"sprites/spr_Goku_Idle/spr_Goku_Idle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_Goku_Idle","path":"sprites/spr_Goku_Idle/spr_Goku_Idle.yy",},"resourceVersion":"1.0","name":"e93e48c2-d42f-417b-819d-f8412e95e10e","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_Goku_Idle","path":"sprites/spr_Goku_Idle/spr_Goku_Idle.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 7.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"7f003cb3-9549-428c-bd3b-6b0cc3a73e83","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"764a3fa7-8155-434e-98b2-e6feef138160","path":"sprites/spr_Goku_Idle/spr_Goku_Idle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"fac36c8b-9c08-4f7c-8fee-2263b0eca42b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e93e48c2-d42f-417b-819d-f8412e95e10e","path":"sprites/spr_Goku_Idle/spr_Goku_Idle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -54,8 +54,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 75,
-    "yorigin": 121,
+    "xorigin": 76,
+    "yorigin": 123,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_Goku_Idle","path":"sprites/spr_Goku_Idle/spr_Goku_Idle.yy",},
@@ -65,12 +65,12 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c2c1c188-b252-40fc-8b39-2ed6f402e4c0","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f8318cc4-42df-45f4-8ee1-985d11e265e0","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Goku base",
+    "path": "folders/Sprites/Goku/SSJ forms/Goku base.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_Goku_Idle",

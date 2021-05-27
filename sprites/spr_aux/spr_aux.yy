@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Goku base",
+    "path": "folders/Sprites/Goku/SSJ forms/Goku base.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_aux",
