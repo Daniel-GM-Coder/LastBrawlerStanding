@@ -1,4 +1,4 @@
-if(instance_number(obj_Weiss_Player) > 0)
+/*if(instance_number(obj_Weiss_Player) > 0)
 {
 if(obj_Weiss_Player != noone)
 {weissY = obj_Weiss_Player.y;}
@@ -16,4 +16,4 @@ else if(weissY > (y + 8))
 {	
 	solid = false;
 }
-}
+}*/
