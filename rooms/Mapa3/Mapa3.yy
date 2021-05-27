@@ -19,9 +19,7 @@
         {"spriteId":{"name":"spr_Map3_BG4","path":"sprites/spr_Map3_BG4/spr_Map3_BG4.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1280.0,"y":928.0,"resourceVersion":"1.0","name":"graphic_E916CB3","tags":[],"resourceType":"GMRSpriteGraphic",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Assets_3","tags":[],"resourceType":"GMRAssetLayer",},
     {"instances":[
-        {"properties":[],"isDnd":false,"objectId":{"name":"obj_Weiss_Player1","path":"objects/obj_Weiss_Player1/obj_Weiss_Player1.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":640.0,"y":736.0,"resourceVersion":"1.0","name":"inst_690F1D40","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_Screen_Cotrol","path":"objects/obj_Screen_Cotrol/obj_Screen_Cotrol.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,"resourceVersion":"1.0","name":"inst_4EAF1B6A","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"obj_Goku_player","path":"objects/obj_Goku_player/obj_Goku_player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1216.0,"y":704.0,"resourceVersion":"1.0","name":"inst_61029778","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_OutWall","path":"objects/obj_OutWall/obj_OutWall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":-90.0,"scaleX":7.0,"scaleY":145.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2072.0,"y":-159.0,"resourceVersion":"1.0","name":"inst_4F84276E","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_OutWall","path":"objects/obj_OutWall/obj_OutWall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":7.0,"scaleY":81.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-232.0,"y":-95.0,"resourceVersion":"1.0","name":"inst_6C455A82","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_OutWall","path":"objects/obj_OutWall/obj_OutWall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":-90.0,"scaleX":7.0,"scaleY":145.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2072.0,"y":1153.0,"resourceVersion":"1.0","name":"inst_1CE9EC4","tags":[],"resourceType":"GMRInstance",},
@@ -31,6 +29,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_InvWall","path":"objects/obj_InvWall/obj_InvWall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":14.375,"scaleY":22.125,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":842.0,"y":687.0,"resourceVersion":"1.0","name":"inst_5AE7C8A0","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_OneWayPlat1","path":"objects/obj_OneWayPlat1/obj_OneWayPlat1.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":7.875,"scaleY":0.5625,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":954.0,"y":548.0,"resourceVersion":"1.0","name":"inst_45F52087","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_OneWayPlat1","path":"objects/obj_OneWayPlat1/obj_OneWayPlat1.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":7.6875,"scaleY":0.473062515,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":955.5,"y":423.0,"resourceVersion":"1.0","name":"inst_44610B95","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_Weiss_Player","path":"objects/obj_Weiss_Player/obj_Weiss_Player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":704.0,"y":672.0,"resourceVersion":"1.0","name":"inst_6A875BE9","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_Stage3","path":"objects/obj_Stage3/obj_Stage3.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":3.0,"scaleY":3.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":416.0,"y":170.0,"resourceVersion":"1.0","name":"inst_7F845DA7","tags":[],"resourceType":"GMRInstance",},
@@ -46,9 +45,7 @@
   "creationCodeFile": "${project_dir}/rooms/Mapa3/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_690F1D40","path":"rooms/Mapa3/Mapa3.yy",},
     {"name":"inst_4EAF1B6A","path":"rooms/Mapa3/Mapa3.yy",},
-    {"name":"inst_61029778","path":"rooms/Mapa3/Mapa3.yy",},
     {"name":"inst_7F845DA7","path":"rooms/Mapa3/Mapa3.yy",},
     {"name":"inst_4F84276E","path":"rooms/Mapa3/Mapa3.yy",},
     {"name":"inst_6C455A82","path":"rooms/Mapa3/Mapa3.yy",},
@@ -59,6 +56,7 @@
     {"name":"inst_5AE7C8A0","path":"rooms/Mapa3/Mapa3.yy",},
     {"name":"inst_45F52087","path":"rooms/Mapa3/Mapa3.yy",},
     {"name":"inst_44610B95","path":"rooms/Mapa3/Mapa3.yy",},
+    {"name":"inst_6A875BE9","path":"rooms/Mapa3/Mapa3.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
