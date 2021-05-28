@@ -26,3 +26,5 @@ globalvar Ganador;
 Ganador = 0;
 
 firstTime2 = 1;
+
+LoadSelectedCharacters();

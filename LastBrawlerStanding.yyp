@@ -107,6 +107,7 @@
     {"id":{"name":"sprMarioNormalUp_initial_Air","path":"sprites/sprMarioNormalUp_initial_Air/sprMarioNormalUp_initial_Air.yy",},"order":2,},
     {"id":{"name":"spr_Knight_Crouch","path":"sprites/spr_Knight_Crouch/spr_Knight_Crouch.yy",},"order":3,},
     {"id":{"name":"spr_Map3_BG1","path":"sprites/spr_Map3_BG1/spr_Map3_BG1.yy",},"order":0,},
+    {"id":{"name":"LoadSelectedCharacters","path":"scripts/LoadSelectedCharacters/LoadSelectedCharacters.yy",},"order":5,},
     {"id":{"name":"obj_Stage1","path":"objects/obj_Stage1/obj_Stage1.yy",},"order":3,},
     {"id":{"name":"font_HUD","path":"fonts/font_HUD/font_HUD.yy",},"order":1,},
     {"id":{"name":"snd_Results","path":"sounds/snd_Results/snd_Results.yy",},"order":12,},
@@ -292,7 +293,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.1.542",
+    "IDEVersion": "2.3.2.560",
   },
   "resourceVersion": "1.4",
   "name": "LastBrawlerStanding",
