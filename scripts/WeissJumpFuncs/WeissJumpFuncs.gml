@@ -25,10 +25,10 @@ function WeissEnterJumpIdle()
 function WeissNextStateJumpIdle()
 {
 	if(inputNormalAttack)
-		return 11;
+		return 20;
 		
 	if(inputSpecialAttack)
-		return 12;
+		return 19;
 		
 	if(inputNormalDownAttack)
 		return 13;
@@ -41,6 +41,12 @@ function WeissNextStateJumpIdle()
 		
 	if(inputSpecialUpAttack)
 		return 16;
+		
+	if(inputNormalSide)
+		return 11;
+		
+	if(inputSpecialSide)
+		return 12;
 	
 	if(inputHorizMov != 0)
 		return 10;

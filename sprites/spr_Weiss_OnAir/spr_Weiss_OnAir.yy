@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 53,
-  "bbox_right": 89,
-  "bbox_top": 22,
-  "bbox_bottom": 119,
+  "bbox_left": 21,
+  "bbox_right": 57,
+  "bbox_top": 15,
+  "bbox_bottom": 105,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -71,7 +71,6 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"731d991e-f279-48e6-ad8b-0044ad4f14dc","tags":[],"resourceType":"GMImageLayer",},
   ],
-  "nineSlice": null,
   "parent": {
     "name": "Weiss",
     "path": "folders/Sprites/Weiss.yy",

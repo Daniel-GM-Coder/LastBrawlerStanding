@@ -24,7 +24,7 @@ else if (seleccionPJ1 == 1)
 	{
 		draw_sprite(spr_Pj1_Select,myimage_index,160,448);
 	}
-	draw_sprite_ext(spr_Weiss_Idle,myimage_index2,672,832,3.24,3.707,0,c_white,1);
+	draw_sprite_ext(spr_Weiss_Idle,myimage_index2,662,832,3.24,3.707,0,c_white,1);
 	draw_set_halign(fa_center);
 	imp_text(672,925,"WEISS",c_white,font_MainMenu,1,0.8);
 	draw_set_halign(fa_left);

@@ -12,6 +12,21 @@ function FindFreePosY(newY){
 	return newY;
 }
 
+function MarioFindFreePosPlatform(newY){
+	if(newY > y)
+	{
+		var foundFreePos = false;
+		while(newY > y && !foundFreePos)
+		{
+			newY -= 1;
+			if (instance_position(x, newY, obj_OneWayPlat1) == noone)
+				foundFreePos = true;
+		}
+	}
+	
+	return newY;
+}
+
 function FindFreePosX(newX){
 	if(newX > x)
 	{

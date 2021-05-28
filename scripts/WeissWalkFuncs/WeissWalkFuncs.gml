@@ -16,7 +16,6 @@ function WeissEnterWalk()
 	//}
 	
 	speedX = maxWalkSpeed * inputHorizMov;
-	speedY = 0;
 }
 
 //Comprueba si queremos cambiar de estado
