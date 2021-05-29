@@ -39,12 +39,13 @@ if(onAir)
 	}
 	if(instance_position(x, newY, obj_OneWayPlat1) != noone 
 	&& instance_position(x, y-1, obj_OneWayPlat1) == noone
-	&& speedY >= -0.5)
+	&& speedY >= -0.5
+	&& !keyboard_check(ord("S")))
 	{
 		newY = WeissFindFreePosPlatform(newY);
-			speedY = 0;
-			onAir = false;
-			onAir2 = false;
+		speedY = 0;
+		onAir = false;
+		onAir2 = false;
 	}
 	y = newY;
 
