@@ -4,6 +4,12 @@ if (keyboard_check_released(ord("Z")))
 	room_goto(CharacterSelect)
 }
 
+if (gamepad_button_check_pressed(obj_DeviceManager.player1AssignedController, gp_face2))
+{
+	audio_play_sound(MainMenuBack,2,false);
+	room_goto(CharacterSelect)
+}
+
 if keyboard_check_released(vk_right)
 {
 	audio_play_sound(MainMenuChange,2,false);
@@ -15,8 +21,20 @@ if keyboard_check_released(vk_left)
 	audio_play_sound(MainMenuChange,2,false);
 	seleccionMapa --;
 }
+
+if (gamepad_button_check_pressed(obj_DeviceManager.player1AssignedController, gp_padr))
+{
+	audio_play_sound(MainMenuChange,2,false);
+	seleccionMapa ++;
+}
+
+if (gamepad_button_check_pressed(obj_DeviceManager.player1AssignedController, gp_padl))
+{
+	audio_play_sound(MainMenuChange,2,false);
+	seleccionMapa --;
+}
 	
-if (keyboard_check(ord("X")) && (firstTime == true))
+if (gamepad_button_check_pressed(obj_DeviceManager.player1AssignedController, gp_face1) && (firstTime == true))
 {
 	audio_play_sound(MainMenuAccept,2,false);
 	alarm [0] = room_speed*2;

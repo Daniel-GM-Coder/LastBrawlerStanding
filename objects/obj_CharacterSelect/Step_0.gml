@@ -1,6 +1,6 @@
 if (fijadoPJ1 == true)
 {
-	if (keyboard_check_released(ord("Z")))
+	if gamepad_button_check_pressed(obj_DeviceManager.player1AssignedController, gp_face2)
 	{
 		audio_play_sound(MainMenuBack,2,false);
 		fijadoPJ1 = false;
@@ -8,19 +8,19 @@ if (fijadoPJ1 == true)
 }
 else
 {
-	if keyboard_check_released(vk_down)
+	if gamepad_button_check_pressed(obj_DeviceManager.player1AssignedController, gp_padd)
 	{
 		audio_play_sound(MainMenuChange,2,false);
 		seleccionPJ1 ++;
 	}
 
-	if keyboard_check_released(vk_up)
+	if gamepad_button_check_pressed(obj_DeviceManager.player1AssignedController, gp_padu)
 	{
 		audio_play_sound(MainMenuChange,2,false);
 		seleccionPJ1 --;
 	}
 	
-	if (keyboard_check(ord("X")))
+	if gamepad_button_check_pressed(obj_DeviceManager.player1AssignedController, gp_face1)
 	{
 		audio_play_sound(MainMenuAccept,2,false);
 		fijadoPJ1 = true;
@@ -30,7 +30,7 @@ else
 
 if (fijadoPJ2 == true)
 {
-	if (keyboard_check_released(ord("V")))
+	if gamepad_button_check_pressed(obj_DeviceManager.player2AssignedController, gp_face2)
 	{
 		audio_play_sound(MainMenuBack,2,false);
 		fijadoPJ2 = false;
@@ -38,18 +38,18 @@ if (fijadoPJ2 == true)
 }
 else
 {
-	if keyboard_check_released(ord("G"))
+	if gamepad_button_check_pressed(obj_DeviceManager.player2AssignedController, gp_padd)
 	{
 		audio_play_sound(MainMenuChange,2,false);
 		seleccionPJ2 ++;
 	}
 
-	if keyboard_check_released(ord("T"))
+	if gamepad_button_check_pressed(obj_DeviceManager.player2AssignedController, gp_padu)
 	{
 		audio_play_sound(MainMenuChange,2,false);
 		seleccionPJ2 --;
 	}
-	if (keyboard_check(ord("B")))
+	if gamepad_button_check_pressed(obj_DeviceManager.player2AssignedController, gp_face1)
 	{
 		audio_play_sound(MainMenuAccept,2,false);
 		fijadoPJ2 = true;
@@ -58,7 +58,7 @@ else
 
 if ((fijadoPJ1 == false) && (fijadoPJ2 == false))
 {
-	if (keyboard_check(ord("Z")))
+	if gamepad_button_check_pressed(obj_DeviceManager.player1AssignedController, gp_face2)
 	{
 		room_goto(MainMenu);
 	}

@@ -4,6 +4,10 @@ function KnightPlayerInputs(){
 	inputVerMov = 0;
 	inputVerMov2 = 0;
 	
+	if gamepad_is_connected(4) {
+		gamepad_set_vibration(4, 1, 1);
+	}
+	
 	if(keyboard_check(ord("A")))
 	{
 		inputHorizMov -= 1;

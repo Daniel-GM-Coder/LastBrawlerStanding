@@ -10,6 +10,19 @@ else if keyboard_check_released(vk_left)
 	mainmenu --;
 }
 
+if gamepad_button_check_pressed(obj_DeviceManager.player1AssignedController, gp_padr)
+{
+	audio_play_sound(MainMenuChange,2,false);
+	mainmenu ++;
+}
+
+else if gamepad_button_check_pressed(obj_DeviceManager.player1AssignedController, gp_padl)
+{
+	audio_play_sound(MainMenuChange,2,false);
+	mainmenu --;
+}
+
+
 
 if(mainmenu > 2)
 	{mainmenu = 0;}
@@ -47,7 +60,6 @@ else if (mainmenu==2)
 	Tamano0=1;
 }
 
-
 if keyboard_check_released(ord("X"))
 {
 	if(mainmenu==0)
@@ -64,8 +76,33 @@ if keyboard_check_released(ord("X"))
 		room_goto(CharacterSelect);
 		modoJuego = 1;
 	}
-else if (mainmenu ==2)
+	else if (mainmenu ==2)
+	{
+	audio_play_sound(MainMenuBack,2,false)
+	alarm[0]=50;
+	}
+}
+
+
+
+if gamepad_button_check_pressed(obj_DeviceManager.player1AssignedController, gp_face1)
 {
+	if(mainmenu==0)
+	{
+		audio_play_sound(MainMenuAccept,2,false);
+		audio_stop_sound(MainMenuBM)
+		room_goto(CharacterSelect);
+		modoJuego = 0;
+	}
+	else if (mainmenu==1)
+	{
+		audio_play_sound(MainMenuAccept,2,false);
+		audio_stop_sound(MainMenuBM)
+		room_goto(CharacterSelect);
+		modoJuego = 1;
+	}
+	else if (mainmenu ==2)
+	{
 	audio_play_sound(MainMenuBack,2,false)
 	alarm[0]=50;
 	}
