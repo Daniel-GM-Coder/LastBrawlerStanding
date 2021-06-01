@@ -1,7 +1,7 @@
 //Entrar en el estado
 function EnterJumpIdleMario()
 {
-	if(!onAir)
+	if(!onAir && (sprite_index == sprMarioIdle || sprite_index == sprMarioWalk))
 	{
 		speedY = -20;
 		onAir = true;

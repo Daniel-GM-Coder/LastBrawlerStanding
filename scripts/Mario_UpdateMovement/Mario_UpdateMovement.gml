@@ -9,7 +9,7 @@ function UpdateMovementMario(){
 		var diffSpeedX = targetSpeedX - speedX;
 		diffSpeedX = clamp(diffSpeedX, -accel, accel);
 		speedX += diffSpeedX;
-		show_debug_message(speedX);
+
 		var newX = x+speedX;
 		if(!place_free(newX, y))
 		{

@@ -24,14 +24,14 @@ function PlayerInputsMario(){
 		inputVerMov = -1;
 	}
 	
-	inputNormalAttack = keyboard_check(ord("J"));
-	inputSpecialAttack = keyboard_check(ord("K"));
+	inputNormalAttack = keyboard_check_pressed(ord("J"));
+	inputSpecialAttack = keyboard_check_pressed(ord("K"));
 	
-	inputNormalDownAttack = keyboard_check(ord("N"));
+	inputNormalDownAttack = keyboard_check_pressed(ord("N"));
 	inputSpecialDownAttack = keyboard_check(ord("M"));
 	
-	inputNormalUpAttack = keyboard_check(ord("I"));
-	inputSpecialUpAttack = keyboard_check(ord("O"));
+	inputNormalUpAttack = keyboard_check_pressed(ord("U"));
+	inputSpecialUpAttack = keyboard_check_pressed(ord("I"));
 	
 	if(keyboard_check(ord("X")))
 	{

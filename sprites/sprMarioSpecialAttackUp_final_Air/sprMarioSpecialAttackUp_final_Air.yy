@@ -2,7 +2,7 @@
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
-  "origin": 0,
+  "origin": 9,
   "preMultiplyAlpha": false,
   "edgeFiltering": false,
   "collisionTolerance": 0,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"4c50c522-8614-4daa-941f-a4055155c9d7","path":"sprites/sprMarioNormalUp_final_Air/sprMarioNormalUp_final_Air.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4c50c522-8614-4daa-941f-a4055155c9d7","path":"sprites/sprMarioNormalUp_final_Air/sprMarioNormalUp_final_Air.yy",},"LayerId":{"name":"3f639b61-7b85-4566-88ed-6acdfc4103af","path":"sprites/sprMarioNormalUp_final_Air/sprMarioNormalUp_final_Air.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprMarioNormalUp_final_Air","path":"sprites/sprMarioNormalUp_final_Air/sprMarioNormalUp_final_Air.yy",},"resourceVersion":"1.0","name":"4c50c522-8614-4daa-941f-a4055155c9d7","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"4c50c522-8614-4daa-941f-a4055155c9d7","path":"sprites/sprMarioSpecialAttackUp_final_Air/sprMarioSpecialAttackUp_final_Air.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"4c50c522-8614-4daa-941f-a4055155c9d7","path":"sprites/sprMarioSpecialAttackUp_final_Air/sprMarioSpecialAttackUp_final_Air.yy",},"LayerId":{"name":"3f639b61-7b85-4566-88ed-6acdfc4103af","path":"sprites/sprMarioSpecialAttackUp_final_Air/sprMarioSpecialAttackUp_final_Air.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprMarioSpecialAttackUp_final_Air","path":"sprites/sprMarioSpecialAttackUp_final_Air/sprMarioSpecialAttackUp_final_Air.yy",},"resourceVersion":"1.0","name":"4c50c522-8614-4daa-941f-a4055155c9d7","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprMarioNormalUp_final_Air","path":"sprites/sprMarioNormalUp_final_Air/sprMarioNormalUp_final_Air.yy",},
+    "spriteId": {"name":"sprMarioSpecialAttackUp_final_Air","path":"sprites/sprMarioSpecialAttackUp_final_Air/sprMarioSpecialAttackUp_final_Air.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"4513d03a-bcf7-4cfe-bcd5-f9167dcf1674","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4c50c522-8614-4daa-941f-a4055155c9d7","path":"sprites/sprMarioNormalUp_final_Air/sprMarioNormalUp_final_Air.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4513d03a-bcf7-4cfe-bcd5-f9167dcf1674","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4c50c522-8614-4daa-941f-a4055155c9d7","path":"sprites/sprMarioSpecialAttackUp_final_Air/sprMarioSpecialAttackUp_final_Air.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -54,13 +54,13 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 0,
-    "yorigin": 0,
+    "xorigin": 34,
+    "yorigin": 77,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprMarioNormalUp_final_Air","path":"sprites/sprMarioNormalUp_final_Air/sprMarioNormalUp_final_Air.yy",},
+    "parent": {"name":"sprMarioSpecialAttackUp_final_Air","path":"sprites/sprMarioSpecialAttackUp_final_Air/sprMarioSpecialAttackUp_final_Air.yy",},
     "resourceVersion": "1.3",
-    "name": "sprMarioNormalUp_final_Air",
+    "name": "sprMarioSpecialAttackUp_final_Air",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Speedrunner Mario/Air.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sprMarioNormalUp_final_Air",
+  "name": "sprMarioSpecialAttackUp_final_Air",
   "tags": [],
   "resourceType": "GMSprite",
 }

@@ -10,10 +10,8 @@ function EnterIdleMario()
 	sprite_index = sprMarioIdle;
 	image_index = 0;
 	
-	if(facingRight)
-		image_xscale = 1;
-	else
-		image_xscale = -1;
+	if(inputHorizMov != 0)
+		image_xscale = inputHorizMov;
 }
 
 //Comprueba si queremos cambiar de estado

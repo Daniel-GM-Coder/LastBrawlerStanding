@@ -54,12 +54,11 @@ function NextStateWalkMario()
 
 function EnterWalkAirMario()
 {	
-	sprite_index = sprMarioJumpIdle;
+	if(sprite_index != sprMarioDamagedFly && sprite_index != sprMarioSpecialAttackUp_final_Air)
+		sprite_index = sprMarioJumpIdle;
+	
 	if(inputHorizMov != 0)
-	{
-		//speedX = maxWalkSpeed * 4 * inputHorizMov;
 		image_xscale = 1 * inputHorizMov;
-	}
 }
 
 //Comprueba si queremos cambiar de estado
