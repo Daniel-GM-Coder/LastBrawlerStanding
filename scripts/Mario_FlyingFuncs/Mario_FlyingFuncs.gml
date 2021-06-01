@@ -13,10 +13,11 @@ function EnterFlyingMario(animSpriteIndex)
 //Comprueba si queremos cambiar de estado
 function NextStateFlyingMario()
 {
-	if(inputVerMov == 1)
+	if(inputVerMov2 == 1)
 		return 9;
 	
 	if(!onAir)
 		return 0;
+		
 	return state;
 }

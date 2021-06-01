@@ -1,7 +1,7 @@
 //Entrar en el estado
 function EnterJumpIdleMario()
 {
-	if(!onAir && (sprite_index == sprMarioIdle || sprite_index == sprMarioWalk))
+	if(!onAir && !falling && (sprite_index == sprMarioIdle || sprite_index == sprMarioWalk))
 	{
 		speedY = -20;
 		onAir = true;
@@ -15,10 +15,8 @@ function EnterJumpIdleMario()
 	sprite_index = sprMarioJumpIdle;
 	image_index = 0;
 	
-	if(facingRight)
-		image_xscale = 1;
-	else
-		image_xscale = -1;
+	if(inputHorizMov != 0)
+		image_xscale = inputHorizMov;
 }
 
 //Comprueba si queremos cambiar de estado
@@ -41,12 +39,12 @@ function NextStateJumpIdleMario()
 		
 	if(inputSpecialUpAttack)
 		return 16;
-	
+
+	if(inputVerMov2 != 0 || falling)
+		return state;
+		
 	if(inputHorizMov != 0)
 		return 10;
-
-	if(inputVerMov2 != 0)
-		return state;
 
 	if(!onAir)
 		return 0;

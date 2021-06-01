@@ -40,7 +40,7 @@ function NextStateWalkMario()
 	if(inputSpecialUpAttack)
 		return 8;
 	
-	if(inputVerMov == 1)
+	if(inputVerMov == 1 || falling)
 		return 9;
 
 	if(inputHorizMov == 0)
@@ -81,7 +81,7 @@ function NextStateWalkAirMario()
 	
 	if(inputSpecialUpAttack)
 		return 16;
-	
+		
 	if(inputVerMov2 != 0)
 		return 9;
 	
