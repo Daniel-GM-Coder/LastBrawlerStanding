@@ -8,10 +8,12 @@ function EnterAttackMario(animSpriteIndex, hitMaskIndex)
 		speedY = 0;
 	}
 	
-	if(sprite_index == sprMarioSpecialAttackDown_initial)
+	//Hacer IF por cada ataque que tenga una funcionalidad distinta de una simple hitbox
+	
+	if(sprite_index == sprMarioSpecialAttackDown_initial && image_index >= image_number - 1)
 		sprite_index = sprMarioSpecialAttackDown_final;
 		
-	else if(sprite_index == sprMarioSpecialAttackUp_initial_Air)
+	else if(sprite_index == sprMarioSpecialAttackUp_initial_Air && image_index >= image_number - 1)
 	{
 		sprite_index = sprMarioSpecialAttackUp_final_Air;
 		speedY = -30;
@@ -42,7 +44,7 @@ function NextAttackMario(returnToState)
 	if(!inputSpecialDownAttack && (sprite_index == sprMarioSpecialAttackDown_initial || sprite_index == sprMarioSpecialAttackDown_final))
 		return returnToState;
 	
-	if((sprite_index == sprMarioSpecialAttackDown_initial || sprite_index == sprMarioSpecialAttackDown_final) && image_index >= image_number - 1)
+	if(sprite_index == sprMarioSpecialAttackDown_initial || sprite_index == sprMarioSpecialAttackDown_final)
 		return state;
 		
 	else if(sprite_index == sprMarioSpecialAttackUp_final_Air && speedY > 0)

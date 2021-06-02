@@ -1,6 +1,7 @@
 //Entrar en el estado
 function EnterIdleMario()
 {
+	//Ambos saltos disponibles
 	onAir = false;
 	onAir2 = false;
 	

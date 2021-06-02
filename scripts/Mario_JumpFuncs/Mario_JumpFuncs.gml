@@ -1,6 +1,7 @@
 //Entrar en el estado
 function EnterJumpIdleMario()
 {
+	//Sólo salta si esta en el idle o andando, y no si está cayendo
 	if(!onAir && !falling && (sprite_index == sprMarioIdle || sprite_index == sprMarioWalk))
 	{
 		speedY = -20;
@@ -40,7 +41,7 @@ function NextStateJumpIdleMario()
 	if(inputSpecialUpAttack)
 		return 16;
 
-	if(inputVerMov2 != 0 || falling)
+	if(inputVerMov2 != 0 || falling) //Si no usa el segundo salto o está cayendo(después de andar) vuelve al idle aéreo
 		return state;
 		
 	if(inputHorizMov != 0)

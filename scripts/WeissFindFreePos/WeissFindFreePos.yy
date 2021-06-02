@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "WeissMP",
-    "path": "folders/Scripts/WeissMP.yy",
+    "name": "WeissSM",
+    "path": "folders/Scripts/WeissSM.yy",
   },
   "resourceVersion": "1.0",
   "name": "WeissFindFreePos",

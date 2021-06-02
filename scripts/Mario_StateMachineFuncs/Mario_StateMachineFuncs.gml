@@ -26,7 +26,7 @@ function UpdateStateMachineMario()
 	if(nextState !=	state)
 		SMChangeStateMario(nextState);
 		
-	else if(nextState == 9 || nextState == 1 || nextState == 10 || nextState == 6 || nextState == 16)
+	else if(nextState == 9 || nextState == 1 || nextState == 10 || nextState == 6 || nextState == 16) //Estados que tengan que volver a sí mismos
 		SMChangeStateMario(nextState);
 }
 
@@ -45,6 +45,7 @@ function SmNextStateMario()
 			nextState = NextStateWalkMario();
 			break;
 		case 3:
+		//NextAttacks en el suelo, se les pasa como parámetro el idle al que deben volver
 			nextState = NextAttackMario(0); //right & left normal
 			break;
 		case 4:
@@ -71,6 +72,7 @@ function SmNextStateMario()
 			nextState = NextStateWalkAirMario();
 			break;
 		case 11:
+		//NextAttacks en el aire, se les pasa como parámetro el idle al que deben volver
 			nextState = NextAttackMario(9); //right & left normal
 			break;
 		case 12:
@@ -89,7 +91,7 @@ function SmNextStateMario()
 			nextState = NextAttackMario(9); //up special
 			break;
 		case 17:
-			nextState = NextStateFlyingMario(); //up special
+			nextState = NextStateFlyingMario();
 			break;	
 		default:
 			break;
@@ -101,7 +103,7 @@ function SmNextStateMario()
 //Cambia el estado acutal por el dado como parámetro
 function SMChangeStateMario(newState)
 {
-	if(state == newState && state != 9 && state != 1 && state != 10 && state != 6 && state != 16)
+	if(state == newState && state != 9 && state != 1 && state != 10 && state != 6 && state != 16) //Estados que tengan que volver a sí mismos
 		return;
 	
 	//Cambiar el estado
@@ -118,6 +120,7 @@ function SMChangeStateMario(newState)
 			nextState = EnterWalkMario();
 			break;
 		case 3:
+		//En los enter Attack, pasar animación y animación con hitbox
 			nextState = EnterAttackMario(sprMarioNormalAttackLeftRight,sprMarioNormalAttackLeftRight); //right & left normal
 			break;
 		case 4:
