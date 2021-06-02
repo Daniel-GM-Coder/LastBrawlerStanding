@@ -121,22 +121,22 @@ function SMChangeStateMario(newState)
 			break;
 		case 3:
 		//En los enter Attack, pasar animación y animación con hitbox
-			nextState = EnterAttackMario(sprMarioNormalAttackLeftRight,sprMarioNormalAttackLeftRight); //right & left normal
+			nextState = EnterAttackMario(sprMarioNormalAttackLeftRight, objMarioNormalAttackLeftRight_HitMask); //right & left normal
 			break;
 		case 4:
-			nextState = EnterAttackMario(sprMarioSpecialAttackLeftRight,sprMarioSpecialAttackLeftRight); //right & left special
+			nextState = EnterAttackMario(sprMarioSpecialAttackLeftRight, objMarioSpecialAttackLeftRight_HitMask); //right & left special
 			break;
 		case 5:
-			nextState = EnterAttackMario(sprMarioNormalAttackDown,sprMarioNormalAttackDown); //down normal
+			nextState = EnterAttackMario(sprMarioNormalAttackDown, objMarioNormalAttackDown_HitMask); //down normal
 			break;
 		case 6:
-			nextState = EnterAttackMario(sprMarioSpecialAttackDown_initial,sprMarioSpecialAttackDown_final); //down special
+			nextState = EnterAttackMario(sprMarioSpecialAttackDown_initial, noone); //down special
 			break;
 		case 7:
-			nextState = EnterAttackMario(sprMarioNormalAttackUp,sprMarioNormalAttackUp); //up normal
+			nextState = EnterAttackMario(sprMarioNormalAttackUp, objMarioNormalAttackUp_HitMask); //up normal
 			break;
 		case 8:
-			nextState = EnterAttackMario(sprMarioSpecialAttackUp,sprMarioSpecialAttackUp); //up special
+			nextState = EnterAttackMario(sprMarioSpecialAttackUp, objMarioSpecialAttackUp_HitMask); //up special
 			break;
 
 		//Aerials
@@ -147,22 +147,22 @@ function SMChangeStateMario(newState)
 			nextState = EnterWalkAirMario();
 			break;
 		case 11:
-			nextState = EnterAttackMario(sprMarioNormalAttackLeftRight_Air, sprMarioNormalAttackLeftRight_Air); //right & left normal
+			nextState = EnterAttackMario(sprMarioNormalAttackLeftRight_Air, objMarioNormalAttackLeftRight_Air_HitMask); //right & left normal
 			break;
 		case 12:
-			nextState = EnterAttackMario(sprMarioSpecialAttackLeftRight_Air, sprMarioSpecialAttackLeftRight_Air); //right & left special
+			nextState = EnterAttackMario(sprMarioSpecialAttackLeftRight_Air, objMarioSpecialAttackLeftRight_Air_HitMask); //right & left special
 			break;
 		case 13:
-			nextState = EnterAttackMario(sprMarioNormalAttackDown_Air, sprMarioNormalAttackDown_Air); //down normal
+			nextState = EnterAttackMario(sprMarioNormalAttackDown_Air, objMarioNormalAttackDown_Air_HitMask); //down normal
 			break;
 		case 14:
-			nextState = EnterAttackMario(sprMarioSpecialAttackDown_Air, sprMarioSpecialAttackDown_Air); //down special
+			nextState = EnterAttackMario(sprMarioSpecialAttackDown_Air, objMarioSpecialAttackDown_Air_HitMask); //down special
 			break;
 		case 15:
-			nextState = EnterAttackMario(sprMarioNormalAttackUp_Air, sprMarioNormalAttackUp_Air); //up normal
+			nextState = EnterAttackMario(sprMarioNormalAttackUp_Air, objMarioNormalAttackUp_Air_HitMask); //up normal
 			break;
 		case 16:
-			nextState = EnterAttackMario(sprMarioSpecialAttackUp_initial_Air, sprMarioSpecialAttackUp_initial_Air); //up special
+			nextState = EnterAttackMario(sprMarioSpecialAttackUp_initial_Air, noone); //up special
 			break;
 		case 17:
 			nextState = EnterFlyingMario(sprMarioDamagedFly); //damaged Flying

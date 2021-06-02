@@ -20,10 +20,15 @@ function EnterAttackMario(animSpriteIndex, hitMaskIndex)
 	}
 	else
 	{
-		if(sprite_index != sprMarioSpecialAttackDown_final && sprite_index != sprMarioSpecialAttackUp_final_Air)
+		if(sprite_index != sprMarioSpecialAttackDown_final && sprite_index != sprMarioSpecialAttackUp_final_Air && animSpriteIndex != sprite_index)
 		{
 			sprite_index = animSpriteIndex;
 			image_index = 0;
+			
+			//Crear la hitMask	
+			var hitMaskInstance = instance_create_depth(x, y, depth + 1, hitMaskIndex);
+			hitMaskInstance.image_xscale = image_xscale;
+			//hitMaskInstance.owner = self;
 		}
 		else
 		{
@@ -31,11 +36,6 @@ function EnterAttackMario(animSpriteIndex, hitMaskIndex)
 				image_xscale = -inputHorizMov;
 		}
 	}
-	
-	//Crear la hitMask
-	//var hitMaskInstance = instance_create_depth(x, y, depth + 1, hitMaskIndex);
-	//hitMaskInstance.image_xscale = image_xscale;
-	//hitMaskInstance.owner = self;
 }
 
 //Comprueba si queremos cambiar de estado
@@ -44,7 +44,7 @@ function NextAttackMario(returnToState)
 	if(!inputSpecialDownAttack && (sprite_index == sprMarioSpecialAttackDown_initial || sprite_index == sprMarioSpecialAttackDown_final))
 		return returnToState;
 	
-	if(sprite_index == sprMarioSpecialAttackDown_initial || sprite_index == sprMarioSpecialAttackDown_final)
+	if((sprite_index == sprMarioSpecialAttackUp_initial_Air ||sprite_index == sprMarioSpecialAttackDown_initial || sprite_index == sprMarioSpecialAttackDown_final) && image_index >= image_number - 1)
 		return state;
 		
 	else if(sprite_index == sprMarioSpecialAttackUp_final_Air && speedY > 0)
