@@ -1,4 +1,4 @@
-damagePlayer = DamagePlayer1;
+damagePlayer = DamagePlayer2;
 
 if(playerNumber) {
 	controllerDevice = obj_DeviceManager.player1AssignedController;
