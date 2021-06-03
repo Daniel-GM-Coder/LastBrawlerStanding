@@ -1,3 +1,4 @@
+damagePlayer = DamagePlayer1;
 //Inputs
 PlayerInputsMario();
 

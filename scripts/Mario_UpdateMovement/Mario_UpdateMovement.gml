@@ -1,6 +1,7 @@
 function UpdateMovementMario(){
 	
 	//Sólo hay aceleración horizontal si el player está en el aire, ya sea cayendo o por haber saltado
+	
 	if(onAir || falling)
 	{
 		var targetSpeedX = 0;

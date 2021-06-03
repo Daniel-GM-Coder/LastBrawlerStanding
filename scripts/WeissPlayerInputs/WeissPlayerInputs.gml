@@ -3,6 +3,7 @@ function WeissPlayerInputs(){
 	inputHorizMov = 0;
 	inputVerMov = 0;
 	inputVerMov2 = 0;
+	inputFlying = false;
 	
 	if(keyboard_check(ord("A")))
 	{
@@ -41,9 +42,8 @@ function WeissPlayerInputs(){
 	inputNormalAttack = keyboard_check(ord("J"));
 	inputSpecialAttack = keyboard_check(ord("K"));
 	
-	if(keyboard_check(ord("X")))
+	if(hitted)
 	{
-		//inputFlying = true;
-		//Usar esto para probar
+		inputFlying = true;
 	}
 }

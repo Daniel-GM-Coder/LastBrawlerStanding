@@ -110,7 +110,7 @@ function WeissNextAttack(returnToState)
 	{
 		if(sprite_index == spr_Weiss_BasicSpecial)
 		{
-			if(facingRight == 0)
+			if(image_xscale == -1)
 			{
 				var WeissProyect = instance_create_depth(x - 70,y - 80,depth,obj_Weiss_Proyectile);
 				WeissProyect.image_xscale = -1;

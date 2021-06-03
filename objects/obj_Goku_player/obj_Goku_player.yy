@@ -3,7 +3,7 @@
     "name": "spr_Goku_Idle",
     "path": "sprites/spr_Goku_Idle/spr_Goku_Idle.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
