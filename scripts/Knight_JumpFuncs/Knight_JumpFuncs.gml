@@ -16,6 +16,9 @@ function KnightEnterJumpIdle()
 		image_index = 0;
 	}
 
+	if(sprite_index == spr_Knight_NeutralAir) {
+		sprite_index = spr_Knight_FirstJump;
+	}
 	
 	if(facingRight)
 		image_xscale = 1;

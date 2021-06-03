@@ -54,6 +54,11 @@ function KnightEnterAttack(animSpriteIndex, hitMaskIndex)
 			
 	}
 	
+	if(sprite_index == spr_Knight_Taunt) {
+		if(image_index == 0)
+			instance_create_depth(x ,y,depth, obj_Knight_Bench);
+	}
+	
 	if(sprite_index == spr_Knight_FSpecial) {
 		if(image_index == 0) {
 			grav = 0;
@@ -79,10 +84,7 @@ function KnightEnterAttack(animSpriteIndex, hitMaskIndex)
 		if(image_index == image_number - 2)
 				grav = 1;
 	}
-	
-	if(sprite_index == spr_Knight_FrontAir) {
-		
-	}
+
 
 	if (sprite_index == spr_Knight_UpSpecial) {
 		
@@ -95,6 +97,21 @@ function KnightEnterAttack(animSpriteIndex, hitMaskIndex)
 			speedY = -25;	
 			grav = 1;
 		}		
+	}
+	
+	if(sprite_index == spr_Knight_NeutralAir) {
+		if(image_index == 0) {
+			speedY = 0;		
+			speedX = 0;		
+			grav = 0;
+		}
+		if(onAir) {
+			speedX = 0;
+			speedY = 0;
+		}
+		if(image_index > 7) {	
+			grav = 1;
+		}	
 	}
 	
 	if (sprite_index == spr_Knight_DownSpecial) {
@@ -150,11 +167,15 @@ function KnightNextAttack(returnToState)
 	//		return 19;
 	//	}
 	//}
+		
+	if(sprite_index == spr_Knight_FrontAir && !onAir) {
+		speedX = 0;
+	}
 	
-	
-
 	if(sprite_index == spr_Knight_UpSpecial && image_index >= image_number - 1)
 		return 17;
+	else if(sprite_index == spr_Knight_NeutralAir && image_index >= image_number - 1)
+		return 9;
 	else if(sprite_index == spr_Knight_FSpecial && (image_index >= image_number - 1 || image_index >= image_number - 2) && inputNormalSide && !onAir)
 		return 3;
 	else if(sprite_index == spr_Knight_FSpecial && (image_index >= image_number - 1 || image_index >= image_number - 2) && inputNormalSide && onAir)

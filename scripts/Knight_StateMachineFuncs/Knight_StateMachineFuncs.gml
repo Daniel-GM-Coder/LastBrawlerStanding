@@ -32,7 +32,7 @@ function KnightUpdateStateMachine()
 	if(nextState !=	state)
 		KnightChangeState(nextState);
 		
-	else if(nextState == 9 || nextState == 1 || nextState == 10 || nextState == 8 || nextState == 16 || nextState == 6 || nextState == 14 || nextState == 19 || nextState == 4 || nextState == 12) 
+	else if(nextState == 9 || nextState == 1 || nextState == 10 || nextState == 8 || nextState == 16 || nextState == 6 || nextState == 14 || nextState == 19 || nextState == 4 || nextState == 12 || nextState == 21 || nextState == 20) 
 		KnightChangeState(nextState);
 }
 
@@ -74,6 +74,9 @@ function KnightNextState()
 		case 19:
 			nextState = KnightNextAttack(0); // special
 			break;
+		case 21:
+			nextState = KnightNextAttack(0); // special
+			break;	
 
 			
 		//Aerials
@@ -117,7 +120,7 @@ function KnightNextState()
 //Cambia el estado acutal por el dado como parámetro
 function KnightChangeState(newState)
 {
-	if(state == newState && state != 9 && state != 1 && state != 10 &&  state != 8 &&  state != 16 && state != 6 && state != 14 && state != 19 && state != 4 && state != 12)
+	if(state == newState && state != 9 && state != 1 && state != 10 &&  state != 8 &&  state != 16 && state != 6 && state != 14 && state != 19 && state != 4 && state != 12 && state != 20 && state != 21)
 		return;
 	
 	//Cambiar el estado
@@ -157,7 +160,9 @@ function KnightChangeState(newState)
 		case 19:
 			nextState = KnightEnterAttack(spr_Knight_NeutralSpecial,spr_Knight_NeutralSpecial); // special
 			break;
-
+		case 21:
+			nextState = KnightEnterAttack(spr_Knight_Taunt, spr_Knight_Taunt); //air attack
+			break;
 		//Aerials
 		case 9:
 			nextState = KnightEnterJumpIdle();
@@ -189,6 +194,7 @@ function KnightChangeState(newState)
 		case 20:
 			nextState = KnightEnterAttack(spr_Knight_NeutralAir, spr_Knight_NeutralAir); //air attack
 			break;
+
 		default:
 			break;
 	}
