@@ -1,0 +1,1 @@
+instance_create_depth(910,450,1,obj_KnightPlayer);

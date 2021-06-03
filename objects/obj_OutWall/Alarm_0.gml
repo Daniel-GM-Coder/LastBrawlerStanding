@@ -1,1 +1,0 @@
-instance_create_depth(1010,450,1,obj_Goku_player);

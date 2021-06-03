@@ -1,0 +1,1 @@
+instance_create_depth(1010,450,1,obj_Weiss_Player2);

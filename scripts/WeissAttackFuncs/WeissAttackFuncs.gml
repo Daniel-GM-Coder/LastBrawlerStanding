@@ -121,6 +121,7 @@ function WeissNextAttack(returnToState)
 				var WeissProyect = instance_create_depth(x - 70,y - 80,depth,obj_Weiss_Proyectile);
 				WeissProyect.image_xscale = -1;
 				WeissProyect.hspeed = -5;
+				WeissProyect.owner = self;
 				CastingFinished = false;
 			}
 			else
@@ -128,6 +129,7 @@ function WeissNextAttack(returnToState)
 				var WeissProyect = instance_create_depth(x + 70,y - 80,depth,obj_Weiss_Proyectile);
 				WeissProyect.image_xscale = 1;
 				WeissProyect.hspeed = 5;
+				WeissProyect.owner = self;
 				CastingFinished = false;
 			}
 		}
