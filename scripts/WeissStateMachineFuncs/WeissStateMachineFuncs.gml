@@ -21,8 +21,14 @@
 */
 function WeissUpdateStateMachine()
 {
+	if(inputFlying)
+	{
+		WeissSMChangeState(17);
+		return;
+	}
+		
 	var nextState = WeissSmNextState();
-	
+		
 	if(nextState !=	state)
 		WeissSMChangeState(nextState);
 		

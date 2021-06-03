@@ -7,6 +7,8 @@ function KnightEnterIdle()
 	speedX = 0;
 	speedY = 0;
 	
+	image_blend = noone;
+	
 	sprite_index = spr_Knight_Idle;
 	image_index = 0;
 	

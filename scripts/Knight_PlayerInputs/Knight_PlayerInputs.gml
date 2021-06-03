@@ -105,9 +105,7 @@ function KnightPlayerInputs(){
 		
 	inputSpecialUpAttack = gamepad_button_check_pressed(obj_DeviceManager.player1AssignedController, gp_face4) && 
 		gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padu) &&
-		!gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padd) &&
-		!gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padl) &&
-		!gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padr);
+		!gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padd);
 	
 	
 	if(keyboard_check(ord("X")))

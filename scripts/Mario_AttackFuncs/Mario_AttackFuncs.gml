@@ -11,7 +11,11 @@ function EnterAttackMario(animSpriteIndex, hitMaskIndex)
 	//Hacer IF por cada ataque que tenga una funcionalidad distinta de una simple hitbox
 	
 	if(sprite_index == sprMarioSpecialAttackDown_initial && image_index >= image_number - 1)
+	{
 		sprite_index = sprMarioSpecialAttackDown_final;
+		maxWalkSpeed += 5;
+		accel += 0.1;
+	}
 		
 	else if(sprite_index == sprMarioSpecialAttackUp_initial_Air && image_index >= image_number - 1)
 	{
@@ -26,8 +30,11 @@ function EnterAttackMario(animSpriteIndex, hitMaskIndex)
 			image_index = 0;
 			
 			//Crear la hitMask	
-			var hitMaskInstance = instance_create_depth(x, y, depth + 1, hitMaskIndex);
-			hitMaskInstance.image_xscale = image_xscale;
+			if(hitMaskIndex != noone)
+			{
+				var hitMaskInstance = instance_create_depth(x, y, depth + 1, hitMaskIndex);
+				hitMaskInstance.image_xscale = image_xscale;
+			}
 			//hitMaskInstance.owner = self;
 		}
 		else

@@ -40,7 +40,7 @@ function WeissNextStateWalk()
 	if(inputSpecialUpAttack)
 		return 8;
 	
-	if(inputVerMov == 1)
+	if(inputVerMov == 1 || falling)
 		return 9;
 
 	if(inputHorizMov == 0)

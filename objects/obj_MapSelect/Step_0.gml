@@ -41,6 +41,13 @@ if (gamepad_button_check_pressed(obj_DeviceManager.player1AssignedController, gp
 	firstTime = false;
 }
 
+if (keyboard_check_released(ord("B")))
+{
+	audio_play_sound(MainMenuAccept,2,false);
+	alarm [0] = room_speed*2;
+	firstTime = false;
+}
+
 
 if(seleccionMapa > 3)
 	{seleccionMapa = 0;}

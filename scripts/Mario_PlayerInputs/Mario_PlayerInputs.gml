@@ -7,10 +7,12 @@ function PlayerInputsMario(){
 	if(keyboard_check(ord("A")))
 	{
 		inputHorizMov -= 1;
+		facingRight = -1;
 	}
 	if(keyboard_check(ord("D")))
 	{
 		inputHorizMov += 1;
+		facingRight = 1;
 	}
 	if(keyboard_check_pressed(ord("W")))
 	{

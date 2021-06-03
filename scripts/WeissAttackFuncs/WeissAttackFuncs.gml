@@ -53,15 +53,15 @@ function WeissEnterAttack(animSpriteIndex, hitMaskIndex)
 				{
 					sprite_index = spr_Weiss_UpSpecial;
 					image_xscale = -1;
-					direction = 100;
-					speed = 10;
+					speedY = -30;
+					speedX = -5;
 				}
 			else if (facingRight == 1)
 				{
 					sprite_index = spr_Weiss_UpSpecial;
 					image_xscale = 1;
-					direction = 80;
-					speed = 10;
+					speedY = -30;
+					speedX = 5;
 				}
 		}
 		
@@ -72,14 +72,14 @@ function WeissEnterAttack(animSpriteIndex, hitMaskIndex)
 				sprite_index = spr_Weiss_SideSpecial;
 				image_xscale = -1;
 				direction = 180;
-				speed = 10;
+				speedX = -10;
 			}
 			else if (facingRight == 1)
 			{
 				sprite_index = spr_Weiss_SideSpecial;
 				image_xscale = 1;
 				direction = 0;
-				speed = 10;
+				speedX = 10;
 			}
 
 }
@@ -110,7 +110,7 @@ function WeissNextAttack(returnToState)
 	{
 		if(sprite_index == spr_Weiss_BasicSpecial)
 		{
-			if(facingRight == 0)
+			if(image_xscale == -1)
 			{
 				var WeissProyect = instance_create_depth(x - 70,y - 80,depth,obj_Weiss_Proyectile);
 				WeissProyect.image_xscale = -1;
@@ -129,5 +129,5 @@ function WeissNextAttack(returnToState)
 	}
 	else
 		return state;
-}
+	}
 }

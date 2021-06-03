@@ -10,6 +10,11 @@ function EnterFlyingMario(animSpriteIndex)
 		speedX = maxWalkSpeed * inputHorizMov;
 		
 	//Hacer las movidas de que salgan volando al ser golpeados con X porcentaje
+	if(hitted)
+	{
+		speedX = maxWalkSpeed + damagePlayer * 0.1;
+		speedY = maxWalkSpeed + damagePlayer * 0.1;
+	}
 }
 
 //Comprueba si queremos cambiar de estado

@@ -19,6 +19,9 @@ function WeissEnterIdle()
 //Comprueba si queremos cambiar de estado
 function WeissNextStateIdle()
 {
+	if(inputFlying)
+		return 17;
+		
 	if(inputNormalSide)
 		return 3;
 		

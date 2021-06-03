@@ -1,7 +1,7 @@
 //Entrar en el estado
 function WeissEnterJumpIdle()
 {
-	if(!onAir)
+	if(!onAir && !falling && (sprite_index == spr_Weiss_Idle || sprite_index == spr_Weiss_Walk))
 	{
 		speedY = -20;
 		onAir = true;
@@ -51,7 +51,7 @@ function WeissNextStateJumpIdle()
 	if(inputHorizMov != 0)
 		return 10;
 
-	if(inputVerMov2 != 0)
+	if(inputVerMov2 != 0 || falling)
 		return state;
 
 	if(!onAir)

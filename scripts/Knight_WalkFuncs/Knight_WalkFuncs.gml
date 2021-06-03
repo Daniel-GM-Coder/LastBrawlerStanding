@@ -40,7 +40,7 @@ function KnightNextStateWalk()
 	if(inputSpecialUpAttack)
 		return 8;
 	
-	if(inputVerMov == 1)
+	if(inputVerMov == 1 || falling)
 		return 9;
 
 	if(inputHorizMov == 0)
@@ -69,10 +69,10 @@ function KnightEnterWalkAir()
 //Comprueba si queremos cambiar de estado
 function KnightNextStateWalkAir()
 {
-	if(inputNormalAttack)
+	if(inputNormalSide)
 		return 11;
 		
-	if(inputSpecialAttack)
+	if(inputSpecialSide)
 		return 12;
 	
 	if(inputNormalDownAttack)
