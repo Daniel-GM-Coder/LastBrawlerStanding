@@ -23,7 +23,7 @@ function EnterJumpIdleMario()
 //Comprueba si queremos cambiar de estado
 function NextStateJumpIdleMario()
 {
-	if(inputNormalAttack)
+	if(inputNormalAttack || inputNormalSide)
 		return 11;
 		
 	if(inputSpecialAttack)

@@ -131,7 +131,7 @@ function KnightEnterAttack(animSpriteIndex, hitMaskIndex)
 			image_index = 19;
 	}
 	
-	if(hitMaskIndex != noone)
+	if(hitMaskIndex != noone && image_index == 0)
 	{
 		var hitMaskInstance = instance_create_depth(x, y, depth + 1, hitMaskIndex);
 		hitMaskInstance.image_xscale = image_xscale;

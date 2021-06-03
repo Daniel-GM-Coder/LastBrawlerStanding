@@ -8,16 +8,14 @@ if(!hitted && other != owner && image_index >= firstValidFrame && image_index < 
 	{
 		other.speedX = (hitSpeedX + other.damagePlayer * 0.1) * owner.facingRight;
 		other.speedY = -(hitSpeedY + other.damagePlayer * 0.3);
+		other.accel = 0.25;
+		other.alarm[0] = 1 * room_speed;
 	}
 	//Dañar al otro jugador
-	switch(other.playerNumber){
-		
-		case 0:
-			DamagePlayer2 += damage;
-			break;
-		case 1:
-			DamagePlayer1 += damage;
-			break;
+	if(!other.playerNumber) {
+		DamagePlayer1 += damage;
+	}else {
+		DamagePlayer2 += damage;
 	}
 	show_debug_message("Golpeado");
 }

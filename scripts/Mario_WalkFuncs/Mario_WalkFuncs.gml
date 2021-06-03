@@ -64,7 +64,7 @@ function EnterWalkAirMario()
 //Comprueba si queremos cambiar de estado
 function NextStateWalkAirMario()
 {
-	if(inputNormalAttack)
+	if(inputNormalAttack || inputNormalSide)
 		return 11;
 		
 	if(inputSpecialAttack)
