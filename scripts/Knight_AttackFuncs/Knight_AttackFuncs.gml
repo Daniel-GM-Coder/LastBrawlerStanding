@@ -9,7 +9,19 @@ function KnightEnterAttack(animSpriteIndex, hitMaskIndex)
 	}
 	
 	sprite_index = animSpriteIndex;
-	image_index = 0;
+	/*image_index = 0;*/
+
+	if(sprite_index == spr_Knight_UpSpecial) {
+
+		if(image_index < 8) {
+			speedX = 0;
+			speedY = 0;
+		}
+		
+		if(image_index == 8) {
+			speedY = -10;
+		}
+	}
 
 	//if(CastingFinished)
 	//{
@@ -28,25 +40,8 @@ function KnightEnterAttack(animSpriteIndex, hitMaskIndex)
 	//			CastingFinished = false;
 	//		}
 	//}	
-	
-		if(sprite_index == spr_Weiss_DownSpecial)
-			{
-				
-				if(instance_number(obj_Weiss_Platform) < 1)
-				{
-					if(facingRight == 0)
-					{
-						instance_create_depth(x - 350, y - 40,depth,obj_Weiss_Platform);
-					}
-					else if(facingRight == 1)
-					{
-						instance_create_depth(x + 350, y - 40,depth,obj_Weiss_Platform);
-					}
-				}
-				else
-				{}
-			}
-	}
+
+}
 	//Crear la hitMask
 	//var hitMaskInstance = instance_create_depth(x, y, depth + 1, hitMaskIndex);
 	//hitMaskInstance.image_xscale = image_xscale;
@@ -66,23 +61,7 @@ function KnightNextAttack(returnToState)
 	//}
 	if(image_index >= image_number - 1)
 	{
-		if(sprite_index == spr_Weiss_BasicSpecial)
-		{
-			if(facingRight == 0)
-			{
-				var KnightProyect = instance_create_depth(x - 70,y - 80,depth,obj_Weiss_Proyectile);
-				KnightProyect.image_xscale = -1;
-				KnightProyect.hspeed = -5;
-				CastingFinished = false;
-			}
-			else
-			{
-				var KnightProyect = instance_create_depth(x + 70,y - 80,depth,obj_Weiss_Proyectile);
-				KnightProyect.image_xscale = 1;
-				KnightProyect.hspeed = 5;
-				CastingFinished = false;
-			}
-		}
+		
 		return returnToState;
 	}
 	else

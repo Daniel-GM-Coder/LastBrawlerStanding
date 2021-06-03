@@ -2,14 +2,19 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function getConnectedDevices(){
 	var conectedDevices;
+	var atLessOneConnected = false;
 	var gp_num = gamepad_get_device_count();
-	for (var i = 0; i < gp_num; i++;)
+	for (var i = 0; i < gp_num; i++;){
+	if gamepad_is_connected(i)
 	    {
-	    if gamepad_is_connected(i)
-	        {
-	        conectedDevices[i] = i;
-	        }
+	    conectedDevices[i] = i;
+		atLessOneConnected = true;
 	    }
+	}
+		
+	if(!atLessOneConnected) {
+		return noone;
+	}
 	return conectedDevices;
 }
 

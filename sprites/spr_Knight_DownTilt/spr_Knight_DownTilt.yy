@@ -1,5 +1,5 @@
 {
-  "bboxMode": 0,
+  "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
   "origin": 9,
@@ -7,9 +7,9 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 0,
-  "bbox_right": 103,
-  "bbox_top": 0,
+  "bbox_left": 10,
+  "bbox_right": 48,
+  "bbox_top": 20,
   "bbox_bottom": 65,
   "HTile": false,
   "VTile": false,
@@ -47,7 +47,7 @@
     "spriteId": {"name":"spr_Knight_DownTilt","path":"sprites/spr_Knight_DownTilt/spr_Knight_DownTilt.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 6.0,
+    "playbackSpeed": 10.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
@@ -87,7 +87,6 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b313c4d2-7b2c-4824-a6ed-4494557584fa","tags":[],"resourceType":"GMImageLayer",},
   ],
-  "nineSlice": null,
   "parent": {
     "name": "TheKnight",
     "path": "folders/Sprites/TheKnight.yy",
