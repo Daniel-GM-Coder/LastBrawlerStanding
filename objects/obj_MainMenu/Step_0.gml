@@ -23,13 +23,23 @@ else if keyboard_check_released(vk_down)
 if gamepad_button_check_pressed(obj_DeviceManager.player1AssignedController, gp_padr)
 {
 	audio_play_sound(MainMenuChange,2,false);
-	mainmenu ++;
+		mainmenu = 1;
 }
 
 else if gamepad_button_check_pressed(obj_DeviceManager.player1AssignedController, gp_padl)
 {
 	audio_play_sound(MainMenuChange,2,false);
-	mainmenu --;
+	mainmenu = 0;
+}
+else if gamepad_button_check_pressed(obj_DeviceManager.player1AssignedController, gp_padu)
+{
+	audio_play_sound(MainMenuChange,2,false);
+	mainmenu = 0;
+}
+else if gamepad_button_check_pressed(obj_DeviceManager.player1AssignedController, gp_padd)
+{
+	audio_play_sound(MainMenuChange,2,false);
+	mainmenu = 2;
 }
 
 

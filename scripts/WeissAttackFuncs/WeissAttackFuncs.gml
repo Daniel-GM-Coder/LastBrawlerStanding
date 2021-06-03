@@ -67,19 +67,24 @@ function WeissEnterAttack(animSpriteIndex, hitMaskIndex)
 		
 		if(sprite_index == spr_Weiss_SideSpecial)
 		{
+			if(image_index == 0) {
+				grav = 0;
+				speedY = 0;
+			}
 			if(facingRight == 0)
 			{
 				sprite_index = spr_Weiss_SideSpecial;
 				image_xscale = -1;
-				direction = 180;
 				speedX = -10;
 			}
 			else if (facingRight == 1)
 			{
 				sprite_index = spr_Weiss_SideSpecial;
 				image_xscale = 1;
-				direction = 0;
 				speedX = 10;
+			}
+			if(image_index == image_number - 2) {
+				grav = 1;
 			}
 
 }
