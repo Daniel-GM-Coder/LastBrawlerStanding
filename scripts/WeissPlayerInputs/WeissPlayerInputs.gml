@@ -88,7 +88,7 @@ function WeissPlayerInputs(){
 		!gamepad_button_check(controllerDevice, gp_padd);
 		
 	
-	if(hitted)
+	if(hitted && damagePlayer >= 40)
 	{
 		inputFlying = true;
 	}
