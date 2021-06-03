@@ -128,28 +128,28 @@ function WeissSMChangeState(newState)
 			nextState = WeissEnterWalk();
 			break;
 		case 3:
-			nextState = WeissEnterAttack(spr_Weiss_SideAttack,spr_Weiss_SideAttack); //right & left normal
+			nextState = WeissEnterAttack(spr_Weiss_SideAttack,obj_Weiss_SideAttack_HM); //right & left normal
 			break;
 		case 4:
-			nextState = WeissEnterAttack(spr_Weiss_SideSpecial,spr_Weiss_SideSpecial); //right & left special
+			nextState = WeissEnterAttack(spr_Weiss_SideSpecial,obj_Weiss_SideSpecial_HM); //right & left special
 			break;
 		case 5:
-			nextState = WeissEnterAttack(spr_Weiss_DownAttack,spr_Weiss_DownAttack); //down normal
+			nextState = WeissEnterAttack(spr_Weiss_DownAttack,obj_Weiss_DownAttack_HM); //down normal
 			break;
 		case 6:
-			nextState = WeissEnterAttack(spr_Weiss_DownSpecial,spr_Weiss_DownSpecial); //down special
+			nextState = WeissEnterAttack(spr_Weiss_DownSpecial,noone); //down special
 			break;
 		case 7:
-			nextState = WeissEnterAttack(spr_Weiss_UpAttack,spr_Weiss_UpAttack); //up normal
+			nextState = WeissEnterAttack(spr_Weiss_UpAttack,obj_Weiss_UpAttack_HM); //up normal
 			break;
 		case 8:
-			nextState = WeissEnterAttack(spr_Weiss_UpSpecial,sprMarioSpecialAttackUp); //up special
+			nextState = WeissEnterAttack(spr_Weiss_UpSpecial,obj_Weiss_UpSpecial_HM); //up special
 			break;
 		case 18:
-			nextState = WeissEnterAttack(spr_Weiss_BasicAttack,spr_Weiss_BasicAttack); // normal
+			nextState = WeissEnterAttack(spr_Weiss_BasicAttack,obj_Weiss_NormalAttack_HM); // normal
 			break;
 		case 19:
-			nextState = WeissEnterAttack(spr_Weiss_BasicSpecial,spr_Weiss_BasicSpecial); // special
+			nextState = WeissEnterAttack(spr_Weiss_BasicSpecial,noone); // special
 			break;
 
 		//Aerials
@@ -160,28 +160,28 @@ function WeissSMChangeState(newState)
 			nextState = WeissEnterWalkAir();
 			break;
 		case 11:
-			nextState = WeissEnterAttack(spr_Weiss_SideAir, spr_Weiss_SideAir); //right & left normal
+			nextState = WeissEnterAttack(spr_Weiss_SideAir, obj_Weiss_SideAir_HM); //right & left normal
 			break;
 		case 12:
-			nextState = WeissEnterAttack(spr_Weiss_SideSpecial, spr_Weiss_SideSpecial); //right & left special
+			nextState = WeissEnterAttack(spr_Weiss_SideSpecial, obj_Weiss_SideSpecial_HM); //right & left special
 			break;
 		case 13:
-			nextState = WeissEnterAttack(spr_Weiss_DownAir, spr_Weiss_DownAir); //down normal
+			nextState = WeissEnterAttack(spr_Weiss_DownAir, obj_Weiss_DownAir_HM); //down normal
 			break;
 		case 14:
-			nextState = WeissEnterAttack(spr_Weiss_DownSpecial, spr_Weiss_DownSpecial); //down special
+			nextState = WeissEnterAttack(spr_Weiss_DownSpecial, noone); //down special
 			break;
 		case 15:
-			nextState = WeissEnterAttack(spr_Weiss_UpAir,spr_Weiss_UpAir); //up normal
+			nextState = WeissEnterAttack(spr_Weiss_UpAir,obj_Weiss_UpAir_HM); //up normal
 			break;
 		case 16:
-			nextState = WeissEnterAttack(spr_Weiss_UpSpecial, spr_Weiss_UpSpecial); //up special
+			nextState = WeissEnterAttack(spr_Weiss_UpSpecial, obj_Weiss_UpSpecial_HM); //up special
 			break;
 		case 17:
 			nextState = WeissEnterFlying(spr_Weiss_Hurt); //damaged Flying
 			break;
 		case 20:
-			nextState = WeissEnterAttack(spr_Weiss_BasicAir, spr_Weiss_BasicAir); //air attack
+			nextState = WeissEnterAttack(spr_Weiss_BasicAir, obj_Weiss_NormalAir_HM); //air attack
 			break;
 		default:
 			break;

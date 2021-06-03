@@ -85,6 +85,11 @@ function WeissEnterAttack(animSpriteIndex, hitMaskIndex)
 }
 
 	//Crear la hitMask
+	if(hitMaskIndex != noone)
+	{
+		var hitMaskInstance = instance_create_depth(x, y, depth + 1, hitMaskIndex);
+		hitMaskInstance.image_xscale = image_xscale;
+	}
 	//var hitMaskInstance = instance_create_depth(x, y, depth + 1, hitMaskIndex);
 	//hitMaskInstance.image_xscale = image_xscale;
 	//hitMaskInstance.owner = self;

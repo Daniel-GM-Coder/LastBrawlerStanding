@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"09e9df22-a8e8-44fe-8543-c69062cdec36","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Weiss_HitBox",
     "path": "folders/Sprites/Weiss/Weiss_HitBox.yy",
