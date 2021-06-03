@@ -61,3 +61,7 @@ if (keyboard_check(ord("L")))
 	DamagePlayer2 = DamagePlayer2 - 1;
 }
 
+if (keyboard_check(vk_escape))
+{
+	room_goto(MapSelect);
+}	
