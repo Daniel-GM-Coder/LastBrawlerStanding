@@ -49,6 +49,7 @@
     {"id":{"name":"Note2","path":"notes/Note2/Note2.yy",},"order":1,},
     {"id":{"name":"spr_Weiss_BasicAirHB","path":"sprites/spr_Weiss_BasicAirHB/spr_Weiss_BasicAirHB.yy",},"order":1,},
     {"id":{"name":"spr_Knight_DownSpecial_HitMask","path":"sprites/spr_Knight_DownSpecial_HitMask/spr_Knight_DownSpecial_HitMask.yy",},"order":0,},
+    {"id":{"name":"objMarioNormalAttackLeftRight_HitMask","path":"objects/objMarioNormalAttackLeftRight_HitMask/objMarioNormalAttackLeftRight_HitMask.yy",},"order":5,},
     {"id":{"name":"WeissFlyingFuncs","path":"scripts/WeissFlyingFuncs/WeissFlyingFuncs.yy",},"order":2,},
     {"id":{"name":"snd_MarioMapMusic","path":"sounds/snd_MarioMapMusic/snd_MarioMapMusic.yy",},"order":8,},
     {"id":{"name":"spr_Weiss_BasicAttack","path":"sprites/spr_Weiss_BasicAttack/spr_Weiss_BasicAttack.yy",},"order":6,},

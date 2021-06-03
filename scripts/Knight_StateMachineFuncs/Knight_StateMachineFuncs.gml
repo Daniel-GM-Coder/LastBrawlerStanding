@@ -137,31 +137,31 @@ function KnightChangeState(newState)
 			nextState = KnightEnterWalk();
 			break;
 		case 3:
-			nextState = KnightEnterAttack(spr_Knight_FTilt,spr_Knight_FTilt); //right & left normal
+			nextState = KnightEnterAttack(spr_Knight_FTilt, obj_KnightNormalAttackLeftRight_HitMask); //right & left normal
 			break;
 		case 4:
-			nextState = KnightEnterAttack(spr_Knight_FSpecial,spr_Knight_FSpecial); //right & left special
+			nextState = KnightEnterAttack(spr_Knight_FSpecial, noone); //right & left special
 			break;
 		case 5:
-			nextState = KnightEnterAttack(spr_Knight_DownTilt,spr_Knight_DownTilt); //down normal
+			nextState = KnightEnterAttack(spr_Knight_DownTilt, obj_KnightNormalAttackDown_HitMask); //down normal
 			break;
 		case 6:
-			nextState = KnightEnterAttack(spr_Knight_DownSpecial,spr_Knight_DownSpecial); //down special
+			nextState = KnightEnterAttack(spr_Knight_DownSpecial, obj_KnightSpecialAttackDown_HitMask); //down special
 			break;
 		case 7:
-			nextState = KnightEnterAttack(spr_Knight_UpAttack,spr_Knight_UpAttack); //up normal
+			nextState = KnightEnterAttack(spr_Knight_UpAttack, obj_KnightNormalAttackUp_HitMask); //up normal
 			break;
 		case 8:
-			nextState = KnightEnterAttack(spr_Knight_UpSpecial,spr_Knight_UpSpecial); //up special
+			nextState = KnightEnterAttack(spr_Knight_UpSpecial, noone); //up special
 			break;
 		case 18:
-			nextState = KnightEnterAttack(spr_Knight_Jab,spr_Knight_Jab); // normal
+			nextState = KnightEnterAttack(spr_Knight_Jab, obj_KnightJabAttack_HitMask); // normal
 			break;
 		case 19:
-			nextState = KnightEnterAttack(spr_Knight_NeutralSpecial,spr_Knight_NeutralSpecial); // special
+			nextState = KnightEnterAttack(spr_Knight_NeutralSpecial,noone); // special
 			break;
 		case 21:
-			nextState = KnightEnterAttack(spr_Knight_Taunt, spr_Knight_Taunt); //air attack
+			nextState = KnightEnterAttack(spr_Knight_Taunt, noone); //air attack
 			break;
 		//Aerials
 		case 9:
@@ -171,28 +171,28 @@ function KnightChangeState(newState)
 			nextState = KnightEnterWalkAir();
 			break;
 		case 11:
-			nextState = KnightEnterAttack(spr_Knight_FrontAir, spr_Knight_FrontAir); //right & left normal
+			nextState = KnightEnterAttack(spr_Knight_FrontAir, obj_KnightNormalAttackLeftRight_Air_HitMask); //right & left normal
 			break;
 		case 12:
-			nextState = KnightEnterAttack(spr_Knight_FSpecial, spr_Knight_FSpecial); //right & left special
+			nextState = KnightEnterAttack(spr_Knight_FSpecial, noone); //right & left special
 			break;
 		case 13:
-			nextState = KnightEnterAttack(spr_Knight_DownAir, spr_Knight_DownAir); //down normal
+			nextState = KnightEnterAttack(spr_Knight_DownAir, obj_KnightNormalAttackDown_Air_HitMask); //down normal
 			break;
 		case 14:
-			nextState = KnightEnterAttack(spr_Knight_DownSpecial, spr_Knight_DownSpecial); //down special
+			nextState = KnightEnterAttack(spr_Knight_DownSpecial, obj_KnightSpecialAttackDown_HitMask); //down special
 			break;
 		case 15:
-			nextState = KnightEnterAttack(spr_Knight_UpAir,spr_Knight_UpAir); //up normal
+			nextState = KnightEnterAttack(spr_Knight_UpAir,obj_KnightNormalAttackUp_Air_HitMask); //up normal
 			break;
 		case 16:
-			nextState = KnightEnterAttack(spr_Knight_UpSpecial, spr_Knight_UpSpecial); //up special
+			nextState = KnightEnterAttack(spr_Knight_UpSpecial, noone); //up special
 			break;
 		case 17:
 			nextState = KnightEnterFlying(spr_Knight_Fall2); //damaged Flying
 			break;
 		case 20:
-			nextState = KnightEnterAttack(spr_Knight_NeutralAir, spr_Knight_NeutralAir); //air attack
+			nextState = KnightEnterAttack(spr_Knight_NeutralAir, obj_KnightNeutralAttack_Air_HitMask); //air attack
 			break;
 
 		default:

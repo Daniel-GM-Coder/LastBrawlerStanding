@@ -13,15 +13,15 @@ function LoadSelectedCharacters(){
 			break;
 		
 		case 1:
-			player1 = obj_Weiss_Player;
+			player1 = obj_Weiss_Player2;
 			break;
 		
 		case 2:
-			player1 = objMarioPlayer;
+			player1 = objMarioPlayer2;
 			break;
 			
 		case 3:
-			player1 = obj_KnightPlayer;
+			player1 = obj_KnightPlayer2;
 			break;
 	}
 	switch(pj2){
@@ -31,15 +31,15 @@ function LoadSelectedCharacters(){
 			break;
 		
 		case 1:
-			player2 = obj_Weiss_Player2;
+			player2 = obj_Weiss_Player;
 			break;
 		
 		case 2:
-			player2 = objMarioPlayer2;
+			player2 = objMarioPlayer;
 			break;
 			
 		case 3:
-			player2 = obj_KnightPlayer2;
+			player2 = obj_KnightPlayer;
 			break;
 	}
 	

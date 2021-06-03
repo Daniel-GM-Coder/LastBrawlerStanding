@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "",
-    "path": "",
+    "name": "obj_KnightNormalAttackLeftRight_HitMask",
+    "path": "objects/obj_KnightNormalAttackLeftRight_HitMask/obj_KnightNormalAttackLeftRight_HitMask.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

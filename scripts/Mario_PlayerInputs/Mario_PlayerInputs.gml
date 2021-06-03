@@ -73,7 +73,7 @@ function PlayerInputsMario(){
 		!gamepad_button_check(controllerDevice, gp_padl) &&
 		!gamepad_button_check(controllerDevice, gp_padr);
 		
-	inputSpecialDownAttack = gamepad_button_check_pressed(controllerDevice, gp_face4) && 
+	inputSpecialDownAttack = gamepad_button_check(controllerDevice, gp_face4) && 
 		!gamepad_button_check(controllerDevice, gp_padu) &&
 		gamepad_button_check(controllerDevice, gp_padd) &&
 		!gamepad_button_check(controllerDevice, gp_padl) &&

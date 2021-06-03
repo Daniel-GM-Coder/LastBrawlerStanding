@@ -3,8 +3,12 @@
 if(!hitted && other != owner && image_index >= firstValidFrame && image_index < firstNotValidFrame)
 {
 	hitted = true;
-	other.hitted = true;
-	other.hittedDir = owner.facingRight;
+	
+	if(hitted && other.damagePlayer >= minDamageEffect)
+	{
+		other.speedX = (hitSpeedX + other.damagePlayer * 0.1) * owner.facingRight;
+		other.speedY = -(hitSpeedY + other.damagePlayer * 0.3);
+	}
 	//Dañar al otro jugador
 	switch(other.playerNumber){
 		
