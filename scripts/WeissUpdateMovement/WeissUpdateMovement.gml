@@ -3,7 +3,6 @@ if(onAir || falling)
 	{
 		var targetSpeedX = 0;
 		
-		falling = false;
 		if(inputHorizMov != 0)
 			targetSpeedX += maxWalkSpeed * inputHorizMov;
 
@@ -12,13 +11,14 @@ if(onAir || falling)
 		speedX += diffSpeedX;
 
 		var newX = x+speedX;
-		if(!place_free(newX, y))
+		if(!hitted && !place_free(newX, y))
 		{
 			newX = WeissFindFreePosX(newX);
 	
 			speedX = 0;
 		}
-	
+		
+		hitted = false;
 		x = newX;
 	}
 	else
