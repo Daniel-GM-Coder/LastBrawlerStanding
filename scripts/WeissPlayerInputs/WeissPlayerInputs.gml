@@ -42,7 +42,7 @@ function WeissPlayerInputs(){
 	inputNormalAttack = keyboard_check(ord("J"));
 	inputSpecialAttack = keyboard_check(ord("K"));
 	
-	if(hitted)
+	if(hitted && damagePlayer >= 40)
 	{
 		inputFlying = true;
 	}

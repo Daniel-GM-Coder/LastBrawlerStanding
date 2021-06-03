@@ -39,7 +39,7 @@ function PlayerInputsMario(){
 	inputNormalUpAttack = keyboard_check_pressed(ord("U"));
 	inputSpecialUpAttack = keyboard_check_pressed(ord("I"));
 	
-	if(hitted)
+	if(hitted && damagePlayer >= 40)
 	{
 		inputFlying = true;
 	}

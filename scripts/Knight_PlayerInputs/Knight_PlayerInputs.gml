@@ -108,7 +108,7 @@ function KnightPlayerInputs(){
 		!gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padd);
 	
 	
-	if(hitted)
+	if(hitted && damagePlayer >= 40)
 	{
 		inputFlying = true;
 	}
