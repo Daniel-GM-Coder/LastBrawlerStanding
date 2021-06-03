@@ -1,3 +1,5 @@
+/// @description Insert description here
+// You can write your code in this editor
 if(!hitted && other != owner && image_index >= firstValidFrame && image_index < firstNotValidFrame)
 {
 	hitted = true;

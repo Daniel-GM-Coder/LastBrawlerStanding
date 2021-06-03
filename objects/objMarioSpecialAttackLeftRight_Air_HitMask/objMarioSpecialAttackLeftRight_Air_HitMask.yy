@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "objMarioNormalAttackLeftRight_HitMask",
-    "path": "objects/objMarioNormalAttackLeftRight_HitMask/objMarioNormalAttackLeftRight_HitMask.yy",
+    "name": "",
+    "path": "",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -26,8 +26,8 @@
   "eventList": [],
   "properties": [],
   "overriddenProperties": [
-    {"propertyId":{"name":"firstValidFrame","path":"objects/objMarioNormalAttackLeftRight_HitMask/objMarioNormalAttackLeftRight_HitMask.yy",},"objectId":{"name":"objMarioNormalAttackLeftRight_HitMask","path":"objects/objMarioNormalAttackLeftRight_HitMask/objMarioNormalAttackLeftRight_HitMask.yy",},"value":"3","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"firstNotValidFrame","path":"objects/objMarioNormalAttackLeftRight_HitMask/objMarioNormalAttackLeftRight_HitMask.yy",},"objectId":{"name":"objMarioNormalAttackLeftRight_HitMask","path":"objects/objMarioNormalAttackLeftRight_HitMask/objMarioNormalAttackLeftRight_HitMask.yy",},"value":"4","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"","path":"",},"objectId":{"name":"","path":"",},"value":"3","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"","path":"",},"objectId":{"name":"","path":"",},"value":"4","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Air",
