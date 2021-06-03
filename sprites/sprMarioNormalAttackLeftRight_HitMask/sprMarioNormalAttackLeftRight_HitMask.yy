@@ -83,6 +83,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"66fb6d6e-eb47-4adf-87c4-86017931fc7d","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Ground_HitMasks",
     "path": "folders/Sprites/Speedrunner Mario/Ground/Ground_HitMasks.yy",
