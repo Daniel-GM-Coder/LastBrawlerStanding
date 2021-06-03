@@ -6,46 +6,46 @@ function LoadSelectedCharacters(){
 	var player1;
 	var player2;
 	
-	switch(pj1){
+	switch(pj2){
 		
 		case 0: 
 			player1 = obj_Goku_player;
 			break;
 		
 		case 1:
-			player1 = obj_Weiss_Player2;
+			player1 = obj_Weiss_Player;
 			break;
 		
 		case 2:
-			player1 = objMarioPlayer2;
+			player1 = objMarioPlayer;
 			break;
 			
 		case 3:
-			player1 = obj_KnightPlayer2;
+			player1 = obj_KnightPlayer;
 			break;
 	}
-	switch(pj2){
+	switch(pj1){
 		
 		case 0: 
 			player2 = obj_Goku_player;
 			break;
 		
 		case 1:
-			player2 = obj_Weiss_Player;
+			player2 = obj_Weiss_Player2;
 			break;
 		
 		case 2:
-			player2 = objMarioPlayer;
+			player2 = objMarioPlayer2;
 			break;
 			
 		case 3:
-			player2 = obj_KnightPlayer;
+			player2 = obj_KnightPlayer2;
 			break;
 	}
 	
-	var pj1SpawnPositionX = room_width / 3;
+	var pj2SpawnPositionX = room_width / 3;
 	var ySpawnPosition = room_height / 2;
-	var pj2SpawnPositionX = room_width * 2/3;
+	var pj1SpawnPositionX = room_width * 2/3;
 	
 	instance_create_depth(pj1SpawnPositionX, ySpawnPosition, depth, player1);
 	instance_create_depth(pj2SpawnPositionX, ySpawnPosition, depth, player2);

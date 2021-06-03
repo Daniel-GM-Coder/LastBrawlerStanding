@@ -83,14 +83,11 @@ function WeissEnterAttack(animSpriteIndex, hitMaskIndex)
 				image_xscale = 1;
 				speedX = 10;
 			}
-			if(image_index == image_number - 2) {
-				grav = 1;
-			}
 
 }
 
 	//Crear la hitMask
-	if(hitMaskIndex != noone)
+	if(hitMaskIndex != noone && image_index == 0)
 	{
 		var hitMaskInstance = instance_create_depth(x, y, depth + 1, hitMaskIndex);
 		hitMaskInstance.image_xscale = image_xscale;
@@ -112,6 +109,10 @@ function WeissNextAttack(returnToState)
 	//		return 19;
 	//	}
 	//}
+	
+	if(image_index == image_number - 1 && sprite_index == spr_Weiss_SideSpecial) {
+		grav = 1;
+	}
 	if(image_index >= image_number - 1)
 	{
 		if(sprite_index == spr_Weiss_BasicSpecial)

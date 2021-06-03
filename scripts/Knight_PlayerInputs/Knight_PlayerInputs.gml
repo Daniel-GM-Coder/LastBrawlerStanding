@@ -109,7 +109,7 @@ function KnightPlayerInputs(){
 	gamepad_button_check_pressed(controllerDevice, gp_face4);
 	
 	
-	if(hitted)
+	if(hitted && !inputFlying)
 	{
 		inputFlying = true;
 	}

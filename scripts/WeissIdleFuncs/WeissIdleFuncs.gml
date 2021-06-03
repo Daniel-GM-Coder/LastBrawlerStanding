@@ -46,10 +46,10 @@ function WeissNextStateIdle()
 	if(inputVerMov == 1)
 		return 9;
 	
-	if(inputNormalAttack == 1)
+	if(inputNormalAttack)
 		return 18;
 		
-	if(inputSpecialAttack == 1)
+	if(inputSpecialAttack)
 		return 19;
 	return 0;
 }

@@ -9,7 +9,8 @@ if(!hitted && other != owner && image_index >= firstValidFrame && image_index < 
 		other.speedX = (hitSpeedX + other.damagePlayer * 0.1) * owner.facingRight;
 		other.speedY = -(hitSpeedY + other.damagePlayer * 0.3);
 		other.accel = 0.25;
-		other.alarm[0] = 1 * room_speed;
+		other.alarm[0] = 0.2  * room_speed;
+		other.hitted = true;
 	}
 	//Dañar al otro jugador
 	if(!other.playerNumber) {

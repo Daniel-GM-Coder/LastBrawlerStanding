@@ -21,11 +21,11 @@ function WeissEnterWalk()
 //Comprueba si queremos cambiar de estado
 function WeissNextStateWalk()
 {
-	
-	if(inputNormalAttack)
+			
+	if(inputNormalSide)
 		return 3;
 		
-	if(inputSpecialAttack)
+	if(inputSpecialSide)
 		return 4;
 	
 	if(inputNormalDownAttack)
@@ -65,6 +65,10 @@ function WeissEnterWalkAir()
 //Comprueba si queremos cambiar de estado
 function WeissNextStateWalkAir()
 {
+		
+	if(inputSpecialSide)
+		return 4;
+		
 	if(inputNormalAttack)
 		return 11;
 		

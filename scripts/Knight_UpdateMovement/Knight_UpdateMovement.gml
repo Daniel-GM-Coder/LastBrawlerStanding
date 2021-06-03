@@ -11,7 +11,7 @@ if(onAir || falling)
 		speedX += diffSpeedX;
 
 		var newX = x+speedX;
-		if(!place_free(newX, y))
+		if(!place_free(newX, y)  && !hitted)
 		{
 			newX =  KnightFindFreePosX(newX);
 	
