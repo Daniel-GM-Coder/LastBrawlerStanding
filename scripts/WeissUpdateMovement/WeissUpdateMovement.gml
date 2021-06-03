@@ -1,8 +1,9 @@
 function WeissUpdateMovement(){
-if(onAir)
+if(onAir || falling)
 	{
 		var targetSpeedX = 0;
 		
+		falling = false;
 		if(inputHorizMov != 0)
 			targetSpeedX += maxWalkSpeed * inputHorizMov;
 
@@ -36,6 +37,10 @@ if(onAir)
 		speedY = 0;
 		onAir = false;
 		onAir2 = false;
+		falling = false;
+	}else {
+		falling = true;
+		onAir = true;
 	}
 	if(instance_position(x, newY, obj_OneWayPlat1) != noone 
 	&& instance_position(x, y-1, obj_OneWayPlat1) == noone
@@ -46,6 +51,7 @@ if(onAir)
 		speedY = 0;
 		onAir = false;
 		onAir2 = false;
+		falling = false;
 	}
 	y = newY;
 

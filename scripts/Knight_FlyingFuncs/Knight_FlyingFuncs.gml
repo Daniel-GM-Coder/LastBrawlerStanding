@@ -5,17 +5,23 @@ function KnightEnterFlying(animSpriteIndex)
 	
 	sprite_index = animSpriteIndex;
 	
+	if(onAir2) {
+		image_blend = c_gray;
+	}
+	
 	//Hacer las movidas de que salgan volando al ser golpeados con X porcentaje
 }
 
 //Comprueba si queremos cambiar de estado
 function KnightNextStateFlying()
-{
-	if(inputHorizMov != 0)
-		return 10;
-	
-	if(inputVerMov == 1)
+{	
+	//Vuelva al idle aéreo si usa el doble salto
+	if(inputVerMov2 == 1)
 		return 9;
 	
+	//Vuelve al idle terrestre si toca el suelo o plataforma
+	if(!onAir)
+		return 0;
+		
 	return state;
 }

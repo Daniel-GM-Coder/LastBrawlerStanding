@@ -25,6 +25,11 @@ else
 		audio_play_sound(MainMenuAccept,2,false);
 		fijadoPJ1 = true;
 	}
+	if keyboard_check_pressed(ord("X"))
+	{
+		audio_play_sound(MainMenuAccept,2,false);
+		fijadoPJ1 = true;
+	}
 }
 
 

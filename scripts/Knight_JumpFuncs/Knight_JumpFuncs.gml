@@ -1,7 +1,7 @@
 //Entrar en el estado
 function KnightEnterJumpIdle()
 {
-	if(!onAir)
+	if(!onAir && !falling && (sprite_index == spr_Knight_Idle || sprite_index == spr_Knight_Walk))
 	{
 		speedY = -20;
 		onAir = true;	
@@ -53,7 +53,7 @@ function KnightNextStateJumpIdle()
 	if(inputHorizMov != 0)
 		return 10;
 
-	if(inputVerMov2 != 0)
+	if(inputVerMov2 != 0 || falling)
 		return state;
 
 	if(!onAir)
