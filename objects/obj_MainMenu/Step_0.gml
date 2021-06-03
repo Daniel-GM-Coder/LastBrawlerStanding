@@ -1,13 +1,23 @@
 if keyboard_check_released(vk_right)
 {
 	audio_play_sound(MainMenuChange,2,false);
-	mainmenu ++;
+	mainmenu = 1;
 }
 
 else if keyboard_check_released(vk_left)
 {
 	audio_play_sound(MainMenuChange,2,false);
-	mainmenu --;
+	mainmenu = 0;
+}
+else if keyboard_check_released(vk_up)
+{
+	audio_play_sound(MainMenuChange,2,false);
+	mainmenu = 0;
+}
+else if keyboard_check_released(vk_down)
+{
+	audio_play_sound(MainMenuChange,2,false);
+	mainmenu = 2;
 }
 
 if gamepad_button_check_pressed(obj_DeviceManager.player1AssignedController, gp_padr)

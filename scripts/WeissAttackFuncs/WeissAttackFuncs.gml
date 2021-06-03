@@ -130,3 +130,4 @@ function WeissNextAttack(returnToState)
 	else
 		return state;
 }
+}
