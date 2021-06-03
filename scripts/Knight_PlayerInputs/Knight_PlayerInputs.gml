@@ -108,9 +108,8 @@ function KnightPlayerInputs(){
 		!gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padd);
 	
 	
-	if(keyboard_check(ord("X")))
+	if(hitted)
 	{
-		//inputFlying = true;
-		//Usar esto para probar
+		inputFlying = true;
 	}
 }

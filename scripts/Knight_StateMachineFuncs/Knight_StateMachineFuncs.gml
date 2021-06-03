@@ -21,6 +21,12 @@
 */
 function KnightUpdateStateMachine()
 {
+	if(inputFlying)
+	{
+		KnightChangeState(17);
+		return;
+	}
+	
 	var nextState = KnightNextState();
 	
 	if(nextState !=	state)

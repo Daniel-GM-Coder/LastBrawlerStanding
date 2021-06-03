@@ -21,6 +21,12 @@
 */
 function UpdateStateMachineMario()
 {
+	if(inputFlying)
+	{
+		SMChangeStateMario(17);
+		return;
+	}
+	
 	var nextState = SmNextStateMario();
 	
 	if(nextState !=	state)

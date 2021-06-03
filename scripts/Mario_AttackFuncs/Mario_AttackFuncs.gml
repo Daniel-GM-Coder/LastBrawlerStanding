@@ -34,6 +34,7 @@ function EnterAttackMario(animSpriteIndex, hitMaskIndex)
 			{
 				var hitMaskInstance = instance_create_depth(x, y, depth + 1, hitMaskIndex);
 				hitMaskInstance.image_xscale = image_xscale;
+				hitMaskInstance.owner = self;
 			}
 			//hitMaskInstance.owner = self;
 		}

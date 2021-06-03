@@ -39,9 +39,8 @@ function PlayerInputsMario(){
 	inputNormalUpAttack = keyboard_check_pressed(ord("U"));
 	inputSpecialUpAttack = keyboard_check_pressed(ord("I"));
 	
-	if(keyboard_check(ord("X")))
+	if(hitted)
 	{
-		//inputFlying = true;
-		//Usar esto para probar
+		inputFlying = true;
 	}
 }
