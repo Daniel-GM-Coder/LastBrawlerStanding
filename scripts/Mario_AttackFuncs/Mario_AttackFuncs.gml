@@ -14,7 +14,7 @@ function EnterAttackMario(animSpriteIndex, hitMaskIndex)
 	{
 		sprite_index = sprMarioSpecialAttackDown_final;
 		maxWalkSpeed += 5;
-		accel += 0.1;
+		accel += 0.3;
 	}
 		
 	else if(sprite_index == sprMarioSpecialAttackUp_initial_Air && image_index >= image_number - 1)
