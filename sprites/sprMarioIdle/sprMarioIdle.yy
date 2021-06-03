@@ -95,6 +95,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"91856004-63f9-4c83-bc04-ae63df1fe4c3","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Speedrunner Mario",
     "path": "folders/Sprites/Speedrunner Mario.yy",
