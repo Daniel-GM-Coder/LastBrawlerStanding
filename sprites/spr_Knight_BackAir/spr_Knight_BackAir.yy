@@ -1,5 +1,5 @@
 {
-  "bboxMode": 0,
+  "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
   "origin": 9,
@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 0,
-  "bbox_right": 105,
-  "bbox_top": 0,
-  "bbox_bottom": 83,
+  "bbox_left": 38,
+  "bbox_right": 71,
+  "bbox_top": 20,
+  "bbox_bottom": 79,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -103,7 +103,6 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ea16da57-6bf0-4c2b-9e5b-68551bf1eddb","tags":[],"resourceType":"GMImageLayer",},
   ],
-  "nineSlice": null,
   "parent": {
     "name": "TheKnight",
     "path": "folders/Sprites/TheKnight.yy",

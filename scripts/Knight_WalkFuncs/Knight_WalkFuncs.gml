@@ -22,10 +22,10 @@ function  KnightEnterWalk()
 function KnightNextStateWalk()
 {
 	
-	if(inputNormalAttack)
+	if(inputNormalSide)
 		return 3;
 		
-	if(inputSpecialAttack)
+	if(inputSpecialSide)
 		return 4;
 	
 	if(inputNormalDownAttack)
@@ -54,8 +54,12 @@ function KnightNextStateWalk()
 
 function KnightEnterWalkAir()
 {	
-	sprite_index = spr_Knight_OnAir;
-	if(inputHorizMov != 0)
+	if(sprite_index != spr_Knight_DoubleJump) {
+		sprite_index = spr_Knight_OnAir;
+	} else if(image_index >= image_number - 1 ) {
+		sprite_index = spr_Knight_OnAir
+	}
+	if(inputHorizMov != 0 )
 	{
 		//speedX = maxWalkSpeed * 4 * inputHorizMov;
 		image_xscale = 1 * inputHorizMov;

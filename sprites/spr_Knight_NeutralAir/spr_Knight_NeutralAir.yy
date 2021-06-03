@@ -1,5 +1,5 @@
 {
-  "bboxMode": 0,
+  "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
   "origin": 9,
@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 0,
-  "bbox_right": 121,
-  "bbox_top": 0,
-  "bbox_bottom": 141,
+  "bbox_left": 39,
+  "bbox_right": 71,
+  "bbox_top": 51,
+  "bbox_bottom": 106,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -56,7 +56,7 @@
     "spriteId": {"name":"spr_Knight_NeutralAir","path":"sprites/spr_Knight_NeutralAir/spr_Knight_NeutralAir.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 9.0,
+    "playbackSpeed": 10.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
@@ -99,7 +99,6 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8fc98741-8af7-4839-9ec4-d5ca21bf7f0c","tags":[],"resourceType":"GMImageLayer",},
   ],
-  "nineSlice": null,
   "parent": {
     "name": "TheKnight",
     "path": "folders/Sprites/TheKnight.yy",

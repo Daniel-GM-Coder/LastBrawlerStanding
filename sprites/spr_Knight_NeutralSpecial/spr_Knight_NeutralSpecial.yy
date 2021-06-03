@@ -1,5 +1,5 @@
 {
-  "bboxMode": 0,
+  "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
   "origin": 9,
@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 0,
-  "bbox_right": 43,
-  "bbox_top": 0,
-  "bbox_bottom": 79,
+  "bbox_left": 7,
+  "bbox_right": 39,
+  "bbox_top": 27,
+  "bbox_bottom": 77,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -53,7 +53,7 @@
     "spriteId": {"name":"spr_Knight_NeutralSpecial","path":"sprites/spr_Knight_NeutralSpecial/spr_Knight_NeutralSpecial.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 8.0,
+    "playbackSpeed": 10.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
@@ -95,7 +95,6 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ab878478-a391-4357-85a2-df8c71d3af19","tags":[],"resourceType":"GMImageLayer",},
   ],
-  "nineSlice": null,
   "parent": {
     "name": "TheKnight",
     "path": "folders/Sprites/TheKnight.yy",

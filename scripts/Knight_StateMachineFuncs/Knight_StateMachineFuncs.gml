@@ -26,7 +26,7 @@ function KnightUpdateStateMachine()
 	if(nextState !=	state)
 		KnightChangeState(nextState);
 		
-	else if(nextState == 9 || nextState == 1 || nextState == 10)
+	else if(nextState == 9 || nextState == 1 || nextState == 10 || nextState == 8)
 		KnightChangeState(nextState);
 }
 
@@ -128,7 +128,7 @@ function KnightChangeState(newState)
 			nextState = KnightEnterWalk();
 			break;
 		case 3:
-			nextState = KnightEnterAttack(spr_Knight_Jab,spr_Knight_Jab); //right & left normal
+			nextState = KnightEnterAttack(spr_Knight_FTilt,spr_Knight_FTilt); //right & left normal
 			break;
 		case 4:
 			nextState = KnightEnterAttack(spr_Knight_FSpecial,spr_Knight_FSpecial); //right & left special
@@ -146,7 +146,7 @@ function KnightChangeState(newState)
 			nextState = KnightEnterAttack(spr_Knight_UpSpecial,spr_Knight_UpSpecial); //up special
 			break;
 		case 18:
-			nextState = KnightEnterAttack(spr_Knight_NeutralAir,spr_Knight_NeutralAir); // normal
+			nextState = KnightEnterAttack(spr_Knight_Jab,spr_Knight_Jab); // normal
 			break;
 		case 19:
 			nextState = KnightEnterAttack(spr_Knight_NeutralSpecial,spr_Knight_NeutralSpecial); // special
