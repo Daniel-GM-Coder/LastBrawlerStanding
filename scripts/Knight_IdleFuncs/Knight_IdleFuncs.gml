@@ -38,6 +38,9 @@ function KnightNextStateIdle()
 		
 	if(inputSpecialUpAttack)
 		return 8;
+		
+	if(inputTaunt)
+		return 21;
 	
 	if(inputHorizMov != 0)
 		return 1;

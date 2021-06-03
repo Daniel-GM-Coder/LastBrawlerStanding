@@ -4,7 +4,7 @@ function KnightPlayerInputs(){
 	inputVerMov = 0;
 	inputVerMov2 = 0;
 	
-	if(gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padl))
+	if(gamepad_button_check(controllerDevice, gp_padl))
 	{
 		inputHorizMov -= 1;
 		facingRight = false;
@@ -15,7 +15,7 @@ function KnightPlayerInputs(){
 		inputHorizMov -= 1;
 		facingRight = false;
 	}
-	if(gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padr))
+	if(gamepad_button_check(controllerDevice, gp_padr))
 	{
 		inputHorizMov += 1;
 		facingRight = true;
@@ -25,7 +25,7 @@ function KnightPlayerInputs(){
 		inputHorizMov += 1;
 		facingRight = true;
 	}
-	if(gamepad_button_check_pressed(obj_DeviceManager.player1AssignedController, gp_face1))
+	if(gamepad_button_check_pressed(controllerDevice, gp_face1))
 	{
 		if(!onAir)
 			inputVerMov = 1;
@@ -39,7 +39,7 @@ function KnightPlayerInputs(){
 		else if(onAir && !onAir2)
 			inputVerMov2 = 1;
 	}
-	if(gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padd))
+	if(gamepad_button_check(controllerDevice, gp_padd))
 	{
 		//inputVerMov = -1;
 	}
@@ -49,7 +49,7 @@ function KnightPlayerInputs(){
 		//inputVerMov = -1;
 	}
 	
-	if(gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padu))
+	if(gamepad_button_check(controllerDevice, gp_padu))
 	{
 		//inputVerMov = 1;
 	}
@@ -58,54 +58,55 @@ function KnightPlayerInputs(){
 	{
 		//inputVerMov = 1;
 	}
+
+	inputNormalAttack = gamepad_button_check_pressed(controllerDevice, gp_face2) && 
+		!gamepad_button_check(controllerDevice, gp_padu) &&
+		!gamepad_button_check(controllerDevice, gp_padd) &&
+		!gamepad_button_check(controllerDevice, gp_padl) &&
+		!gamepad_button_check(controllerDevice, gp_padr);
+	inputSpecialAttack = gamepad_button_check_pressed(controllerDevice, gp_face4) && 
+		!gamepad_button_check(controllerDevice, gp_padu) &&
+		!gamepad_button_check(controllerDevice, gp_padd) &&
+		!gamepad_button_check(controllerDevice, gp_padl) &&
+		!gamepad_button_check(controllerDevice, gp_padr);
 	
-	
-	
-	inputNormalAttack = gamepad_button_check_pressed(obj_DeviceManager.player1AssignedController, gp_face2) && 
-		!gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padu) &&
-		!gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padd) &&
-		!gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padl) &&
-		!gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padr);
-	inputSpecialAttack = gamepad_button_check_pressed(obj_DeviceManager.player1AssignedController, gp_face4) && 
-		!gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padu) &&
-		!gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padd) &&
-		!gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padl) &&
-		!gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padr);
-	
-	inputNormalSide = gamepad_button_check_pressed(obj_DeviceManager.player1AssignedController, gp_face2) && 
-		!gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padu) &&
-		!gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padd) &&
-		(gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padl) ||
-		gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padr));
+	inputNormalSide = gamepad_button_check_pressed(controllerDevice, gp_face2) && 
+		!gamepad_button_check(controllerDevice, gp_padu) &&
+		!gamepad_button_check(controllerDevice, gp_padd) &&
+		(gamepad_button_check(controllerDevice, gp_padl) ||
+		gamepad_button_check(controllerDevice, gp_padr));
 		
-	inputSpecialSide = gamepad_button_check_pressed(obj_DeviceManager.player1AssignedController, gp_face4) && 
-		!gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padu) &&
-		!gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padd) &&
-		(gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padl) ||
-		gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padr));
+	inputSpecialSide = gamepad_button_check_pressed(controllerDevice, gp_face4) && 
+		!gamepad_button_check(controllerDevice, gp_padu) &&
+		!gamepad_button_check(controllerDevice, gp_padd) &&
+		(gamepad_button_check(controllerDevice, gp_padl) ||
+		gamepad_button_check(controllerDevice, gp_padr));
 		
 	
-	inputNormalDownAttack = gamepad_button_check_pressed(obj_DeviceManager.player1AssignedController, gp_face2) && 
-		!gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padu) &&
-		gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padd) &&
-		!gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padl) &&
-		!gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padr);
+	inputNormalDownAttack = gamepad_button_check_pressed(controllerDevice, gp_face2) && 
+		!gamepad_button_check(controllerDevice, gp_padu) &&
+		gamepad_button_check(controllerDevice, gp_padd) &&
+		!gamepad_button_check(controllerDevice, gp_padl) &&
+		!gamepad_button_check(controllerDevice, gp_padr);
 		
-	inputSpecialDownAttack = gamepad_button_check_pressed(obj_DeviceManager.player1AssignedController, gp_face4) && 
-		!gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padu) &&
-		gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padd) &&
-		!gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padl) &&
-		!gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padr);
+	inputSpecialDownAttack = gamepad_button_check_pressed(controllerDevice, gp_face4) && 
+		!gamepad_button_check(controllerDevice, gp_padu) &&
+		gamepad_button_check(controllerDevice, gp_padd) &&
+		!gamepad_button_check(controllerDevice, gp_padl) &&
+		!gamepad_button_check(controllerDevice, gp_padr);
 	
-	inputNormalUpAttack = gamepad_button_check_pressed(obj_DeviceManager.player1AssignedController, gp_face2) && 
-		gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padu) &&
-		!gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padd) &&
-		!gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padl) &&
-		!gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padr);
+	inputNormalUpAttack = gamepad_button_check_pressed(controllerDevice, gp_face2) && 
+		gamepad_button_check(controllerDevice, gp_padu) &&
+		!gamepad_button_check(controllerDevice, gp_padd) &&
+		!gamepad_button_check(controllerDevice, gp_padl) &&
+		!gamepad_button_check(controllerDevice, gp_padr);
 		
-	inputSpecialUpAttack = gamepad_button_check_pressed(obj_DeviceManager.player1AssignedController, gp_face4) && 
-		gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padu) &&
-		!gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_padd);
+	inputSpecialUpAttack = gamepad_button_check_pressed(controllerDevice, gp_face4) && 
+		gamepad_button_check(controllerDevice, gp_padu) &&
+		!gamepad_button_check(controllerDevice, gp_padd);
+		
+	inputTaunt = gamepad_button_check(controllerDevice, gp_face3) && 
+	gamepad_button_check_pressed(controllerDevice, gp_face4);
 	
 	
 	if(hitted)
