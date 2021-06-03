@@ -127,7 +127,7 @@ function SMChangeStateMario(newState)
 			break;
 		case 3:
 		//En los enter Attack, pasar animación y animación con hitbox
-			nextState = EnterAttackMario(sprMarioNormalAttackLeftRight, objMarioNormalAttackLeftRight_HitMask); //right & left normal
+			nextState = EnterAttackMario(sprMarioNormalAttackLeftRight, objMarioSpecialAttackLeftRight_HitMask); //right & left normal
 			break;
 		case 4:
 			nextState = EnterAttackMario(sprMarioSpecialAttackLeftRight, objMarioSpecialAttackLeftRight_HitMask); //right & left special
