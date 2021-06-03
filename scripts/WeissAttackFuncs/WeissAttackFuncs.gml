@@ -46,7 +46,44 @@ function WeissEnterAttack(animSpriteIndex, hitMaskIndex)
 				else
 				{}
 			}
-	}
+		
+		if(sprite_index == spr_Weiss_UpSpecial)
+		{
+			if(facingRight == 0)
+				{
+					sprite_index = spr_Weiss_UpSpecial;
+					image_xscale = -1;
+					direction = 100;
+					speed = 10;
+				}
+			else if (facingRight == 1)
+				{
+					sprite_index = spr_Weiss_UpSpecial;
+					image_xscale = 1;
+					direction = 80;
+					speed = 10;
+				}
+		}
+		
+		if(sprite_index == spr_Weiss_SideSpecial)
+		{
+			if(facingRight == 0)
+			{
+				sprite_index = spr_Weiss_SideSpecial;
+				image_xscale = -1;
+				direction = 180;
+				speed = 10;
+			}
+			else if (facingRight == 1)
+			{
+				sprite_index = spr_Weiss_SideSpecial;
+				image_xscale = 1;
+				direction = 0;
+				speed = 10;
+			}
+
+}
+
 	//Crear la hitMask
 	//var hitMaskInstance = instance_create_depth(x, y, depth + 1, hitMaskIndex);
 	//hitMaskInstance.image_xscale = image_xscale;

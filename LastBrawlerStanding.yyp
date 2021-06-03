@@ -16,7 +16,6 @@
     {"id":{"name":"spr_Goku_SSJ_BasicAttack","path":"sprites/spr_Goku_SSJ_BasicAttack/spr_Goku_SSJ_BasicAttack.yy",},"order":5,},
     {"id":{"name":"WeissMapMusic","path":"sounds/WeissMapMusic/WeissMapMusic.yy",},"order":4,},
     {"id":{"name":"spr_Goku_SSJ_ChargeKi","path":"sprites/spr_Goku_SSJ_ChargeKi/spr_Goku_SSJ_ChargeKi.yy",},"order":0,},
-    {"id":{"name":"obj_Weiss_Player1","path":"objects/obj_Weiss_Player1/obj_Weiss_Player1.yy",},"order":1,},
     {"id":{"name":"spr_Weiss_UpAirHB","path":"sprites/spr_Weiss_UpAirHB/spr_Weiss_UpAirHB.yy",},"order":7,},
     {"id":{"name":"spr_Weiss_DownSpecial","path":"sprites/spr_Weiss_DownSpecial/spr_Weiss_DownSpecial.yy",},"order":10,},
     {"id":{"name":"spr_Goku_ssj_particles","path":"sprites/spr_Goku_ssj_particles/spr_Goku_ssj_particles.yy",},"order":7,},
