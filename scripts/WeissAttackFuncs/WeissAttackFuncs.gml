@@ -70,6 +70,7 @@ function WeissEnterAttack(animSpriteIndex, hitMaskIndex)
 			if(image_index == 0) {
 				grav = 0;
 				speedY = 0;
+				y -= 5;
 			}
 			if(facingRight == 0)
 			{
@@ -121,7 +122,7 @@ function WeissNextAttack(returnToState)
 			{
 				var WeissProyect = instance_create_depth(x - 70,y - 80,depth,obj_Weiss_Proyectile);
 				WeissProyect.image_xscale = -1;
-				WeissProyect.hspeed = -5;
+				WeissProyect.hspeed = -9;
 				WeissProyect.owner = self;
 				CastingFinished = false;
 			}
@@ -129,7 +130,7 @@ function WeissNextAttack(returnToState)
 			{
 				var WeissProyect = instance_create_depth(x + 70,y - 80,depth,obj_Weiss_Proyectile);
 				WeissProyect.image_xscale = 1;
-				WeissProyect.hspeed = 5;
+				WeissProyect.hspeed = 9;
 				WeissProyect.owner = self;
 				CastingFinished = false;
 			}

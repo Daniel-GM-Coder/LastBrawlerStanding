@@ -11,7 +11,7 @@ if(!hitted && other != owner && owner.image_index >= firstValidFrame && owner.im
 	
 		other.speedY = -(hitSpeedY + other.damagePlayer * 0.3);
 		other.accel = 0.25;
-		other.alarm[0] = (0.2 + (other.damagePlayer / 100)) * room_speed;
+		other.alarm[0] = (0.2 + (other.damagePlayer / 200)) * room_speed;
 		other.hitted = true;
 		if(!other.onAir) {
 				y -= 5

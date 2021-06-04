@@ -4,7 +4,7 @@
     "path": "sprites/spr_Weiss_UpSpecialHB/spr_Weiss_UpSpecialHB.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -24,7 +24,6 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_Goku_player","path":"objects/obj_Goku_player/obj_Goku_player.yy",},"parent":{"name":"obj_Weiss_UpSpecial_HM","path":"objects/obj_Weiss_UpSpecial_HM/obj_Weiss_UpSpecial_HM.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"parent":{"name":"obj_Weiss_UpSpecial_HM","path":"objects/obj_Weiss_UpSpecial_HM/obj_Weiss_UpSpecial_HM.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [

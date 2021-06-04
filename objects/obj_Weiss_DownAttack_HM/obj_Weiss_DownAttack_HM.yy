@@ -24,7 +24,6 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_Goku_player","path":"objects/obj_Goku_player/obj_Goku_player.yy",},"parent":{"name":"obj_Weiss_DownAttack_HM","path":"objects/obj_Weiss_DownAttack_HM/obj_Weiss_DownAttack_HM.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"parent":{"name":"obj_Weiss_DownAttack_HM","path":"objects/obj_Weiss_DownAttack_HM/obj_Weiss_DownAttack_HM.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [
@@ -37,7 +36,9 @@
   "overriddenProperties": [
     {"propertyId":{"name":"firstValidFrame","path":"objects/obj_Weiss_NormalAttack_HM/obj_Weiss_NormalAttack_HM.yy",},"objectId":{"name":"obj_Weiss_NormalAttack_HM","path":"objects/obj_Weiss_NormalAttack_HM/obj_Weiss_NormalAttack_HM.yy",},"value":"5","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"firstNotValidFrame","path":"objects/obj_Weiss_NormalAttack_HM/obj_Weiss_NormalAttack_HM.yy",},"objectId":{"name":"obj_Weiss_NormalAttack_HM","path":"objects/obj_Weiss_NormalAttack_HM/obj_Weiss_NormalAttack_HM.yy",},"value":"10","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"damage","path":"objects/obj_Weiss_NormalAttack_HM/obj_Weiss_NormalAttack_HM.yy",},"objectId":{"name":"obj_Weiss_NormalAttack_HM","path":"objects/obj_Weiss_NormalAttack_HM/obj_Weiss_NormalAttack_HM.yy",},"value":"10","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"damage","path":"objects/obj_Weiss_NormalAttack_HM/obj_Weiss_NormalAttack_HM.yy",},"objectId":{"name":"obj_Weiss_NormalAttack_HM","path":"objects/obj_Weiss_NormalAttack_HM/obj_Weiss_NormalAttack_HM.yy",},"value":"15","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"hitSpeedX","path":"objects/obj_Weiss_NormalAttack_HM/obj_Weiss_NormalAttack_HM.yy",},"objectId":{"name":"obj_Weiss_NormalAttack_HM","path":"objects/obj_Weiss_NormalAttack_HM/obj_Weiss_NormalAttack_HM.yy",},"value":"2","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"hitSpeedY","path":"objects/obj_Weiss_NormalAttack_HM/obj_Weiss_NormalAttack_HM.yy",},"objectId":{"name":"obj_Weiss_NormalAttack_HM","path":"objects/obj_Weiss_NormalAttack_HM/obj_Weiss_NormalAttack_HM.yy",},"value":"12","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Ground",

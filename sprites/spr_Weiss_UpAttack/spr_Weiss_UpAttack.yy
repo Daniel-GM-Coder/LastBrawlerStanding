@@ -9,8 +9,8 @@
   "swfPrecision": 2.525,
   "bbox_left": 37,
   "bbox_right": 88,
-  "bbox_top": 71,
-  "bbox_bottom": 162,
+  "bbox_top": 72,
+  "bbox_bottom": 163,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -67,7 +67,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 43,
-    "yorigin": 170,
+    "yorigin": 164,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_Weiss_UpAttack","path":"sprites/spr_Weiss_UpAttack/spr_Weiss_UpAttack.yy",},
@@ -79,7 +79,6 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"53c766eb-3f25-4a2a-ae37-5e800c01084e","tags":[],"resourceType":"GMImageLayer",},
   ],
-  "nineSlice": null,
   "parent": {
     "name": "Weiss",
     "path": "folders/Sprites/Weiss.yy",

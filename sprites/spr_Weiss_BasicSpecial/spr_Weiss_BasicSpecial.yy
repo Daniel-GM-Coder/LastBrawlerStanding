@@ -59,7 +59,7 @@
     "spriteId": {"name":"spr_Weiss_BasicSpecial","path":"sprites/spr_Weiss_BasicSpecial/spr_Weiss_BasicSpecial.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 6.0,
+    "playbackSpeed": 10.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
@@ -103,7 +103,6 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"25d3d3f5-e217-4851-93aa-64c586788cbf","tags":[],"resourceType":"GMImageLayer",},
   ],
-  "nineSlice": null,
   "parent": {
     "name": "Weiss",
     "path": "folders/Sprites/Weiss.yy",

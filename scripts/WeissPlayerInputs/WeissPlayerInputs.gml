@@ -90,6 +90,7 @@ function WeissPlayerInputs(){
 	
 	if(hitted)
 	{
+		grav = 1;
 		inputFlying = true;
 	}
 }

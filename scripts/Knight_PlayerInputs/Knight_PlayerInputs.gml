@@ -111,6 +111,7 @@ function KnightPlayerInputs(){
 	
 	if(hitted && !inputFlying)
 	{
+		grav = 1;
 		inputFlying = true;
 	}
 }

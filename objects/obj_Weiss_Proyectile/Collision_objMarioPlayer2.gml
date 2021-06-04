@@ -1,5 +1,5 @@
 if(other != owner)
 {
-	DamagePlayer2 += 10;
+	DamagePlayer2 += 8;
 	instance_destroy();
 }

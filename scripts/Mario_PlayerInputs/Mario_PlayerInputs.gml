@@ -92,6 +92,7 @@ function PlayerInputsMario(){
 	
 	if(hitted)
 	{
+		grav = 1;
 		inputFlying = true;
 	}
 }

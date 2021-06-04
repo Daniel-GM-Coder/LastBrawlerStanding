@@ -17,11 +17,6 @@ if(instance_number(obj_Weiss_Player) > 0)
 		}
 	}
 }
-else
-{
-	instance_destroy();
-}
-
 if(instance_number(obj_Weiss_Player2) > 0)
 {
 	if(platformReady == true)
