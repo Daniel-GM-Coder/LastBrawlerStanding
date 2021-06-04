@@ -24,14 +24,13 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [],
-  "properties": [
-    {"varType":3,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"hitted","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":0,"value":"1","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"firstValidFrame","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":0,"value":"2","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"firstNotValidFrame","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":5,"value":"obj_KnightPlayer","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"owner","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":0,"value":"10","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"damage","tags":[],"resourceType":"GMObjectProperty",},
+  "properties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"damage","path":"objects/obj_KnightNormalAttackLeftRight_HitMask/obj_KnightNormalAttackLeftRight_HitMask.yy",},"objectId":{"name":"obj_KnightNormalAttackLeftRight_HitMask","path":"objects/obj_KnightNormalAttackLeftRight_HitMask/obj_KnightNormalAttackLeftRight_HitMask.yy",},"value":"16","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"minDamageEffect","path":"objects/obj_KnightNormalAttackLeftRight_HitMask/obj_KnightNormalAttackLeftRight_HitMask.yy",},"objectId":{"name":"obj_KnightNormalAttackLeftRight_HitMask","path":"objects/obj_KnightNormalAttackLeftRight_HitMask/obj_KnightNormalAttackLeftRight_HitMask.yy",},"value":"40","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"hitSpeedX","path":"objects/obj_KnightNormalAttackLeftRight_HitMask/obj_KnightNormalAttackLeftRight_HitMask.yy",},"objectId":{"name":"obj_KnightNormalAttackLeftRight_HitMask","path":"objects/obj_KnightNormalAttackLeftRight_HitMask/obj_KnightNormalAttackLeftRight_HitMask.yy",},"value":"15","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"hitSpeedY","path":"objects/obj_KnightNormalAttackLeftRight_HitMask/obj_KnightNormalAttackLeftRight_HitMask.yy",},"objectId":{"name":"obj_KnightNormalAttackLeftRight_HitMask","path":"objects/obj_KnightNormalAttackLeftRight_HitMask/obj_KnightNormalAttackLeftRight_HitMask.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
-  "overriddenProperties": [],
   "parent": {
     "name": "Air",
     "path": "folders/Objetos/obj_Knight_HitMasks/Air.yy",

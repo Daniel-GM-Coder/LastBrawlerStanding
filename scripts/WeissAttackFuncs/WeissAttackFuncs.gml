@@ -2,7 +2,7 @@
 function WeissEnterAttack(animSpriteIndex, hitMaskIndex)
 {
 	//Parar al personaje
-	if(!onAir)
+	if(!onAir && !hitted)
 	{
 		speedX = 0;
 		speedY = 0;
@@ -53,15 +53,15 @@ function WeissEnterAttack(animSpriteIndex, hitMaskIndex)
 				{
 					sprite_index = spr_Weiss_UpSpecial;
 					image_xscale = -1;
-					speedY = -30;
-					speedX = -5;
+					speedY = -25;
+					speedX = -10;
 				}
 			else if (facingRight == 1)
 				{
 					sprite_index = spr_Weiss_UpSpecial;
 					image_xscale = 1;
-					speedY = -30;
-					speedX = 5;
+					speedY = -25;
+					speedX = 10;
 				}
 		}
 		

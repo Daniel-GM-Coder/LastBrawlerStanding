@@ -61,7 +61,7 @@ if (keyboard_check(ord("L")))
 	DamagePlayer2 = DamagePlayer2 - 1;
 }
 
-if (keyboard_check(vk_escape))
+if (keyboard_check(vk_escape) || gamepad_button_check(obj_DeviceManager.player1AssignedController, gp_start))
 {
 	room_goto(MapSelect);
 }	

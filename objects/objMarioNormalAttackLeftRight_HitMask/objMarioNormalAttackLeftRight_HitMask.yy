@@ -4,7 +4,7 @@
     "path": "sprites/sprMarioNormalAttackLeftRight_HitMask/sprMarioNormalAttackLeftRight_HitMask.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {

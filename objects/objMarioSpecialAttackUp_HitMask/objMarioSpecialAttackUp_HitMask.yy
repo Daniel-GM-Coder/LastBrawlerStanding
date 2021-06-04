@@ -4,7 +4,7 @@
     "path": "sprites/sprMarioSpecialAttackUp_HitMask/sprMarioSpecialAttackUp_HitMask.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -28,8 +28,12 @@
   "overriddenProperties": [
     {"propertyId":{"name":"","path":"",},"objectId":{"name":"","path":"",},"value":"12","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"","path":"",},"objectId":{"name":"","path":"",},"value":"17","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"firstValidFrame","path":"objects/obj_KnightNormalAttackLeftRight_HitMask/obj_KnightNormalAttackLeftRight_HitMask.yy",},"objectId":{"name":"obj_KnightNormalAttackLeftRight_HitMask","path":"objects/obj_KnightNormalAttackLeftRight_HitMask/obj_KnightNormalAttackLeftRight_HitMask.yy",},"value":"12","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"firstNotValidFrame","path":"objects/obj_KnightNormalAttackLeftRight_HitMask/obj_KnightNormalAttackLeftRight_HitMask.yy",},"objectId":{"name":"obj_KnightNormalAttackLeftRight_HitMask","path":"objects/obj_KnightNormalAttackLeftRight_HitMask/obj_KnightNormalAttackLeftRight_HitMask.yy",},"value":"17","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"firstValidFrame","path":"objects/obj_KnightNormalAttackLeftRight_HitMask/obj_KnightNormalAttackLeftRight_HitMask.yy",},"objectId":{"name":"obj_KnightNormalAttackLeftRight_HitMask","path":"objects/obj_KnightNormalAttackLeftRight_HitMask/obj_KnightNormalAttackLeftRight_HitMask.yy",},"value":"11","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"firstNotValidFrame","path":"objects/obj_KnightNormalAttackLeftRight_HitMask/obj_KnightNormalAttackLeftRight_HitMask.yy",},"objectId":{"name":"obj_KnightNormalAttackLeftRight_HitMask","path":"objects/obj_KnightNormalAttackLeftRight_HitMask/obj_KnightNormalAttackLeftRight_HitMask.yy",},"value":"18","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"damage","path":"objects/obj_KnightNormalAttackLeftRight_HitMask/obj_KnightNormalAttackLeftRight_HitMask.yy",},"objectId":{"name":"obj_KnightNormalAttackLeftRight_HitMask","path":"objects/obj_KnightNormalAttackLeftRight_HitMask/obj_KnightNormalAttackLeftRight_HitMask.yy",},"value":"20","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"minDamageEffect","path":"objects/obj_KnightNormalAttackLeftRight_HitMask/obj_KnightNormalAttackLeftRight_HitMask.yy",},"objectId":{"name":"obj_KnightNormalAttackLeftRight_HitMask","path":"objects/obj_KnightNormalAttackLeftRight_HitMask/obj_KnightNormalAttackLeftRight_HitMask.yy",},"value":"20","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"hitSpeedX","path":"objects/obj_KnightNormalAttackLeftRight_HitMask/obj_KnightNormalAttackLeftRight_HitMask.yy",},"objectId":{"name":"obj_KnightNormalAttackLeftRight_HitMask","path":"objects/obj_KnightNormalAttackLeftRight_HitMask/obj_KnightNormalAttackLeftRight_HitMask.yy",},"value":"0","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"hitSpeedY","path":"objects/obj_KnightNormalAttackLeftRight_HitMask/obj_KnightNormalAttackLeftRight_HitMask.yy",},"objectId":{"name":"obj_KnightNormalAttackLeftRight_HitMask","path":"objects/obj_KnightNormalAttackLeftRight_HitMask/obj_KnightNormalAttackLeftRight_HitMask.yy",},"value":"12","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Ground",

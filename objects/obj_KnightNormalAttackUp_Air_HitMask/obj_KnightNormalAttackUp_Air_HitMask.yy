@@ -25,7 +25,12 @@
   "physicsShapePoints": [],
   "eventList": [],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"damage","path":"objects/obj_KnightNormalAttackLeftRight_HitMask/obj_KnightNormalAttackLeftRight_HitMask.yy",},"objectId":{"name":"obj_KnightNormalAttackLeftRight_HitMask","path":"objects/obj_KnightNormalAttackLeftRight_HitMask/obj_KnightNormalAttackLeftRight_HitMask.yy",},"value":"13","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"minDamageEffect","path":"objects/obj_KnightNormalAttackLeftRight_HitMask/obj_KnightNormalAttackLeftRight_HitMask.yy",},"objectId":{"name":"obj_KnightNormalAttackLeftRight_HitMask","path":"objects/obj_KnightNormalAttackLeftRight_HitMask/obj_KnightNormalAttackLeftRight_HitMask.yy",},"value":"50","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"hitSpeedX","path":"objects/obj_KnightNormalAttackLeftRight_HitMask/obj_KnightNormalAttackLeftRight_HitMask.yy",},"objectId":{"name":"obj_KnightNormalAttackLeftRight_HitMask","path":"objects/obj_KnightNormalAttackLeftRight_HitMask/obj_KnightNormalAttackLeftRight_HitMask.yy",},"value":"0","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"hitSpeedY","path":"objects/obj_KnightNormalAttackLeftRight_HitMask/obj_KnightNormalAttackLeftRight_HitMask.yy",},"objectId":{"name":"obj_KnightNormalAttackLeftRight_HitMask","path":"objects/obj_KnightNormalAttackLeftRight_HitMask/obj_KnightNormalAttackLeftRight_HitMask.yy",},"value":"20","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "Air",
     "path": "folders/Objetos/obj_Knight_HitMasks/Air.yy",

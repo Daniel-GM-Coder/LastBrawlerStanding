@@ -2,7 +2,7 @@
 function KnightEnterAttack(animSpriteIndex, hitMaskIndex)
 {
 	//Parar al personaje
-	if(!onAir)
+	if(!onAir && !hitted)
 	{
 		speedX = 0;
 		speedY = 0;
@@ -183,6 +183,8 @@ function KnightNextAttack(returnToState)
 	
 	if(sprite_index == spr_Knight_UpSpecial && image_index >= image_number - 1)
 		return 17;
+	else if(sprite_index == spr_Knight_DownAir && image_index >= image_number - 1)
+		return 9;
 	else if(sprite_index == spr_Knight_NeutralAir && image_index >= image_number - 1)
 		return 9;
 	else if(sprite_index == spr_Knight_FSpecial && (image_index >= image_number - 1 || image_index >= image_number - 2) && inputNormalSide && !onAir)

@@ -76,13 +76,13 @@ if ((fijadoPJ1 == false) && (fijadoPJ2 == false))
 }
 if ((fijadoPJ1 == true) && (fijadoPJ2 == true) && (firstTime == true))
 {
-	alarm [0] = room_speed*2;
+	alarm [0] = room_speed*1.5;
 	firstTime = false;
 }
 
 if (seleccionPJ1 == 0)
 {
-	pj1 = 0;
+	pj1 = irandom(2)+1;
 }
 else if (seleccionPJ1 == 1)
 {
@@ -100,7 +100,7 @@ else if (seleccionPJ1 == 3)
 
 if (seleccionPJ2 == 0)
 {
-	pj2 = 0;
+	pj2 = irandom(2)+1;
 }
 else if (seleccionPJ2 == 1)
 {

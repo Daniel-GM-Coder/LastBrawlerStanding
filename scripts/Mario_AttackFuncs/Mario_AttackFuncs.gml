@@ -2,7 +2,7 @@
 function EnterAttackMario(animSpriteIndex, hitMaskIndex)
 {
 	//Parar al personaje
-	if(!onAir)
+	if(!onAir && !hitted)
 	{
 		speedX = 0;
 		speedY = 0;

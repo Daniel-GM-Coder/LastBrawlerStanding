@@ -1,0 +1,1 @@
+gamepad_set_vibration(controllerDevice, 0, 0);

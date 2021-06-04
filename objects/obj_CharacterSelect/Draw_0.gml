@@ -10,7 +10,7 @@ if (seleccionPJ1 == 0)
 	}
 	draw_sprite_ext(spr_Goku_Idle,myimage_index3,656,793.8,3.133,3.773,0,c_white,1);
 	draw_set_halign(fa_center);
-	imp_text(672,925,"GOKU",c_white,font_MainMenu,1,0.8);
+	imp_text(672,925,"Aleatorio",c_white,font_MainMenu,1,0.8);
 	draw_set_halign(fa_left);
 
 }
@@ -74,9 +74,9 @@ if (seleccionPJ2 == 0)
 	{
 		draw_sprite(spr_Pj2_Select,myimage_index,1664,288);
 	}
-	draw_sprite_ext(spr_Goku_Idle,myimage_index3,1275,793.8,-3.133,3.773,0,c_white,1);
+	draw_sprite_ext(spr_Goku_Idle,myimage_index3,1275,793.8,3.133,3.773,0,c_white,1);
 	draw_set_halign(fa_center);
-	imp_text(1250,925,"GOKU",c_white,font_MainMenu,1,0.8);
+	imp_text(1250,925,"Aleatorio",c_white,font_MainMenu,1,0.8);
 	draw_set_halign(fa_left);
 }
 else if (seleccionPJ2 == 1)

@@ -1,10 +1,10 @@
-if keyboard_check_released(vk_up)
+if (gamepad_button_check_pressed(obj_DeviceManager.player1AssignedController, gp_padu) || keyboard_check_released(vk_up))
 {
 	audio_play_sound(MainMenuChange,2,false);
 	PostBattleOpt --;
 }
 
-else if keyboard_check_released(vk_down)
+else if (gamepad_button_check_pressed(obj_DeviceManager.player1AssignedController, gp_padd) || keyboard_check_released(vk_down))
 {
 	audio_play_sound(MainMenuChange,2,false);
 	PostBattleOpt ++;
@@ -66,7 +66,7 @@ else if (PostBattleOpt==3)
 	Tamano2=1;
 }
 
-if keyboard_check_released(ord("X"))
+if (gamepad_button_check_pressed(obj_DeviceManager.player1AssignedController, gp_face1) || keyboard_check_released(ord("X")))
 {
 	if(PostBattleOpt==0)
 	{

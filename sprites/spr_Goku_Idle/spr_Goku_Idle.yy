@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 44,
-  "bbox_right": 105,
-  "bbox_top": 26,
-  "bbox_bottom": 123,
+  "bbox_left": 30,
+  "bbox_right": 120,
+  "bbox_top": 6,
+  "bbox_bottom": 141,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -67,7 +67,6 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f8318cc4-42df-45f4-8ee1-985d11e265e0","tags":[],"resourceType":"GMImageLayer",},
   ],
-  "nineSlice": null,
   "parent": {
     "name": "Goku base",
     "path": "folders/Sprites/Goku/SSJ forms/Goku base.yy",

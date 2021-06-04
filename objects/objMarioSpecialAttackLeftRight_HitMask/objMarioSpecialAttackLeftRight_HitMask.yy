@@ -4,7 +4,7 @@
     "path": "sprites/sprMarioSpecialAttackLeftRight_HitMask/sprMarioSpecialAttackLeftRight_HitMask.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {

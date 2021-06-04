@@ -1,5 +1,5 @@
 {
-  "bboxMode": 0,
+  "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
   "origin": 9,
@@ -7,8 +7,8 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 0,
-  "bbox_right": 74,
+  "bbox_left": 5,
+  "bbox_right": 69,
   "bbox_top": 0,
   "bbox_bottom": 127,
   "HTile": false,
@@ -143,7 +143,6 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"84af3e76-2dfb-460d-8927-15f9d3d67456","tags":[],"resourceType":"GMImageLayer",},
   ],
-  "nineSlice": null,
   "parent": {
     "name": "Ground",
     "path": "folders/Sprites/Speedrunner Mario/Ground.yy",

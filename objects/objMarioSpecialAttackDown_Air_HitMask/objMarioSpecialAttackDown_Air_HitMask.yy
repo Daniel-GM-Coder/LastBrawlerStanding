@@ -4,7 +4,7 @@
     "path": "sprites/sprMarioSpecialAttackDown_Air_HitMask/sprMarioSpecialAttackDown_Air_HitMask.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {

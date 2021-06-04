@@ -16,7 +16,7 @@ function KnightEnterJumpIdle()
 		image_index = 0;
 	}
 
-	if(sprite_index == spr_Knight_NeutralAir) {
+	if(sprite_index == spr_Knight_NeutralAir || sprite_index == spr_Knight_FSpecial || sprite_index == spr_Knight_DownAir) {
 		sprite_index = spr_Knight_FirstJump;
 	}
 	

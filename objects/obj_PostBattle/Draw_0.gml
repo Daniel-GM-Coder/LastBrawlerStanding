@@ -39,7 +39,10 @@ else if(Ganador==2)
 	draw_set_halign(fa_left);
 	if(pj2 == 1)
 	{
-		draw_sprite_ext(spr_Weiss_Walk,myimage_index2,1566,882.8,-3.422,3.476,0,c_white,1);	
+		if(pj1 == pj2)
+			draw_sprite_ext(spr_Weiss_Walk,myimage_index2,1566,882.8,-3.422,3.476,0,c_lime,1);	
+		else
+			draw_sprite_ext(spr_Weiss_Walk,myimage_index2,1566,882.8,-3.422,3.476,0,c_white,1);	
 	}
 	else if(pj2 == 0)
 	{
@@ -47,11 +50,17 @@ else if(Ganador==2)
 	}
 	else if(pj2 == 2)
 	{
-		draw_sprite_ext(sprMarioWalk,myimage_index4,1566,882.8,-3.909,5.571,0,c_white,1);	
+		if(pj1 == pj2)
+			draw_sprite_ext(sprMarioWalk,myimage_index4,1566,882.8,-3.909,5.571,0,c_lime,1);	
+		else
+			draw_sprite_ext(sprMarioWalk,myimage_index4,1566,882.8,-3.909,5.571,0,c_white,1);	
 	}
 	else if(pj2 == 3)
 	{
-		draw_sprite_ext(spr_Knight_Walk,myimage_index5,1566,882.8,-3.962,4.027,0,c_white,1);	
+		if(pj1 == pj2)
+			draw_sprite_ext(spr_Knight_Walk,myimage_index5,1566,882.8,-3.962,4.027,0,c_lime,1);	
+		else
+			draw_sprite_ext(spr_Knight_Walk,myimage_index5,1566,882.8,-3.962,4.027,0,c_white,1);	
 	}
 }
 else
