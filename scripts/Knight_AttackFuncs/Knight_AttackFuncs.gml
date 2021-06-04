@@ -30,6 +30,7 @@ function KnightEnterAttack(animSpriteIndex, hitMaskIndex)
 				var proy = instance_create_depth(x + (sprite_width),y - (sprite_height / 4 ),depth, obj_Knight_Proyectile);
 				proy.hspeed = 10;
 				proy.image_xscale = 1;
+				proy.owner = self;
 			}
 			if(image_index == image_number - 2 )
 				grav = 1;
@@ -47,6 +48,7 @@ function KnightEnterAttack(animSpriteIndex, hitMaskIndex)
 				var proy = instance_create_depth(x + (sprite_width),y - (sprite_height / 4 ),depth, obj_Knight_Proyectile);
 				proy.hspeed = -10;
 				proy.image_xscale = -1;
+				proy.owner = self;
 			}
 			if(image_index == image_number - 2 )
 				grav = 1;

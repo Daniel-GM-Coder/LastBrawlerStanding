@@ -1,14 +1,14 @@
-if(image_index == 5){
-	hitted = false;
-}
-
-if(!hitted && other != owner && (image_index >= firstValidFrame && image_index < firstNotValidFrame || image_index >= 6 && image_index < 8))
+if(!hitted && other != owner && owner.image_index >= firstValidFrame && owner.image_index < firstNotValidFrame)
 {
 	hitted = true;
 	
 	if(hitted && other.damagePlayer >= minDamageEffect)
 	{
-		other.speedX = (hitSpeedX + other.damagePlayer * 0.1) * owner.facingRight;
+		if(owner.x > other.x) 
+			other.speedX = (hitSpeedX + other.damagePlayer * 0.1) * owner.facingRight * -1;
+		else
+			other.speedX = (hitSpeedX + other.damagePlayer * 0.1) * owner.facingRight;
+	
 		other.speedY = -(hitSpeedY + other.damagePlayer * 0.3);
 		other.accel = 0.25;
 		other.alarm[0] = 0.2 * room_speed;

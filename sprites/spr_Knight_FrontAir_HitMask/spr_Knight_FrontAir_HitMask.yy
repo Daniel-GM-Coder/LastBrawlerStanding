@@ -50,7 +50,7 @@
     "spriteId": {"name":"spr_Knight_FrontAir_HitMask","path":"sprites/spr_Knight_FrontAir_HitMask/spr_Knight_FrontAir_HitMask.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 7.0,
+    "playbackSpeed": 10.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

@@ -1,8 +1,4 @@
-if(image_index == 5){
-	hitted = false;
-}
-
-if(!hitted && other != owner && (image_index >= firstValidFrame && image_index < firstNotValidFrame || image_index >= 6 && image_index < 8))
+if(!hitted && other != owner && (image_index >= firstValidFrame || image_index >= 6 ) && (image_index < firstNotValidFrame || image_index < 8))
 {
 	hitted = true;
 	

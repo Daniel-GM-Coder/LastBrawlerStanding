@@ -1,8 +1,4 @@
-if(image_index == 5){
-	hitted = false;
-}
-
-if(!hitted && other != owner && (image_index >= firstValidFrame && image_index < firstNotValidFrame || image_index >= 6 && image_index < 8))
+if(!hitted && other != owner && image_index >= firstValidFrame && image_index < firstNotValidFrame)
 {
 	hitted = true;
 	
@@ -14,6 +10,7 @@ if(!hitted && other != owner && (image_index >= firstValidFrame && image_index <
 		other.alarm[0] = 0.2 * room_speed;
 		other.hitted = true;
 	}
+	owner.speedY = -bounceSpeed;
 	//Dañar al otro jugador
 	
 	if(!other.playerNumber) {

@@ -22,6 +22,14 @@ if(onAir || falling)
 	}
 	else
 	{
+		var newX = x+speedX;
+		if(!place_free(newX, y) && !hitted)
+		{
+			newX = FindFreePosX(newX);
+	
+			speedX = 0;
+		}
+		
 		x += speedX;
 	}
 
@@ -44,7 +52,8 @@ if(onAir || falling)
 	if(instance_position(x, newY, obj_OneWayPlat1) != noone 
 	&& instance_position(x, y-1, obj_OneWayPlat1) == noone
 	&& speedY >= -0.5
-	&& (!keyboard_check(ord("S")) && !gamepad_button_check(controllerDevice, gp_padd)))
+	&& (!keyboard_check(ord("S")) && !gamepad_button_check(controllerDevice, gp_padd))
+	&& !hitted)
 	{
 		newY = KnightFindFreePosPlatform(newY);
 		speedY = 0;
